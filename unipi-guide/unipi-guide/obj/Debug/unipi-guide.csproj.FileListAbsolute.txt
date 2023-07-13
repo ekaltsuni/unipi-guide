@@ -1,0 +1,14 @@
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\unipi-guide.exe.config
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\unipi-guide.exe
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\unipi-guide.pdb
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\el\unipi-guide.resources.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.AssemblyReference.cache
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.SuggestedBindingRedirects.cache
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.homepage_form.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.Properties.Resources.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.homepage_form.el.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.GenerateResource.cache
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.CoreCompileInputs.cache
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\el\unipi-guide.resources.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
