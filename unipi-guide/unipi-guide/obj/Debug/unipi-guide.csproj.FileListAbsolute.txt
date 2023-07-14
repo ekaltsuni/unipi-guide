@@ -12,3 +12,5 @@ C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\o
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\el\unipi-guide.resources.dll
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.about_us_form.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.toPanepistimio_form.resources
