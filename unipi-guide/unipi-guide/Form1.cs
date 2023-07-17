@@ -29,7 +29,7 @@ namespace unipi_guide
             player.PlayLooping();
         }
         /* Stop sound on mute image click */
-        private void mute_image_Click(object sender, EventArgs e)
+        public void mute_image_Click(object sender, EventArgs e)
         {
             player.Stop();
         }

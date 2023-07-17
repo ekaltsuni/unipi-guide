@@ -42,8 +42,10 @@
             this.toPanepistimio_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.istoria_richTextBox = new System.Windows.Forms.RichTextBox();
             this.istoria_image = new System.Windows.Forms.PictureBox();
+            this.mute_image = new System.Windows.Forms.PictureBox();
             this.homepage_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.istoria_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
             // 
             // homepage_menu
@@ -70,6 +72,7 @@
             this.πίσωToolStripMenuItem.Name = "πίσωToolStripMenuItem";
             this.πίσωToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.πίσωToolStripMenuItem.Text = "< Πίσω";
+            this.πίσωToolStripMenuItem.Click += new System.EventHandler(this.πίσωToolStripMenuItem_Click);
             // 
             // σχολέςToolStripMenuItem
             // 
@@ -168,12 +171,27 @@
             this.istoria_image.TabIndex = 12;
             this.istoria_image.TabStop = false;
             // 
+            // mute_image
+            // 
+            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
+            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.mute_image.Location = new System.Drawing.Point(12, 27);
+            this.mute_image.Name = "mute_image";
+            this.mute_image.Size = new System.Drawing.Size(32, 26);
+            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mute_image.TabIndex = 13;
+            this.mute_image.TabStop = false;
+            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
+            // 
             // toPanepistimio_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(918, 795);
+            this.Controls.Add(this.mute_image);
             this.Controls.Add(this.istoria_image);
             this.Controls.Add(this.istoria_richTextBox);
             this.Controls.Add(this.toPanepistimio_title_richTextBox);
@@ -185,6 +203,7 @@
             this.homepage_menu.ResumeLayout(false);
             this.homepage_menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.istoria_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +224,6 @@
         private System.Windows.Forms.RichTextBox toPanepistimio_title_richTextBox;
         private System.Windows.Forms.RichTextBox istoria_richTextBox;
         private System.Windows.Forms.PictureBox istoria_image;
+        private System.Windows.Forms.PictureBox mute_image;
     }
 }

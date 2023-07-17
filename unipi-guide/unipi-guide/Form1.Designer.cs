@@ -193,7 +193,7 @@ namespace unipi_guide
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(770, 31);
+            this.login_button.Location = new System.Drawing.Point(770, 28);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(124, 28);
             this.login_button.TabIndex = 7;
@@ -208,9 +208,9 @@ namespace unipi_guide
             this.homepage_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 24);
+            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 21);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(931, 94);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(994, 94);
             this.homepage_title_richTextBox.TabIndex = 9;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  Καλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
             // 
@@ -375,10 +375,10 @@ namespace unipi_guide
             | System.Windows.Forms.AnchorStyles.Right)));
             this.homepage_main_image.Image = ((System.Drawing.Image)(resources.GetObject("homepage_main_image.Image")));
             this.homepage_main_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.homepage_main_image.Location = new System.Drawing.Point(-11, 118);
+            this.homepage_main_image.Location = new System.Drawing.Point(-11, 108);
             this.homepage_main_image.Margin = new System.Windows.Forms.Padding(0);
             this.homepage_main_image.Name = "homepage_main_image";
-            this.homepage_main_image.Size = new System.Drawing.Size(958, 282);
+            this.homepage_main_image.Size = new System.Drawing.Size(996, 292);
             this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;
@@ -409,6 +409,7 @@ namespace unipi_guide
             this.Controls.Add(this.homepage_menu);
             this.Controls.Add(this.homepage_title_richTextBox);
             this.Controls.Add(this.homepage_main_image);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.homepage_menu;
             this.Margin = new System.Windows.Forms.Padding(2);
