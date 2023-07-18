@@ -12,7 +12,6 @@ C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\o
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\el\unipi-guide.resources.dll
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
-C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.about_us_form.resources
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.toPanepistimio_form.resources
 C:\Users\mario\Source\Repos\unipi-guide\unipi-guide\unipi-guide\bin\Debug\unipi-guide.exe.config
 C:\Users\mario\Source\Repos\unipi-guide\unipi-guide\unipi-guide\bin\Debug\unipi-guide.exe
@@ -30,3 +29,14 @@ C:\Users\mario\Source\Repos\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-
 C:\Users\mario\Source\Repos\unipi-guide\unipi-guide\unipi-guide\obj\Debug\el\unipi-guide.resources.dll
 C:\Users\mario\Source\Repos\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
 C:\Users\mario\Source\Repos\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.Kritikes_form.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.login_form.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\EntityFramework.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\System.Data.SQLite.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\EntityFramework.xml
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\System.Data.SQLite.xml
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.CopyComplete

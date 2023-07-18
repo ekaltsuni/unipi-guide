@@ -26,10 +26,7 @@ namespace unipi_guide
         /* to Panepistimio menu redirects to other pages */
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form about_us_from_toPanepistimio = new about_us_form();
-            about_us_from_toPanepistimio.ShowDialog();
-            this.Close();
+            MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
         }
 
         private void πίσωToolStripMenuItem_Click(object sender, EventArgs e)

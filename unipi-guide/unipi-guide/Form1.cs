@@ -70,10 +70,7 @@ namespace unipi_guide
         /* Homepage menu redirects to other pages */
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form about_us_from_homepage = new about_us_form();
-            about_us_from_homepage.ShowDialog();
-            this.Close();
+            MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
         }
 
         private void τοΠανεπιστήμιοToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,6 +78,14 @@ namespace unipi_guide
             this.Hide();
             Form toPanepistimio_from_homepage = new toPanepistimio_form();
             toPanepistimio_from_homepage.ShowDialog();
+            this.Close();
+        }
+
+        private void login_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form login_form_from_homepage = new login_form();
+            login_form_from_homepage.ShowDialog();
             this.Close();
         }
     }

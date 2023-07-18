@@ -35,6 +35,7 @@ namespace unipi_guide
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homepage_form));
             this.homepage_menu = new System.Windows.Forms.MenuStrip();
+            this.αρχικήStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.τοΠανεπιστήμιοToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.σχολέςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.οικονομικώνToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +76,7 @@ namespace unipi_guide
             this.homepage_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
             this.homepage_menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.homepage_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.αρχικήStripMenuItem1,
             this.τοΠανεπιστήμιοToolStripMenuItem,
             this.σχολέςToolStripMenuItem,
             this.κριτικέςToolStripMenuItem,
@@ -83,9 +85,17 @@ namespace unipi_guide
             this.homepage_menu.Location = new System.Drawing.Point(0, 0);
             this.homepage_menu.Name = "homepage_menu";
             this.homepage_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.homepage_menu.Size = new System.Drawing.Size(994, 24);
+            this.homepage_menu.Size = new System.Drawing.Size(1036, 24);
             this.homepage_menu.TabIndex = 0;
             this.homepage_menu.Text = "homepage_menu";
+            // 
+            // αρχικήStripMenuItem1
+            // 
+            this.αρχικήStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.αρχικήStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.αρχικήStripMenuItem1.Name = "αρχικήStripMenuItem1";
+            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(59, 20);
+            this.αρχικήStripMenuItem1.Text = "Αρχική";
             // 
             // τοΠανεπιστήμιοToolStripMenuItem
             // 
@@ -193,12 +203,13 @@ namespace unipi_guide
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(770, 28);
+            this.login_button.Location = new System.Drawing.Point(812, 31);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(124, 28);
             this.login_button.TabIndex = 7;
             this.login_button.Text = "Σύνδεση Χρήστη";
             this.login_button.UseVisualStyleBackColor = false;
+            this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // homepage_title_richTextBox
             // 
@@ -210,7 +221,7 @@ namespace unipi_guide
             this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 21);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(994, 94);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(953, 94);
             this.homepage_title_richTextBox.TabIndex = 9;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  Καλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
             // 
@@ -378,19 +389,19 @@ namespace unipi_guide
             this.homepage_main_image.Location = new System.Drawing.Point(-11, 108);
             this.homepage_main_image.Margin = new System.Windows.Forms.Padding(0);
             this.homepage_main_image.Name = "homepage_main_image";
-            this.homepage_main_image.Size = new System.Drawing.Size(996, 292);
-            this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.homepage_main_image.Size = new System.Drawing.Size(984, 320);
+            this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;
             // 
             // homepage_form
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(100, 100);
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(918, 795);
+            this.ClientSize = new System.Drawing.Size(969, 846);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -415,7 +426,7 @@ namespace unipi_guide
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "homepage_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Πανεπιστήμιο Πειραιώς | Οδηγός";
+            this.Text = "Αρχική | Πανεπιστήμιο Πειραιώς";
             this.Load += new System.EventHandler(this.homepage_form_Load);
             this.homepage_menu.ResumeLayout(false);
             this.homepage_menu.PerformLayout();
@@ -459,6 +470,7 @@ namespace unipi_guide
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private ToolStripMenuItem αρχικήStripMenuItem1;
     }
 }
 
