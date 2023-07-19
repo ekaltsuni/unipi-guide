@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static unipi_guide.Program;
 
 namespace unipi_guide
 {
@@ -15,6 +16,13 @@ namespace unipi_guide
         public Kritikes_form()
         {
             InitializeComponent();
+            /* Form behavior when user is logged in */
+            if (userStatus.registeredUser == true)
+            {
+                ΠληροφορικήtoolStripMenuItem.Visible = true;
+                ΕκδηλώσειςtoolStripMenuItem.Visible = true;
+                login_button_homepage.Visible = false;
+            }
         }
 
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)

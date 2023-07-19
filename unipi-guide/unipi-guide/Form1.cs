@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Synthesis;
+using static unipi_guide.Program;
 
 
 namespace unipi_guide
@@ -22,11 +23,21 @@ namespace unipi_guide
         public homepage_form()
         {
             InitializeComponent();
+            /* Form behavior when user is logged in */
+            if (userStatus.registeredUser == true)
+            {
+                ΠληροφορικήtoolStripMenuItem.Visible = true;
+                ΕκδηλώσειςtoolStripMenuItem.Visible = true;
+                login_button_homepage.Visible = false;
+            }
+            
         }
         /* Play sound on form load */
         private void homepage_form_Load(object sender, EventArgs e)
         {
             player.PlayLooping();
+
+
         }
         /* Stop sound on mute image click */
         public void mute_image_Click(object sender, EventArgs e)

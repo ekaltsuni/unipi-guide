@@ -8,6 +8,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static unipi_guide.Program;
 
 namespace unipi_guide
 {
@@ -16,6 +17,13 @@ namespace unipi_guide
         public toPanepistimio_form()
         {
             InitializeComponent();
+            /* Form behavior when user is logged in */
+            if (userStatus.registeredUser == true)
+            {
+                ΠληροφορικήtoolStripMenuItem.Visible = true;
+                ΕκδηλώσειςtoolStripMenuItem.Visible = true;
+                login_button_homepage.Visible = false;
+            }
         }
 
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)

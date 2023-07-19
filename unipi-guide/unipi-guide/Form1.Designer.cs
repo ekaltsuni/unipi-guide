@@ -48,7 +48,7 @@ namespace unipi_guide
             this.slideshow_timer = new System.Windows.Forms.Timer(this.components);
             this.minima_proedrou_richTextBox = new System.Windows.Forms.RichTextBox();
             this.minima_proedrou_textBox = new System.Windows.Forms.TextBox();
-            this.login_button = new System.Windows.Forms.Button();
+            this.login_button_homepage = new System.Windows.Forms.Button();
             this.homepage_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.slideshow_images = new System.Windows.Forms.ImageList(this.components);
             this.sxoles_homepage_textBox = new System.Windows.Forms.TextBox();
@@ -64,6 +64,8 @@ namespace unipi_guide
             this.voice_sound_image = new System.Windows.Forms.PictureBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.homepage_main_image = new System.Windows.Forms.PictureBox();
+            this.ΕκδηλώσειςtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ΠληροφορικήtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.homepage_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow_homepage_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voice_sound_image)).BeginInit();
@@ -79,13 +81,15 @@ namespace unipi_guide
             this.αρχικήStripMenuItem1,
             this.τοΠανεπιστήμιοToolStripMenuItem,
             this.σχολέςToolStripMenuItem,
+            this.ΠληροφορικήtoolStripMenuItem,
             this.κριτικέςToolStripMenuItem,
+            this.ΕκδηλώσειςtoolStripMenuItem,
             this.σχετικάΜεΕμάςToolStripMenuItem,
             this.έξοδοςToolStripMenuItem});
             this.homepage_menu.Location = new System.Drawing.Point(0, 0);
             this.homepage_menu.Name = "homepage_menu";
-            this.homepage_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.homepage_menu.Size = new System.Drawing.Size(1036, 24);
+            this.homepage_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.homepage_menu.Size = new System.Drawing.Size(1351, 28);
             this.homepage_menu.TabIndex = 0;
             this.homepage_menu.Text = "homepage_menu";
             // 
@@ -94,7 +98,7 @@ namespace unipi_guide
             this.αρχικήStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.αρχικήStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.αρχικήStripMenuItem1.Name = "αρχικήStripMenuItem1";
-            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(59, 20);
+            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(74, 24);
             this.αρχικήStripMenuItem1.Text = "Αρχική";
             // 
             // τοΠανεπιστήμιοToolStripMenuItem
@@ -102,7 +106,7 @@ namespace unipi_guide
             this.τοΠανεπιστήμιοToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.τοΠανεπιστήμιοToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.τοΠανεπιστήμιοToolStripMenuItem.Name = "τοΠανεπιστήμιοToolStripMenuItem";
-            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
+            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.τοΠανεπιστήμιοToolStripMenuItem.Text = "Το Πανεπιστήμιο";
             this.τοΠανεπιστήμιοToolStripMenuItem.Click += new System.EventHandler(this.τοΠανεπιστήμιοToolStripMenuItem_Click);
             // 
@@ -116,31 +120,31 @@ namespace unipi_guide
             this.σχολέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχολέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
-            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.σχολέςToolStripMenuItem.Text = "Σχολές";
             // 
             // οικονομικώνToolStripMenuItem
             // 
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
-            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
-            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Name = "χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem";
-            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem
             // 
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Name = "τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem";
-            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             // 
             // κριτικέςToolStripMenuItem
@@ -148,7 +152,7 @@ namespace unipi_guide
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.κριτικέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
-            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
@@ -156,7 +160,7 @@ namespace unipi_guide
             this.σχετικάΜεΕμάςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχετικάΜεΕμάςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχετικάΜεΕμάςToolStripMenuItem.Name = "σχετικάΜεΕμάςToolStripMenuItem";
-            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.σχετικάΜεΕμάςToolStripMenuItem.Text = "Σχετικά με εμάς";
             this.σχετικάΜεΕμάςToolStripMenuItem.Click += new System.EventHandler(this.σχετικάΜεΕμάςToolStripMenuItem_Click);
             // 
@@ -165,7 +169,7 @@ namespace unipi_guide
             this.έξοδοςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.έξοδοςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
-            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
@@ -179,9 +183,10 @@ namespace unipi_guide
             // 
             this.minima_proedrou_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.minima_proedrou_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.minima_proedrou_richTextBox.Location = new System.Drawing.Point(36, 507);
+            this.minima_proedrou_richTextBox.Location = new System.Drawing.Point(48, 624);
+            this.minima_proedrou_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minima_proedrou_richTextBox.Name = "minima_proedrou_richTextBox";
-            this.minima_proedrou_richTextBox.Size = new System.Drawing.Size(858, 126);
+            this.minima_proedrou_richTextBox.Size = new System.Drawing.Size(1203, 173);
             this.minima_proedrou_richTextBox.TabIndex = 4;
             this.minima_proedrou_richTextBox.Text = resources.GetString("minima_proedrou_richTextBox.Text");
             // 
@@ -190,26 +195,28 @@ namespace unipi_guide
             this.minima_proedrou_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.minima_proedrou_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.minima_proedrou_textBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.minima_proedrou_textBox.Location = new System.Drawing.Point(36, 454);
+            this.minima_proedrou_textBox.Location = new System.Drawing.Point(48, 559);
+            this.minima_proedrou_textBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minima_proedrou_textBox.Name = "minima_proedrou_textBox";
-            this.minima_proedrou_textBox.Size = new System.Drawing.Size(221, 24);
+            this.minima_proedrou_textBox.Size = new System.Drawing.Size(295, 30);
             this.minima_proedrou_textBox.TabIndex = 5;
             this.minima_proedrou_textBox.Text = "Χαιρετισμός Πρύτανη";
             // 
-            // login_button
+            // login_button_homepage
             // 
-            this.login_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(812, 31);
-            this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(124, 28);
-            this.login_button.TabIndex = 7;
-            this.login_button.Text = "Σύνδεση Χρήστη";
-            this.login_button.UseVisualStyleBackColor = false;
-            this.login_button.Click += new System.EventHandler(this.login_button_Click);
+            this.login_button_homepage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.login_button_homepage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_button_homepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_button_homepage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.login_button_homepage.ForeColor = System.Drawing.Color.White;
+            this.login_button_homepage.Location = new System.Drawing.Point(1086, 33);
+            this.login_button_homepage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_button_homepage.Name = "login_button_homepage";
+            this.login_button_homepage.Size = new System.Drawing.Size(165, 34);
+            this.login_button_homepage.TabIndex = 7;
+            this.login_button_homepage.Text = "Σύνδεση Χρήστη";
+            this.login_button_homepage.UseVisualStyleBackColor = false;
+            this.login_button_homepage.Click += new System.EventHandler(this.login_button_Click);
             // 
             // homepage_title_richTextBox
             // 
@@ -219,11 +226,12 @@ namespace unipi_guide
             this.homepage_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 21);
+            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 26);
+            this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(953, 94);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1330, 116);
             this.homepage_title_richTextBox.TabIndex = 9;
-            this.homepage_title_richTextBox.Text = "\n\t\t\t\t  Καλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
+            this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \tΚαλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
             // 
             // slideshow_images
             // 
@@ -239,9 +247,10 @@ namespace unipi_guide
             this.sxoles_homepage_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sxoles_homepage_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.sxoles_homepage_textBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.sxoles_homepage_textBox.Location = new System.Drawing.Point(36, 664);
+            this.sxoles_homepage_textBox.Location = new System.Drawing.Point(48, 866);
+            this.sxoles_homepage_textBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sxoles_homepage_textBox.Name = "sxoles_homepage_textBox";
-            this.sxoles_homepage_textBox.Size = new System.Drawing.Size(107, 24);
+            this.sxoles_homepage_textBox.Size = new System.Drawing.Size(143, 30);
             this.sxoles_homepage_textBox.TabIndex = 10;
             this.sxoles_homepage_textBox.Text = "Οι Σχολές";
             // 
@@ -249,9 +258,10 @@ namespace unipi_guide
             // 
             this.sxoles1_homepage_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sxoles1_homepage_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.sxoles1_homepage_richTextBox.Location = new System.Drawing.Point(335, 711);
+            this.sxoles1_homepage_richTextBox.Location = new System.Drawing.Point(447, 924);
+            this.sxoles1_homepage_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sxoles1_homepage_richTextBox.Name = "sxoles1_homepage_richTextBox";
-            this.sxoles1_homepage_richTextBox.Size = new System.Drawing.Size(370, 29);
+            this.sxoles1_homepage_richTextBox.Size = new System.Drawing.Size(493, 36);
             this.sxoles1_homepage_richTextBox.TabIndex = 12;
             this.sxoles1_homepage_richTextBox.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών";
             // 
@@ -259,9 +269,10 @@ namespace unipi_guide
             // 
             this.sxoles2_homepage_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sxoles2_homepage_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.sxoles2_homepage_richTextBox.Location = new System.Drawing.Point(335, 798);
+            this.sxoles2_homepage_richTextBox.Location = new System.Drawing.Point(447, 1031);
+            this.sxoles2_homepage_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sxoles2_homepage_richTextBox.Name = "sxoles2_homepage_richTextBox";
-            this.sxoles2_homepage_richTextBox.Size = new System.Drawing.Size(370, 29);
+            this.sxoles2_homepage_richTextBox.Size = new System.Drawing.Size(493, 36);
             this.sxoles2_homepage_richTextBox.TabIndex = 13;
             this.sxoles2_homepage_richTextBox.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
@@ -269,9 +280,10 @@ namespace unipi_guide
             // 
             this.sxoles3_homepage_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sxoles3_homepage_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.sxoles3_homepage_richTextBox.Location = new System.Drawing.Point(335, 886);
+            this.sxoles3_homepage_richTextBox.Location = new System.Drawing.Point(447, 1139);
+            this.sxoles3_homepage_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sxoles3_homepage_richTextBox.Name = "sxoles3_homepage_richTextBox";
-            this.sxoles3_homepage_richTextBox.Size = new System.Drawing.Size(370, 29);
+            this.sxoles3_homepage_richTextBox.Size = new System.Drawing.Size(493, 36);
             this.sxoles3_homepage_richTextBox.TabIndex = 14;
             this.sxoles3_homepage_richTextBox.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
@@ -279,9 +291,10 @@ namespace unipi_guide
             // 
             this.sxoles4_homepage_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sxoles4_homepage_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.sxoles4_homepage_richTextBox.Location = new System.Drawing.Point(335, 970);
+            this.sxoles4_homepage_richTextBox.Location = new System.Drawing.Point(447, 1243);
+            this.sxoles4_homepage_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sxoles4_homepage_richTextBox.Name = "sxoles4_homepage_richTextBox";
-            this.sxoles4_homepage_richTextBox.Size = new System.Drawing.Size(370, 29);
+            this.sxoles4_homepage_richTextBox.Size = new System.Drawing.Size(493, 36);
             this.sxoles4_homepage_richTextBox.TabIndex = 15;
             this.sxoles4_homepage_richTextBox.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             // 
@@ -293,9 +306,10 @@ namespace unipi_guide
             this.sxoles1_homepage_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sxoles1_homepage_button.ForeColor = System.Drawing.Color.White;
             this.sxoles1_homepage_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sxoles1_homepage_button.Location = new System.Drawing.Point(335, 743);
+            this.sxoles1_homepage_button.Location = new System.Drawing.Point(447, 963);
+            this.sxoles1_homepage_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sxoles1_homepage_button.Name = "sxoles1_homepage_button";
-            this.sxoles1_homepage_button.Size = new System.Drawing.Size(182, 30);
+            this.sxoles1_homepage_button.Size = new System.Drawing.Size(243, 37);
             this.sxoles1_homepage_button.TabIndex = 16;
             this.sxoles1_homepage_button.Text = "Μάθε περισσότερα >>";
             this.sxoles1_homepage_button.UseVisualStyleBackColor = false;
@@ -308,9 +322,10 @@ namespace unipi_guide
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(335, 829);
+            this.button1.Location = new System.Drawing.Point(447, 1069);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 30);
+            this.button1.Size = new System.Drawing.Size(243, 37);
             this.button1.TabIndex = 17;
             this.button1.Text = "Μάθε περισσότερα >>";
             this.button1.UseVisualStyleBackColor = false;
@@ -323,9 +338,10 @@ namespace unipi_guide
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(335, 916);
+            this.button2.Location = new System.Drawing.Point(447, 1176);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 30);
+            this.button2.Size = new System.Drawing.Size(243, 37);
             this.button2.TabIndex = 18;
             this.button2.Text = "Μάθε περισσότερα >>";
             this.button2.UseVisualStyleBackColor = false;
@@ -338,18 +354,20 @@ namespace unipi_guide
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(335, 1001);
+            this.button3.Location = new System.Drawing.Point(447, 1281);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 30);
+            this.button3.Size = new System.Drawing.Size(243, 37);
             this.button3.TabIndex = 19;
             this.button3.Text = "Μάθε περισσότερα >>";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // slideshow_homepage_image
             // 
-            this.slideshow_homepage_image.Location = new System.Drawing.Point(36, 711);
+            this.slideshow_homepage_image.Location = new System.Drawing.Point(48, 924);
+            this.slideshow_homepage_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.slideshow_homepage_image.Name = "slideshow_homepage_image";
-            this.slideshow_homepage_image.Size = new System.Drawing.Size(256, 256);
+            this.slideshow_homepage_image.Size = new System.Drawing.Size(341, 315);
             this.slideshow_homepage_image.TabIndex = 11;
             this.slideshow_homepage_image.TabStop = false;
             // 
@@ -358,9 +376,10 @@ namespace unipi_guide
             this.voice_sound_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.voice_sound_image.Image = ((System.Drawing.Image)(resources.GetObject("voice_sound_image.Image")));
             this.voice_sound_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.voice_sound_image.Location = new System.Drawing.Point(252, 454);
+            this.voice_sound_image.Location = new System.Drawing.Point(336, 559);
+            this.voice_sound_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.voice_sound_image.Name = "voice_sound_image";
-            this.voice_sound_image.Size = new System.Drawing.Size(29, 24);
+            this.voice_sound_image.Size = new System.Drawing.Size(39, 30);
             this.voice_sound_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.voice_sound_image.TabIndex = 6;
             this.voice_sound_image.TabStop = false;
@@ -372,9 +391,10 @@ namespace unipi_guide
             this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(12, 27);
+            this.mute_image.Location = new System.Drawing.Point(16, 33);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(32, 26);
+            this.mute_image.Size = new System.Drawing.Size(43, 32);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mute_image.TabIndex = 3;
             this.mute_image.TabStop = false;
@@ -386,22 +406,40 @@ namespace unipi_guide
             | System.Windows.Forms.AnchorStyles.Right)));
             this.homepage_main_image.Image = ((System.Drawing.Image)(resources.GetObject("homepage_main_image.Image")));
             this.homepage_main_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.homepage_main_image.Location = new System.Drawing.Point(-11, 108);
+            this.homepage_main_image.Location = new System.Drawing.Point(0, 141);
             this.homepage_main_image.Margin = new System.Windows.Forms.Padding(0);
             this.homepage_main_image.Name = "homepage_main_image";
-            this.homepage_main_image.Size = new System.Drawing.Size(984, 320);
-            this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.homepage_main_image.Size = new System.Drawing.Size(1274, 320);
+            this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;
             // 
+            // ΕκδηλώσειςtoolStripMenuItem
+            // 
+            this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
+            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
+            this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
+            // 
+            // ΠληροφορικήtoolStripMenuItem
+            // 
+            this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
+            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
+            this.ΠληροφορικήtoolStripMenuItem.Visible = false;
+            // 
             // homepage_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(100, 100);
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(969, 846);
+            this.ClientSize = new System.Drawing.Size(1292, 1041);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -412,7 +450,7 @@ namespace unipi_guide
             this.Controls.Add(this.sxoles1_homepage_richTextBox);
             this.Controls.Add(this.slideshow_homepage_image);
             this.Controls.Add(this.sxoles_homepage_textBox);
-            this.Controls.Add(this.login_button);
+            this.Controls.Add(this.login_button_homepage);
             this.Controls.Add(this.voice_sound_image);
             this.Controls.Add(this.minima_proedrou_textBox);
             this.Controls.Add(this.minima_proedrou_richTextBox);
@@ -423,7 +461,7 @@ namespace unipi_guide
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.homepage_menu;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "homepage_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Αρχική | Πανεπιστήμιο Πειραιώς";
@@ -457,7 +495,7 @@ namespace unipi_guide
         private RichTextBox minima_proedrou_richTextBox;
         private System.Windows.Forms.TextBox minima_proedrou_textBox;
         private PictureBox voice_sound_image;
-        private System.Windows.Forms.Button login_button;
+        private System.Windows.Forms.Button login_button_homepage;
         private RichTextBox homepage_title_richTextBox;
         private ImageList slideshow_images;
         private System.Windows.Forms.TextBox sxoles_homepage_textBox;
@@ -471,6 +509,8 @@ namespace unipi_guide
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private ToolStripMenuItem αρχικήStripMenuItem1;
+        private ToolStripMenuItem ΠληροφορικήtoolStripMenuItem;
+        private ToolStripMenuItem ΕκδηλώσειςtoolStripMenuItem;
     }
 }
 

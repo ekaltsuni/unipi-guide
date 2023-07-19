@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static unipi_guide.Program;
 
 namespace unipi_guide
 {
@@ -16,6 +17,10 @@ namespace unipi_guide
         /* Initialize connection to database */
         String connectionToStudent = "Data source=unipi-guide.db; Version=3";
         SQLiteConnection connection;
+
+        public object ΠληροφορικήtoolStripMenuItem { get; private set; }
+        public object ΕκδηλώσειςtoolStripMenuItem { get; private set; }
+
         public login_form()
         {
             InitializeComponent();
@@ -79,6 +84,7 @@ namespace unipi_guide
             if (reader.Read())
             {
                 this.Hide();
+                userStatus.registeredUser = true;
                 Form homepage = new homepage_form();
                 homepage.ShowDialog();
                 this.Close();
