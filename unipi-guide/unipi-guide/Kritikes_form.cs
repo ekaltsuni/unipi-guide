@@ -47,10 +47,33 @@ namespace unipi_guide
             arxiki_from_kritikes.ShowDialog();
             this.Close();
         }
+        private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form didaskontes_form_from_kritikes = new Didaskontes_form();
+            didaskontes_form_from_kritikes.ShowDialog();
+            this.Close();
+        }
+        private void login_button_homepage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form login_form_from_kritikes = new login_form();
+            login_form_from_kritikes.ShowDialog();
+            this.Close();
+        }
 
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        private void mute_image_Click(object sender, EventArgs e)
+        {
+            /* Calls the mute_image_Click method of homepage_form to stop the player */
+            homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
+            form1?.mute_image_Click(sender, e);
+        }
+
+
     }
 }

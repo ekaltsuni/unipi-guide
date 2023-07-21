@@ -99,5 +99,13 @@ namespace unipi_guide
             login_form_from_homepage.ShowDialog();
             this.Close();
         }
+
+        private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form didaskontes_form_from_homepage = new Didaskontes_form();
+            didaskontes_form_from_homepage.ShowDialog();
+            this.Close();
+        }
     }
 }

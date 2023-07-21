@@ -37,13 +37,18 @@
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ΠληροφορικήtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.κριτικέςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ΕκδηλώσειςtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ΠληροφορικήtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ΕκδηλώσειςtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.login_button_homepage = new System.Windows.Forms.Button();
+            this.mute_image = new System.Windows.Forms.PictureBox();
+            this.προπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.μεταπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.διδάσκοντεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kritikes_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
             // 
             // kritikes_menu
@@ -121,6 +126,19 @@
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             // 
+            // ΠληροφορικήtoolStripMenuItem
+            // 
+            this.ΠληροφορικήtoolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.προπτυχιακάToolStripMenuItem,
+            this.μεταπτυχιακάToolStripMenuItem,
+            this.διδάσκοντεςToolStripMenuItem});
+            this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
+            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
+            this.ΠληροφορικήtoolStripMenuItem.Visible = false;
+            // 
             // κριτικέςToolStripMenuItem
             // 
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -128,6 +146,15 @@
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
             this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
+            // 
+            // ΕκδηλώσειςtoolStripMenuItem
+            // 
+            this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
+            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
+            this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
             // 
@@ -147,24 +174,6 @@
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
-            // ΠληροφορικήtoolStripMenuItem
-            // 
-            this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
-            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(121, 24);
-            this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
-            this.ΠληροφορικήtoolStripMenuItem.Visible = false;
-            // 
-            // ΕκδηλώσειςtoolStripMenuItem
-            // 
-            this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
-            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
-            this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
-            this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
-            // 
             // login_button_homepage
             // 
             this.login_button_homepage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
@@ -179,6 +188,41 @@
             this.login_button_homepage.TabIndex = 8;
             this.login_button_homepage.Text = "Σύνδεση Χρήστη";
             this.login_button_homepage.UseVisualStyleBackColor = false;
+            this.login_button_homepage.Click += new System.EventHandler(this.login_button_homepage_Click);
+            // 
+            // mute_image
+            // 
+            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
+            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.mute_image.Location = new System.Drawing.Point(13, 32);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
+            this.mute_image.Name = "mute_image";
+            this.mute_image.Size = new System.Drawing.Size(43, 32);
+            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mute_image.TabIndex = 14;
+            this.mute_image.TabStop = false;
+            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
+            // 
+            // προπτυχιακάToolStripMenuItem
+            // 
+            this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
+            // 
+            // μεταπτυχιακάToolStripMenuItem
+            // 
+            this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
+            // 
+            // διδάσκοντεςToolStripMenuItem
+            // 
+            this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
+            this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
             // Kritikes_form
             // 
@@ -186,6 +230,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1292, 1041);
+            this.Controls.Add(this.mute_image);
             this.Controls.Add(this.login_button_homepage);
             this.Controls.Add(this.kritikes_menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -195,6 +240,7 @@
             this.Text = "Κριτικές | Πανεπιστήμιο Πειραιώς";
             this.kritikes_menu.ResumeLayout(false);
             this.kritikes_menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +262,9 @@
         private System.Windows.Forms.ToolStripMenuItem ΠληροφορικήtoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ΕκδηλώσειςtoolStripMenuItem;
         private System.Windows.Forms.Button login_button_homepage;
+        private System.Windows.Forms.PictureBox mute_image;
+        private System.Windows.Forms.ToolStripMenuItem προπτυχιακάToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem μεταπτυχιακάToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem διδάσκοντεςToolStripMenuItem;
     }
 }
