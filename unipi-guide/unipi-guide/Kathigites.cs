@@ -17,11 +17,9 @@ namespace unipi_guide
         {
             InitializeComponent();
             /* Form behavior when user is logged in */
-            if (userStatus.registeredUser == true)
-            {
-                ΠληροφορικήtoolStripMenuItem.Visible = true;
-                ΕκδηλώσειςtoolStripMenuItem.Visible = true;
-            }
+            /* No need to check the user since we are on didaskontes page */
+            ΠληροφορικήtoolStripMenuItem.Visible = true;
+            ΕκδηλώσειςtoolStripMenuItem.Visible = true;
         }
 
         private void mute_image_Click(object sender, EventArgs e)

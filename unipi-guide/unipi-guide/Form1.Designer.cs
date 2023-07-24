@@ -43,6 +43,9 @@ namespace unipi_guide
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ΠληροφορικήtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.προπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.μεταπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.διδάσκοντεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.κριτικέςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ΕκδηλώσειςtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,9 +69,6 @@ namespace unipi_guide
             this.voice_sound_image = new System.Windows.Forms.PictureBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.homepage_main_image = new System.Windows.Forms.PictureBox();
-            this.προπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.μεταπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.διδάσκοντεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.homepage_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow_homepage_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voice_sound_image)).BeginInit();
@@ -163,6 +163,25 @@ namespace unipi_guide
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
             this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
+            // προπτυχιακάToolStripMenuItem
+            // 
+            this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
+            // 
+            // μεταπτυχιακάToolStripMenuItem
+            // 
+            this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
+            // 
+            // διδάσκοντεςToolStripMenuItem
+            // 
+            this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
+            this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
+            // 
             // κριτικέςToolStripMenuItem
             // 
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -170,6 +189,7 @@ namespace unipi_guide
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
             this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
+            this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
             // ΕκδηλώσειςtoolStripMenuItem
             // 
@@ -254,7 +274,7 @@ namespace unipi_guide
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 26);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1448, 116);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1524, 116);
             this.homepage_title_richTextBox.TabIndex = 9;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \tΚαλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
             // 
@@ -434,29 +454,10 @@ namespace unipi_guide
             this.homepage_main_image.Location = new System.Drawing.Point(0, 141);
             this.homepage_main_image.Margin = new System.Windows.Forms.Padding(0);
             this.homepage_main_image.Name = "homepage_main_image";
-            this.homepage_main_image.Size = new System.Drawing.Size(1392, 320);
+            this.homepage_main_image.Size = new System.Drawing.Size(1468, 320);
             this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;
-            // 
-            // προπτυχιακάToolStripMenuItem
-            // 
-            this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
-            // 
-            // μεταπτυχιακάToolStripMenuItem
-            // 
-            this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
-            // 
-            // διδάσκοντεςToolStripMenuItem
-            // 
-            this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
-            this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
             // homepage_form
             // 
@@ -465,7 +466,7 @@ namespace unipi_guide
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(100, 100);
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1313, 1062);
+            this.ClientSize = new System.Drawing.Size(1313, 1055);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Didaskontes_form));
             this.mute_image = new System.Windows.Forms.PictureBox();
-            this.kritikes_menu = new System.Windows.Forms.MenuStrip();
+            this.kathigites_menu = new System.Windows.Forms.MenuStrip();
             this.αρχικήToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.τοΠανεπιστήμιοStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.σχολέςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +53,7 @@
             this.didaskontes_intro_text_box = new System.Windows.Forms.Label();
             this.didaskontes_download_icon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
-            this.kritikes_menu.SuspendLayout();
+            this.kathigites_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.didaskontes_download_icon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,11 +72,11 @@
             this.mute_image.TabStop = false;
             this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
-            // kritikes_menu
+            // kathigites_menu
             // 
-            this.kritikes_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
-            this.kritikes_menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.kritikes_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kathigites_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
+            this.kathigites_menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.kathigites_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.αρχικήToolStripMenuItem,
             this.τοΠανεπιστήμιοStripMenuItem1,
             this.σχολέςToolStripMenuItem,
@@ -85,12 +85,12 @@
             this.ΕκδηλώσειςtoolStripMenuItem,
             this.σχετικάΜεΕμάςToolStripMenuItem,
             this.έξοδοςToolStripMenuItem});
-            this.kritikes_menu.Location = new System.Drawing.Point(0, 0);
-            this.kritikes_menu.Name = "kritikes_menu";
-            this.kritikes_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.kritikes_menu.Size = new System.Drawing.Size(1292, 28);
-            this.kritikes_menu.TabIndex = 5;
-            this.kritikes_menu.Text = "kritikes_menu";
+            this.kathigites_menu.Location = new System.Drawing.Point(0, 0);
+            this.kathigites_menu.Name = "kathigites_menu";
+            this.kathigites_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.kathigites_menu.Size = new System.Drawing.Size(1292, 28);
+            this.kathigites_menu.TabIndex = 5;
+            this.kathigites_menu.Text = "kathigites_menu";
             // 
             // αρχικήToolStripMenuItem
             // 
@@ -224,7 +224,7 @@
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 28);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1366, 116);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1324, 116);
             this.homepage_title_richTextBox.TabIndex = 10;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \t\tΔιδάσκοντες του τμήματος Πληροφορικής";
             // 
@@ -288,12 +288,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1313, 1062);
+            this.ClientSize = new System.Drawing.Size(1313, 1055);
             this.Controls.Add(this.didaskontes_save_button);
             this.Controls.Add(this.didaskontes_download_icon);
             this.Controls.Add(this.didaskontes_intro_text_box);
             this.Controls.Add(this.stoixeiaKathigitwnRichTextBox);
-            this.Controls.Add(this.kritikes_menu);
+            this.Controls.Add(this.kathigites_menu);
             this.Controls.Add(this.mute_image);
             this.Controls.Add(this.homepage_title_richTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -301,8 +301,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Διδάσκοντες | Πανεπιστήμιο Πειραιώς";
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
-            this.kritikes_menu.ResumeLayout(false);
-            this.kritikes_menu.PerformLayout();
+            this.kathigites_menu.ResumeLayout(false);
+            this.kathigites_menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.didaskontes_download_icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,7 +312,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox mute_image;
-        private System.Windows.Forms.MenuStrip kritikes_menu;
+        private System.Windows.Forms.MenuStrip kathigites_menu;
         private System.Windows.Forms.ToolStripMenuItem αρχικήToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem τοΠανεπιστήμιοStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem σχολέςToolStripMenuItem;

@@ -107,5 +107,13 @@ namespace unipi_guide
             didaskontes_form_from_homepage.ShowDialog();
             this.Close();
         }
+
+        private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form kritikes_form_from_homepage = new Kritikes_form();
+            kritikes_form_from_homepage.ShowDialog();
+            this.Close();
+        }
     }
 }
