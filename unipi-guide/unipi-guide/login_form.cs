@@ -83,6 +83,9 @@ namespace unipi_guide
              * Otherwise, prompt user to try again. */
             if (reader.Read())
             {
+                reader.Close();
+                command.Dispose();
+                connection.Close();
                 this.Hide();
                 userStatus.registeredUser = true;
                 Form homepage = new homepage_form();
@@ -92,11 +95,10 @@ namespace unipi_guide
             else
             {
                 MessageBox.Show("Invalid login details. Please try again.");
+                reader.Close();
+                command.Dispose();
+                connection.Close();
             }
-
-            reader.Close();
-            command.Dispose();
-            connection.Close();
         }
     }
 }

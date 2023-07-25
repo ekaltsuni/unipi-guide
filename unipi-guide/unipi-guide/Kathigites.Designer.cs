@@ -185,6 +185,7 @@
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
             this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
+            this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
             // ΕκδηλώσειςtoolStripMenuItem
             // 
@@ -224,7 +225,7 @@
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 28);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1324, 116);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1303, 116);
             this.homepage_title_richTextBox.TabIndex = 10;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \t\tΔιδάσκοντες του τμήματος Πληροφορικής";
             // 

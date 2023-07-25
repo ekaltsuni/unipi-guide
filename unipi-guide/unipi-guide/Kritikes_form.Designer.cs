@@ -53,8 +53,8 @@
             this.newReview_richTextBox = new System.Windows.Forms.RichTextBox();
             this.leaveNewReview_button = new System.Windows.Forms.Button();
             this.unregistered_label = new System.Windows.Forms.Label();
-            this.name_label = new System.Windows.Forms.Label();
-            this.name_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.email_label = new System.Windows.Forms.Label();
+            this.email_richTextBox = new System.Windows.Forms.RichTextBox();
             this.kritikes_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
@@ -309,28 +309,28 @@
             this.unregistered_label.TabIndex = 22;
             this.unregistered_label.Text = "Για να αφήσετε ένα σχόλιο,\r\nπαρακαλώ συνδεθείτε.";
             // 
-            // name_label
+            // email_label
             // 
-            this.name_label.AutoSize = true;
-            this.name_label.BackColor = System.Drawing.Color.Transparent;
-            this.name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.name_label.ForeColor = System.Drawing.Color.Black;
-            this.name_label.Location = new System.Drawing.Point(899, 450);
-            this.name_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(93, 29);
-            this.name_label.TabIndex = 23;
-            this.name_label.Text = "Όνομα:";
-            this.name_label.Visible = false;
+            this.email_label.AutoSize = true;
+            this.email_label.BackColor = System.Drawing.Color.Transparent;
+            this.email_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.email_label.ForeColor = System.Drawing.Color.Black;
+            this.email_label.Location = new System.Drawing.Point(899, 450);
+            this.email_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.email_label.Name = "email_label";
+            this.email_label.Size = new System.Drawing.Size(80, 29);
+            this.email_label.TabIndex = 23;
+            this.email_label.Text = "Email:";
+            this.email_label.Visible = false;
             // 
-            // name_richTextBox
+            // email_richTextBox
             // 
-            this.name_richTextBox.Location = new System.Drawing.Point(904, 482);
-            this.name_richTextBox.Name = "name_richTextBox";
-            this.name_richTextBox.Size = new System.Drawing.Size(323, 40);
-            this.name_richTextBox.TabIndex = 24;
-            this.name_richTextBox.Text = "";
-            this.name_richTextBox.Visible = false;
+            this.email_richTextBox.Location = new System.Drawing.Point(904, 482);
+            this.email_richTextBox.Name = "email_richTextBox";
+            this.email_richTextBox.Size = new System.Drawing.Size(323, 40);
+            this.email_richTextBox.TabIndex = 24;
+            this.email_richTextBox.Text = "";
+            this.email_richTextBox.Visible = false;
             // 
             // Kritikes_form
             // 
@@ -338,8 +338,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1292, 1041);
-            this.Controls.Add(this.name_richTextBox);
-            this.Controls.Add(this.name_label);
+            this.Controls.Add(this.email_richTextBox);
+            this.Controls.Add(this.email_label);
             this.Controls.Add(this.unregistered_label);
             this.Controls.Add(this.leaveNewReview_button);
             this.Controls.Add(this.newReview_richTextBox);
@@ -389,7 +389,7 @@
         private System.Windows.Forms.RichTextBox newReview_richTextBox;
         private System.Windows.Forms.Button leaveNewReview_button;
         private System.Windows.Forms.Label unregistered_label;
-        private System.Windows.Forms.Label name_label;
-        private System.Windows.Forms.RichTextBox name_richTextBox;
+        private System.Windows.Forms.Label email_label;
+        private System.Windows.Forms.RichTextBox email_richTextBox;
     }
 }

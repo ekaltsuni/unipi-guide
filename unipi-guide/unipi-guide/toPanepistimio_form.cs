@@ -61,7 +61,10 @@ namespace unipi_guide
         }
         private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form kritikes_form_from_uni = new Kritikes_form();
+            kritikes_form_from_uni.ShowDialog();
+            this.Close();
         }
         private void mute_image_Click(object sender, EventArgs e)
         {

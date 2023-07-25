@@ -35,8 +35,8 @@ namespace unipi_guide
                 leaveNewReview_button.Visible = true;
                 leaveReview_label.Visible = true;
                 newReview_richTextBox.Visible = true;
-                name_label.Visible = true;
-                name_richTextBox.Visible = true;
+                email_label.Visible = true;
+                email_richTextBox.Visible = true;
             }
         }
 
@@ -111,14 +111,15 @@ namespace unipi_guide
 
         private void leaveNewReview_button_Click(object sender, EventArgs e)
         {
-            String name = name_richTextBox.Text;
+            /*Adds a review to the table Student in the column review using the column email*/
+            String email = email_richTextBox.Text;
             String review = newReview_richTextBox.Text;
             connection = new SQLiteConnection(connectionToStudent);
             connection.Open();
-            String insertSQL = "Insert into Reviews values(@Name,@Review)";
+            String insertSQL = "UPDATE Student SET review=@review WHERE email=@email";
             SQLiteCommand command = new SQLiteCommand(insertSQL, connection);
-            command.Parameters.AddWithValue("@Name", name);
-            command.Parameters.AddWithValue("@Review", review);
+            command.Parameters.AddWithValue("@email", email);
+            command.Parameters.AddWithValue("@review", review);
             int rowsAffected = command.ExecuteNonQuery();
             if (rowsAffected > 0)
             {
