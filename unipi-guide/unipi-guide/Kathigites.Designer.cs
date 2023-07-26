@@ -88,7 +88,7 @@
             this.kathigites_menu.Location = new System.Drawing.Point(0, 0);
             this.kathigites_menu.Name = "kathigites_menu";
             this.kathigites_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.kathigites_menu.Size = new System.Drawing.Size(1292, 28);
+            this.kathigites_menu.Size = new System.Drawing.Size(1294, 28);
             this.kathigites_menu.TabIndex = 5;
             this.kathigites_menu.Text = "kathigites_menu";
             // 
@@ -195,6 +195,7 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
+            this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
             // 
@@ -225,7 +226,7 @@
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 28);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1303, 116);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1327, 116);
             this.homepage_title_richTextBox.TabIndex = 10;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \t\tΔιδάσκοντες του τμήματος Πληροφορικής";
             // 
@@ -289,7 +290,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1313, 1055);
+            this.ClientSize = new System.Drawing.Size(1315, 1055);
             this.Controls.Add(this.didaskontes_save_button);
             this.Controls.Add(this.didaskontes_download_icon);
             this.Controls.Add(this.didaskontes_intro_text_box);
@@ -297,6 +298,7 @@
             this.Controls.Add(this.kathigites_menu);
             this.Controls.Add(this.mute_image);
             this.Controls.Add(this.homepage_title_richTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Didaskontes_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

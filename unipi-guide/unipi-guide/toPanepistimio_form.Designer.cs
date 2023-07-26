@@ -178,6 +178,7 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
+            this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
             // 
@@ -278,6 +279,7 @@
             this.Controls.Add(this.istoria_richTextBox);
             this.Controls.Add(this.toPanepistimio_title_richTextBox);
             this.Controls.Add(this.toPanepistimio_menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "toPanepistimio_form";

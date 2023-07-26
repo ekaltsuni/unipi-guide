@@ -68,3 +68,4 @@ C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\el\un
 C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.CopyComplete
 C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
 C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
+C:\Users\mario\source\repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi_guide.calendar_form.resources

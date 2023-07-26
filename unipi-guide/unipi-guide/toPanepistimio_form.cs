@@ -73,6 +73,12 @@ namespace unipi_guide
             form1?.mute_image_Click(sender,e);
         }
 
-
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar_form_from_uni = new calendar_form();
+            calendar_form_from_uni.ShowDialog();
+            this.Close();
+        }
     }
 }

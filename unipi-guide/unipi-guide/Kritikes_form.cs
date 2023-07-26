@@ -132,5 +132,13 @@ namespace unipi_guide
             command.Dispose();
             connection.Close();
         }
+
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar_form_from_reviews = new calendar_form();
+            calendar_form_from_reviews.ShowDialog();
+            this.Close();
+        }
     }
 }

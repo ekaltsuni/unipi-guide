@@ -199,6 +199,7 @@ namespace unipi_guide
             this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
+            this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
             // 
@@ -274,7 +275,7 @@ namespace unipi_guide
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 26);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1524, 116);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1562, 116);
             this.homepage_title_richTextBox.TabIndex = 9;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \tΚαλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
             // 
@@ -454,7 +455,7 @@ namespace unipi_guide
             this.homepage_main_image.Location = new System.Drawing.Point(0, 141);
             this.homepage_main_image.Margin = new System.Windows.Forms.Padding(0);
             this.homepage_main_image.Name = "homepage_main_image";
-            this.homepage_main_image.Size = new System.Drawing.Size(1468, 320);
+            this.homepage_main_image.Size = new System.Drawing.Size(1506, 320);
             this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;

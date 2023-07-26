@@ -115,5 +115,13 @@ namespace unipi_guide
             kritikes_form_from_homepage.ShowDialog();
             this.Close();
         }
+
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar_form_from_homepage = new calendar_form();
+            calendar_form_from_homepage.ShowDialog();
+            this.Close();
+        }
     }
 }
