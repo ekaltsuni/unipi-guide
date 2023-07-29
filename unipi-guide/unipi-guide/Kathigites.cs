@@ -52,6 +52,29 @@ namespace unipi_guide
             this.Close();
         }
 
+        private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form kritikes_form_from_homepage = new Kritikes_form();
+            kritikes_form_from_homepage.ShowDialog();
+            this.Close();
+        }
+
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar_form_from_didaskontes = new calendar_form();
+            calendar_form_from_didaskontes.ShowDialog();
+            this.Close();
+        }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki_form_from_didaskontes = new Pliroforiki_form();
+            pliroforiki_form_from_didaskontes.ShowDialog();
+            this.Close();
+        }
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
@@ -93,20 +116,6 @@ namespace unipi_guide
             }
         }
 
-        private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form kritikes_form_from_homepage = new Kritikes_form();
-            kritikes_form_from_homepage.ShowDialog();
-            this.Close();
-        }
 
-        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form calendar_form_from_didaskontes = new calendar_form();
-            calendar_form_from_didaskontes.ShowDialog();
-            this.Close();
-        }
     }
 }

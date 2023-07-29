@@ -69,5 +69,14 @@ namespace unipi_guide
         {
             Application.Exit();
         }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki_form_from_calendar_form = new Pliroforiki_form();
+            pliroforiki_form_from_calendar_form.ShowDialog();
+            this.Close();
+
+        }
     }
 }

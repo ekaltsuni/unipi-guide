@@ -77,6 +77,22 @@ namespace unipi_guide
             this.Close();
         }
 
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar_form_from_reviews = new calendar_form();
+            calendar_form_from_reviews.ShowDialog();
+            this.Close();
+        }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki_form_from_kritikes = new Pliroforiki_form();
+            pliroforiki_form_from_kritikes.ShowDialog();
+            this.Close();
+        }
+
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -133,12 +149,6 @@ namespace unipi_guide
             connection.Close();
         }
 
-        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form calendar_form_from_reviews = new calendar_form();
-            calendar_form_from_reviews.ShowDialog();
-            this.Close();
-        }
+
     }
 }

@@ -69,3 +69,10 @@ C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi
 C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
 C:\Users\mario\Source\Repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
 C:\Users\mario\source\repos\unipi-guide1\unipi-guide\unipi-guide\obj\Debug\unipi_guide.calendar_form.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.calendar_form.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\Interop.WMPLib.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\Interop.WMPLib.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.ResolveComReference.cache
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.Pliroforiki_form.resources

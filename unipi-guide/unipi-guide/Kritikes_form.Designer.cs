@@ -38,6 +38,7 @@
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ΠληροφορικήtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.προπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.μεταπτυχιακάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.διδάσκοντεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,6 @@
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.login_button_homepage = new System.Windows.Forms.Button();
-            this.kritikes_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.kritikes_richTextBox = new System.Windows.Forms.RichTextBox();
             this.leaveReview_label = new System.Windows.Forms.Label();
@@ -55,6 +55,7 @@
             this.unregistered_label = new System.Windows.Forms.Label();
             this.email_label = new System.Windows.Forms.Label();
             this.email_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.kritikes_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.kritikes_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
@@ -67,10 +68,10 @@
             this.αρχικήToolStripMenuItem,
             this.τοΠανεπιστήμιοStripMenuItem1,
             this.σχολέςToolStripMenuItem,
-            this.σχετικάΜεΕμάςToolStripMenuItem,
             this.ΠληροφορικήtoolStripMenuItem,
             this.κριτικέςToolStripMenuItem,
             this.ΕκδηλώσειςtoolStripMenuItem,
+            this.σχετικάΜεΕμάςToolStripMenuItem,
             this.έξοδοςToolStripMenuItem});
             this.kritikes_menu.Location = new System.Drawing.Point(0, 0);
             this.kritikes_menu.Name = "kritikes_menu";
@@ -137,6 +138,7 @@
             // ΠληροφορικήtoolStripMenuItem
             // 
             this.ΠληροφορικήtoolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem,
             this.προπτυχιακάToolStripMenuItem,
             this.μεταπτυχιακάToolStripMenuItem,
             this.διδάσκοντεςToolStripMenuItem});
@@ -147,22 +149,29 @@
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
             this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
+            // τοΤμήμαΠληροφορικήςToolStripMenuItem
+            // 
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
+            // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
@@ -217,21 +226,6 @@
             this.login_button_homepage.Text = "Σύνδεση Χρήστη";
             this.login_button_homepage.UseVisualStyleBackColor = false;
             this.login_button_homepage.Click += new System.EventHandler(this.login_button_homepage_Click);
-            // 
-            // kritikes_title_richTextBox
-            // 
-            this.kritikes_title_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.kritikes_title_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.kritikes_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.kritikes_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.kritikes_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.kritikes_title_richTextBox.Location = new System.Drawing.Point(0, 23);
-            this.kritikes_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.kritikes_title_richTextBox.Name = "kritikes_title_richTextBox";
-            this.kritikes_title_richTextBox.Size = new System.Drawing.Size(1324, 116);
-            this.kritikes_title_richTextBox.TabIndex = 15;
-            this.kritikes_title_richTextBox.Text = "\n\t\t\t\t  \t\tΚριτικές για το Πανεπιστήμιο Πειραιά";
             // 
             // mute_image
             // 
@@ -333,6 +327,21 @@
             this.email_richTextBox.Text = "";
             this.email_richTextBox.Visible = false;
             // 
+            // kritikes_title_richTextBox
+            // 
+            this.kritikes_title_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kritikes_title_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.kritikes_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.kritikes_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.kritikes_title_richTextBox.ForeColor = System.Drawing.Color.White;
+            this.kritikes_title_richTextBox.Location = new System.Drawing.Point(0, 23);
+            this.kritikes_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.kritikes_title_richTextBox.Name = "kritikes_title_richTextBox";
+            this.kritikes_title_richTextBox.Size = new System.Drawing.Size(1324, 116);
+            this.kritikes_title_richTextBox.TabIndex = 15;
+            this.kritikes_title_richTextBox.Text = "\n\t\t\t\t  \t\tΚριτικές για το Πανεπιστήμιο Πειραιά";
+            // 
             // Kritikes_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -384,7 +393,6 @@
         private System.Windows.Forms.ToolStripMenuItem προπτυχιακάToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem μεταπτυχιακάToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem διδάσκοντεςToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox kritikes_title_richTextBox;
         private System.Windows.Forms.PictureBox mute_image;
         private System.Windows.Forms.RichTextBox kritikes_richTextBox;
         private System.Windows.Forms.Label leaveReview_label;
@@ -393,5 +401,7 @@
         private System.Windows.Forms.Label unregistered_label;
         private System.Windows.Forms.Label email_label;
         private System.Windows.Forms.RichTextBox email_richTextBox;
+        private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox kritikes_title_richTextBox;
     }
 }

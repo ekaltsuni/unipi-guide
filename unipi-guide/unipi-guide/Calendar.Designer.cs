@@ -48,6 +48,7 @@
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendar_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendar_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +139,7 @@
             // ΠληροφορικήtoolStripMenuItem
             // 
             this.ΠληροφορικήtoolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem,
             this.προπτυχιακάToolStripMenuItem,
             this.μεταπτυχιακάToolStripMenuItem,
             this.διδάσκοντεςToolStripMenuItem});
@@ -151,19 +153,19 @@
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
@@ -233,6 +235,13 @@
             this.mute_image.TabStop = false;
             this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
+            // τοΤμήμαΠληροφορικήςToolStripMenuItem
+            // 
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
+            // 
             // calendar_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -277,5 +286,6 @@
         private System.Windows.Forms.ToolStripMenuItem έξοδοςToolStripMenuItem;
         private System.Windows.Forms.RichTextBox calendar_title_richTextBox;
         private System.Windows.Forms.PictureBox mute_image;
+        private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
     }
 }

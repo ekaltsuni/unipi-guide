@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Didaskontes_form));
-            this.mute_image = new System.Windows.Forms.PictureBox();
             this.kathigites_menu = new System.Windows.Forms.MenuStrip();
             this.αρχικήToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.τοΠανεπιστήμιοStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,25 +51,12 @@
             this.didaskontes_save_button = new System.Windows.Forms.Button();
             this.didaskontes_intro_text_box = new System.Windows.Forms.Label();
             this.didaskontes_download_icon = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
+            this.mute_image = new System.Windows.Forms.PictureBox();
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kathigites_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.didaskontes_download_icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
-            // 
-            // mute_image
-            // 
-            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
-            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(13, 32);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
-            this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(43, 32);
-            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mute_image.TabIndex = 4;
-            this.mute_image.TabStop = false;
-            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
             // kathigites_menu
             // 
@@ -150,6 +136,7 @@
             // ΠληροφορικήtoolStripMenuItem
             // 
             this.ΠληροφορικήtoolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem,
             this.προπτυχιακάToolStripMenuItem,
             this.μεταπτυχιακάToolStripMenuItem,
             this.διδάσκοντεςToolStripMenuItem});
@@ -163,19 +150,19 @@
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             // 
             // κριτικέςToolStripMenuItem
@@ -223,10 +210,10 @@
             this.homepage_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 28);
+            this.homepage_title_richTextBox.Location = new System.Drawing.Point(1, 28);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1327, 116);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1293, 116);
             this.homepage_title_richTextBox.TabIndex = 10;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \t\tΔιδάσκοντες του τμήματος Πληροφορικής";
             // 
@@ -284,6 +271,28 @@
             this.didaskontes_download_icon.TabStop = false;
             this.didaskontes_download_icon.Click += new System.EventHandler(this.didaskontes_download_icon_Click);
             // 
+            // mute_image
+            // 
+            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
+            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.mute_image.Location = new System.Drawing.Point(13, 32);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
+            this.mute_image.Name = "mute_image";
+            this.mute_image.Size = new System.Drawing.Size(43, 32);
+            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mute_image.TabIndex = 4;
+            this.mute_image.TabStop = false;
+            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
+            // 
+            // τοΤμήμαΠληροφορικήςToolStripMenuItem
+            // 
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
+            // 
             // Didaskontes_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -303,10 +312,10 @@
             this.Name = "Didaskontes_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Διδάσκοντες | Πανεπιστήμιο Πειραιώς";
-            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
             this.kathigites_menu.ResumeLayout(false);
             this.kathigites_menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.didaskontes_download_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,5 +346,6 @@
         private System.Windows.Forms.Button didaskontes_save_button;
         private System.Windows.Forms.Label didaskontes_intro_text_box;
         private System.Windows.Forms.PictureBox didaskontes_download_icon;
+        private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
     }
 }

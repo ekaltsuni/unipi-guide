@@ -123,5 +123,13 @@ namespace unipi_guide
             calendar_form_from_homepage.ShowDialog();
             this.Close();
         }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki_form_from_homepage = new Pliroforiki_form();
+            pliroforiki_form_from_homepage.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -66,13 +66,6 @@ namespace unipi_guide
             kritikes_form_from_uni.ShowDialog();
             this.Close();
         }
-        private void mute_image_Click(object sender, EventArgs e)
-        {
-            /* Calls the mute_image_Click method of homepage_form to stop the player */
-            homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
-            form1?.mute_image_Click(sender,e);
-        }
-
         private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -80,5 +73,21 @@ namespace unipi_guide
             calendar_form_from_uni.ShowDialog();
             this.Close();
         }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki_form_from_toPanepistimio = new Pliroforiki_form();
+            pliroforiki_form_from_toPanepistimio.ShowDialog();
+            this.Close();
+        }
+        private void mute_image_Click(object sender, EventArgs e)
+        {
+            /* Calls the mute_image_Click method of homepage_form to stop the player */
+            homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
+            form1?.mute_image_Click(sender,e);
+        }
+
+
     }
 }

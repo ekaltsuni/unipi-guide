@@ -18,8 +18,7 @@ namespace unipi_guide
         String connectionToStudent = "Data source=unipi-guide.db; Version=3";
         SQLiteConnection connection;
 
-        public object ΠληροφορικήtoolStripMenuItem { get; private set; }
-        public object ΕκδηλώσειςtoolStripMenuItem { get; private set; }
+
 
         public login_form()
         {
