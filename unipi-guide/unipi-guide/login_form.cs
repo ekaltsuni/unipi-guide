@@ -18,11 +18,13 @@ namespace unipi_guide
         String connectionToStudent = "Data source=unipi-guide.db; Version=3";
         SQLiteConnection connection;
 
-
-
         public login_form()
         {
             InitializeComponent();
+            τοΠανεπιστήμιοToolStripMenuItem.Visible = false;
+            σχολέςToolStripMenuItem.Visible = false;
+            κριτικέςToolStripMenuItem.Visible = false;
+            σχετικάΜεΕμάςToolStripMenuItem.Visible = false;
         }
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
         {

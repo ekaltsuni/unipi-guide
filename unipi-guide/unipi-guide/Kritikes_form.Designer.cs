@@ -53,8 +53,8 @@
             this.newReview_richTextBox = new System.Windows.Forms.RichTextBox();
             this.leaveNewReview_button = new System.Windows.Forms.Button();
             this.unregistered_label = new System.Windows.Forms.Label();
-            this.email_label = new System.Windows.Forms.Label();
-            this.email_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.name_label = new System.Windows.Forms.Label();
+            this.name_richTextBox = new System.Windows.Forms.RichTextBox();
             this.kritikes_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.kritikes_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
@@ -63,6 +63,7 @@
             // kritikes_menu
             // 
             this.kritikes_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
+            this.kritikes_menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.kritikes_menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.kritikes_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.αρχικήToolStripMenuItem,
@@ -75,8 +76,8 @@
             this.έξοδοςToolStripMenuItem});
             this.kritikes_menu.Location = new System.Drawing.Point(0, 0);
             this.kritikes_menu.Name = "kritikes_menu";
-            this.kritikes_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.kritikes_menu.Size = new System.Drawing.Size(1292, 28);
+            this.kritikes_menu.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
+            this.kritikes_menu.Size = new System.Drawing.Size(1938, 48);
             this.kritikes_menu.TabIndex = 2;
             this.kritikes_menu.Text = "kritikes_menu";
             // 
@@ -85,7 +86,7 @@
             this.αρχικήToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.αρχικήToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.αρχικήToolStripMenuItem.Name = "αρχικήToolStripMenuItem";
-            this.αρχικήToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.αρχικήToolStripMenuItem.Size = new System.Drawing.Size(115, 42);
             this.αρχικήToolStripMenuItem.Text = "Αρχική";
             this.αρχικήToolStripMenuItem.Click += new System.EventHandler(this.αρχικήToolStripMenuItem_Click);
             // 
@@ -94,7 +95,7 @@
             this.τοΠανεπιστήμιοStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.τοΠανεπιστήμιοStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.τοΠανεπιστήμιοStripMenuItem1.Name = "τοΠανεπιστήμιοStripMenuItem1";
-            this.τοΠανεπιστήμιοStripMenuItem1.Size = new System.Drawing.Size(144, 24);
+            this.τοΠανεπιστήμιοStripMenuItem1.Size = new System.Drawing.Size(231, 42);
             this.τοΠανεπιστήμιοStripMenuItem1.Text = "Το Πανεπιστήμιο";
             this.τοΠανεπιστήμιοStripMenuItem1.Click += new System.EventHandler(this.τοΠανεπιστήμιοStripMenuItem1_Click);
             // 
@@ -108,31 +109,31 @@
             this.σχολέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχολέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
-            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(111, 42);
             this.σχολέςToolStripMenuItem.Text = "Σχολές";
             // 
             // οικονομικώνToolStripMenuItem
             // 
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
-            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
-            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Name = "χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem";
-            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem
             // 
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Name = "τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem";
-            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             // 
             // ΠληροφορικήtoolStripMenuItem
@@ -145,33 +146,33 @@
             this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
-            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(195, 36);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
             this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
-            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
             // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
             this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
             this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
@@ -180,7 +181,7 @@
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.κριτικέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
-            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(131, 42);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
             // 
             // ΕκδηλώσειςtoolStripMenuItem
@@ -188,7 +189,7 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
-            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(358, 36);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
@@ -198,7 +199,7 @@
             this.σχετικάΜεΕμάςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχετικάΜεΕμάςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχετικάΜεΕμάςToolStripMenuItem.Name = "σχετικάΜεΕμάςToolStripMenuItem";
-            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(215, 42);
             this.σχετικάΜεΕμάςToolStripMenuItem.Text = "Σχετικά με εμάς";
             this.σχετικάΜεΕμάςToolStripMenuItem.Click += new System.EventHandler(this.σχετικάΜεΕμάςToolStripMenuItem_Click);
             // 
@@ -207,7 +208,7 @@
             this.έξοδοςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.έξοδοςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
-            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(118, 42);
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
@@ -218,10 +219,10 @@
             this.login_button_homepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button_homepage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.login_button_homepage.ForeColor = System.Drawing.Color.White;
-            this.login_button_homepage.Location = new System.Drawing.Point(1099, 32);
-            this.login_button_homepage.Margin = new System.Windows.Forms.Padding(4);
+            this.login_button_homepage.Location = new System.Drawing.Point(1648, 50);
+            this.login_button_homepage.Margin = new System.Windows.Forms.Padding(6);
             this.login_button_homepage.Name = "login_button_homepage";
-            this.login_button_homepage.Size = new System.Drawing.Size(165, 34);
+            this.login_button_homepage.Size = new System.Drawing.Size(248, 53);
             this.login_button_homepage.TabIndex = 8;
             this.login_button_homepage.Text = "Σύνδεση Χρήστη";
             this.login_button_homepage.UseVisualStyleBackColor = false;
@@ -233,10 +234,10 @@
             this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(13, 32);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
+            this.mute_image.Location = new System.Drawing.Point(20, 50);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(6);
             this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(43, 32);
+            this.mute_image.Size = new System.Drawing.Size(64, 50);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mute_image.TabIndex = 14;
             this.mute_image.TabStop = false;
@@ -245,9 +246,10 @@
             // kritikes_richTextBox
             // 
             this.kritikes_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.kritikes_richTextBox.Location = new System.Drawing.Point(13, 162);
+            this.kritikes_richTextBox.Location = new System.Drawing.Point(20, 253);
+            this.kritikes_richTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kritikes_richTextBox.Name = "kritikes_richTextBox";
-            this.kritikes_richTextBox.Size = new System.Drawing.Size(857, 867);
+            this.kritikes_richTextBox.Size = new System.Drawing.Size(1284, 1352);
             this.kritikes_richTextBox.TabIndex = 16;
             this.kritikes_richTextBox.Text = "";
             // 
@@ -257,19 +259,20 @@
             this.leaveReview_label.BackColor = System.Drawing.Color.Transparent;
             this.leaveReview_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.leaveReview_label.ForeColor = System.Drawing.Color.Black;
-            this.leaveReview_label.Location = new System.Drawing.Point(898, 165);
-            this.leaveReview_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.leaveReview_label.Location = new System.Drawing.Point(1347, 258);
+            this.leaveReview_label.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.leaveReview_label.Name = "leaveReview_label";
-            this.leaveReview_label.Size = new System.Drawing.Size(366, 96);
+            this.leaveReview_label.Size = new System.Drawing.Size(574, 156);
             this.leaveReview_label.TabIndex = 17;
             this.leaveReview_label.Text = "Αφήστε τα δικά σας \r\nσχόλια για το Πανεπιστήμιο \r\nεδώ:";
             this.leaveReview_label.Visible = false;
             // 
             // newReview_richTextBox
             // 
-            this.newReview_richTextBox.Location = new System.Drawing.Point(904, 275);
+            this.newReview_richTextBox.Location = new System.Drawing.Point(1356, 430);
+            this.newReview_richTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.newReview_richTextBox.Name = "newReview_richTextBox";
-            this.newReview_richTextBox.Size = new System.Drawing.Size(360, 163);
+            this.newReview_richTextBox.Size = new System.Drawing.Size(538, 252);
             this.newReview_richTextBox.TabIndex = 18;
             this.newReview_richTextBox.Text = "";
             this.newReview_richTextBox.Visible = false;
@@ -281,10 +284,10 @@
             this.leaveNewReview_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.leaveNewReview_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.leaveNewReview_button.ForeColor = System.Drawing.Color.White;
-            this.leaveNewReview_button.Location = new System.Drawing.Point(904, 540);
-            this.leaveNewReview_button.Margin = new System.Windows.Forms.Padding(4);
+            this.leaveNewReview_button.Location = new System.Drawing.Point(1356, 844);
+            this.leaveNewReview_button.Margin = new System.Windows.Forms.Padding(6);
             this.leaveNewReview_button.Name = "leaveNewReview_button";
-            this.leaveNewReview_button.Size = new System.Drawing.Size(165, 34);
+            this.leaveNewReview_button.Size = new System.Drawing.Size(248, 53);
             this.leaveNewReview_button.TabIndex = 21;
             this.leaveNewReview_button.Text = "ΟΚ";
             this.leaveNewReview_button.UseVisualStyleBackColor = false;
@@ -297,35 +300,36 @@
             this.unregistered_label.BackColor = System.Drawing.Color.Transparent;
             this.unregistered_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.unregistered_label.ForeColor = System.Drawing.Color.Black;
-            this.unregistered_label.Location = new System.Drawing.Point(898, 162);
-            this.unregistered_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.unregistered_label.Location = new System.Drawing.Point(1347, 253);
+            this.unregistered_label.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.unregistered_label.Name = "unregistered_label";
-            this.unregistered_label.Size = new System.Drawing.Size(355, 64);
+            this.unregistered_label.Size = new System.Drawing.Size(560, 104);
             this.unregistered_label.TabIndex = 22;
             this.unregistered_label.Text = "Για να αφήσετε ένα σχόλιο,\r\nπαρακαλώ συνδεθείτε.";
             // 
-            // email_label
+            // name_label
             // 
-            this.email_label.AutoSize = true;
-            this.email_label.BackColor = System.Drawing.Color.Transparent;
-            this.email_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.email_label.ForeColor = System.Drawing.Color.Black;
-            this.email_label.Location = new System.Drawing.Point(899, 450);
-            this.email_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.email_label.Name = "email_label";
-            this.email_label.Size = new System.Drawing.Size(80, 29);
-            this.email_label.TabIndex = 23;
-            this.email_label.Text = "Email:";
-            this.email_label.Visible = false;
+            this.name_label.AutoSize = true;
+            this.name_label.BackColor = System.Drawing.Color.Transparent;
+            this.name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.name_label.ForeColor = System.Drawing.Color.Black;
+            this.name_label.Location = new System.Drawing.Point(1348, 703);
+            this.name_label.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.name_label.Name = "name_label";
+            this.name_label.Size = new System.Drawing.Size(141, 42);
+            this.name_label.TabIndex = 23;
+            this.name_label.Text = "Όνομα:";
+            this.name_label.Visible = false;
             // 
-            // email_richTextBox
+            // name_richTextBox
             // 
-            this.email_richTextBox.Location = new System.Drawing.Point(904, 482);
-            this.email_richTextBox.Name = "email_richTextBox";
-            this.email_richTextBox.Size = new System.Drawing.Size(323, 40);
-            this.email_richTextBox.TabIndex = 24;
-            this.email_richTextBox.Text = "";
-            this.email_richTextBox.Visible = false;
+            this.name_richTextBox.Location = new System.Drawing.Point(1356, 753);
+            this.name_richTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.name_richTextBox.Name = "name_richTextBox";
+            this.name_richTextBox.Size = new System.Drawing.Size(482, 60);
+            this.name_richTextBox.TabIndex = 24;
+            this.name_richTextBox.Text = "";
+            this.name_richTextBox.Visible = false;
             // 
             // kritikes_title_richTextBox
             // 
@@ -335,21 +339,21 @@
             this.kritikes_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.kritikes_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.kritikes_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.kritikes_title_richTextBox.Location = new System.Drawing.Point(0, 23);
-            this.kritikes_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.kritikes_title_richTextBox.Location = new System.Drawing.Point(0, 36);
+            this.kritikes_title_richTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.kritikes_title_richTextBox.Name = "kritikes_title_richTextBox";
-            this.kritikes_title_richTextBox.Size = new System.Drawing.Size(1324, 116);
+            this.kritikes_title_richTextBox.Size = new System.Drawing.Size(1986, 181);
             this.kritikes_title_richTextBox.TabIndex = 15;
             this.kritikes_title_richTextBox.Text = "\n\t\t\t\t  \t\tΚριτικές για το Πανεπιστήμιο Πειραιά";
             // 
             // Kritikes_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1292, 1041);
-            this.Controls.Add(this.email_richTextBox);
-            this.Controls.Add(this.email_label);
+            this.ClientSize = new System.Drawing.Size(1938, 1627);
+            this.Controls.Add(this.name_richTextBox);
+            this.Controls.Add(this.name_label);
             this.Controls.Add(this.unregistered_label);
             this.Controls.Add(this.leaveNewReview_button);
             this.Controls.Add(this.newReview_richTextBox);
@@ -361,7 +365,7 @@
             this.Controls.Add(this.kritikes_title_richTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Kritikes_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Κριτικές | Πανεπιστήμιο Πειραιώς";
@@ -399,8 +403,8 @@
         private System.Windows.Forms.RichTextBox newReview_richTextBox;
         private System.Windows.Forms.Button leaveNewReview_button;
         private System.Windows.Forms.Label unregistered_label;
-        private System.Windows.Forms.Label email_label;
-        private System.Windows.Forms.RichTextBox email_richTextBox;
+        private System.Windows.Forms.Label name_label;
+        private System.Windows.Forms.RichTextBox name_richTextBox;
         private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
         private System.Windows.Forms.RichTextBox kritikes_title_richTextBox;
     }

@@ -35,8 +35,8 @@ namespace unipi_guide
                 leaveNewReview_button.Visible = true;
                 leaveReview_label.Visible = true;
                 newReview_richTextBox.Visible = true;
-                email_label.Visible = true;
-                email_richTextBox.Visible = true;
+                name_label.Visible = true;
+                name_richTextBox.Visible = true;
             }
         }
 
@@ -110,12 +110,12 @@ namespace unipi_guide
             /* Create object connection to database */
             connection = new SQLiteConnection(connectionToStudent);
             connection.Open();
-            String selectSQL = "Select * from Student where review is not null";
+            String selectSQL = "Select * from Reviews where Review is not null";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             SQLiteDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                kritikes_richTextBox.AppendText(reader.GetString(6) + " \n" + reader.GetString(3));
+                kritikes_richTextBox.AppendText(reader.GetString(1) + " \n" + reader.GetString(0));
                 kritikes_richTextBox.AppendText(Environment.NewLine);
                 kritikes_richTextBox.AppendText("-------------------------------------------------------------------------------------------");
                 kritikes_richTextBox.AppendText(Environment.NewLine);
@@ -127,28 +127,43 @@ namespace unipi_guide
 
         private void leaveNewReview_button_Click(object sender, EventArgs e)
         {
-            /*Adds a review to the table Student in the column review using the column email*/
-            String email = email_richTextBox.Text;
-            String review = newReview_richTextBox.Text;
-            connection = new SQLiteConnection(connectionToStudent);
-            connection.Open();
-            String insertSQL = "UPDATE Student SET review=@review WHERE email=@email";
-            SQLiteCommand command = new SQLiteCommand(insertSQL, connection);
-            command.Parameters.AddWithValue("@email", email);
-            command.Parameters.AddWithValue("@review", review);
-            int rowsAffected = command.ExecuteNonQuery();
-            if (rowsAffected > 0)
+            /*Adds a review to the table Reviews*/
+            string Name = name_richTextBox.Text;
+            string Review = newReview_richTextBox.Text;
+            if (Name != "" && Review != "")
             {
-                MessageBox.Show("Η κριτική σας αποθηκεύτηκε επιτυχώς.");
+                try
+                {
+                    using (SQLiteConnection connection = new SQLiteConnection(connectionToStudent))
+                    {
+                        connection.Open();
+                        string insertSQL = "INSERT INTO Reviews (Name, Review) VALUES (@Name, @Review)";
+                        using (SQLiteCommand command = new SQLiteCommand(insertSQL, connection))
+                        {
+                            command.Parameters.AddWithValue("@Name", Name);
+                            command.Parameters.AddWithValue("@Review", Review);
+                            int rowsAffected = command.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Η κριτική σας αποθηκεύτηκε επιτυχώς.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Παρακαλώ προσπαθήστε ξανά.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
             }
             else
             {
-                MessageBox.Show("Παρακαλώ προσπαθήστε ξανά.");
+                MessageBox.Show("Παρακαλώ συμπληρώστε όλα τα πεδία.");
             }
-            command.Dispose();
-            connection.Close();
         }
-
-
     }
 }
+
