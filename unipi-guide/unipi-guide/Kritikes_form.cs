@@ -115,9 +115,9 @@ namespace unipi_guide
             SQLiteDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                kritikes_richTextBox.AppendText(reader.GetString(1) + " \n" + reader.GetString(0));
+                kritikes_richTextBox.AppendText(reader.GetString(1) + ", \n" + reader.GetString(0));
                 kritikes_richTextBox.AppendText(Environment.NewLine);
-                kritikes_richTextBox.AppendText("-------------------------------------------------------------------------------------------");
+                kritikes_richTextBox.AppendText("☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸\r\n");
                 kritikes_richTextBox.AppendText(Environment.NewLine);
             }
             reader.Close();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace unipi_guide
 {
     public partial class calendar_form : Form
     {
+        String connectionToStudent = "Data source=unipi-guide.db; Version=3";
+        SQLiteConnection connection;
         public calendar_form()
         {
             InitializeComponent();
@@ -77,6 +80,72 @@ namespace unipi_guide
             pliroforiki_form_from_calendar_form.ShowDialog();
             this.Close();
 
+        }
+
+        private void calendar_form_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            string Date = monthCalendar1.SelectionRange.Start.ToShortDateString();
+            events_richTextBox.Clear();
+            connection = new SQLiteConnection(connectionToStudent);
+            connection.Open();
+            try
+            {
+                String selectSQL = "Select * from Events where Date=@Date";
+                SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
+                command.Parameters.AddWithValue("@Date", Date);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    events_richTextBox.AppendText((string)reader.GetString(0) + " \n" + (string)reader.GetString(1));
+                    events_richTextBox.AppendText(Environment.NewLine);
+                    events_richTextBox.AppendText("☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸\r\n");
+                    events_richTextBox.AppendText(Environment.NewLine);
+                }
+                reader.Close();
+                command.Dispose();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void events_button_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            /* Create object connection to database */
+            connection = new SQLiteConnection(connectionToStudent);
+            connection.Open();
+            try
+            {
+                String selectSQL = "Select * from Events where Date is not null";
+                SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    events_richTextBox.AppendText((string)reader.GetString(0) + " \n" + (string)reader.GetString(1));
+                    events_richTextBox.AppendText(Environment.NewLine);
+                    events_richTextBox.AppendText("☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸\r\n");
+                    events_richTextBox.AppendText(Environment.NewLine);
+                }
+                reader.Close();
+                command.Dispose();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

@@ -23,6 +23,7 @@ namespace unipi_guide
         public homepage_form()
         {
             InitializeComponent();
+            ΕκδηλώσειςtoolStripMenuItem.Visible = true;
             /* Form behavior when user is logged in */
             if (userStatus.registeredUser == true)
             {

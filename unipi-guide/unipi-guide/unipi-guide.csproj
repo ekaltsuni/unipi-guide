@@ -169,6 +169,7 @@
   <ItemGroup>
     <None Include="bin\Debug\images\history.png" />
     <None Include="bin\Debug\images\login1.png" />
+    <None Include="bin\Debug\images\calendar.jpg" />
     <Content Include="bin\Debug\images\panepistimio-peiraia.png" />
   </ItemGroup>
   <ItemGroup>

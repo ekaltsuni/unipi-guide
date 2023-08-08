@@ -94,7 +94,7 @@ namespace unipi_guide
             this.homepage_menu.Location = new System.Drawing.Point(0, 0);
             this.homepage_menu.Name = "homepage_menu";
             this.homepage_menu.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
-            this.homepage_menu.Size = new System.Drawing.Size(1977, 44);
+            this.homepage_menu.Size = new System.Drawing.Size(1977, 42);
             this.homepage_menu.TabIndex = 0;
             this.homepage_menu.Text = "homepage_menu";
             // 
@@ -103,7 +103,7 @@ namespace unipi_guide
             this.αρχικήStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.αρχικήStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.αρχικήStripMenuItem1.Name = "αρχικήStripMenuItem1";
-            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(115, 38);
+            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(115, 36);
             this.αρχικήStripMenuItem1.Text = "Αρχική";
             // 
             // τοΠανεπιστήμιοToolStripMenuItem
@@ -111,7 +111,7 @@ namespace unipi_guide
             this.τοΠανεπιστήμιοToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.τοΠανεπιστήμιοToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.τοΠανεπιστήμιοToolStripMenuItem.Name = "τοΠανεπιστήμιοToolStripMenuItem";
-            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(231, 38);
+            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(231, 36);
             this.τοΠανεπιστήμιοToolStripMenuItem.Text = "Το Πανεπιστήμιο";
             this.τοΠανεπιστήμιοToolStripMenuItem.Click += new System.EventHandler(this.τοΠανεπιστήμιοToolStripMenuItem_Click);
             // 
@@ -125,7 +125,7 @@ namespace unipi_guide
             this.σχολέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχολέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
-            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(111, 38);
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
             this.σχολέςToolStripMenuItem.Text = "Σχολές";
             // 
             // οικονομικώνToolStripMenuItem
@@ -157,7 +157,7 @@ namespace unipi_guide
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.κριτικέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
-            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(131, 38);
+            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(131, 36);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
             this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
@@ -171,7 +171,7 @@ namespace unipi_guide
             this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
-            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(195, 38);
+            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(195, 36);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
             this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
@@ -206,7 +206,7 @@ namespace unipi_guide
             this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
-            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(358, 38);
+            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(358, 36);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
@@ -216,7 +216,7 @@ namespace unipi_guide
             this.σχετικάΜεΕμάςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχετικάΜεΕμάςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχετικάΜεΕμάςToolStripMenuItem.Name = "σχετικάΜεΕμάςToolStripMenuItem";
-            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(215, 38);
+            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(215, 36);
             this.σχετικάΜεΕμάςToolStripMenuItem.Text = "Σχετικά με εμάς";
             this.σχετικάΜεΕμάςToolStripMenuItem.Click += new System.EventHandler(this.σχετικάΜεΕμάςToolStripMenuItem_Click);
             // 
@@ -225,7 +225,7 @@ namespace unipi_guide
             this.έξοδοςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.έξοδοςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
-            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(118, 38);
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(118, 36);
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
@@ -285,7 +285,7 @@ namespace unipi_guide
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 44);
             this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(2466, 181);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(2442, 181);
             this.homepage_title_richTextBox.TabIndex = 9;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t  \tΚαλωσήρθατε στο Πανεπιστήμιο Πειραιώς";
             // 
@@ -465,7 +465,7 @@ namespace unipi_guide
             this.homepage_main_image.Location = new System.Drawing.Point(0, 220);
             this.homepage_main_image.Margin = new System.Windows.Forms.Padding(0);
             this.homepage_main_image.Name = "homepage_main_image";
-            this.homepage_main_image.Size = new System.Drawing.Size(2382, 500);
+            this.homepage_main_image.Size = new System.Drawing.Size(2358, 500);
             this.homepage_main_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;

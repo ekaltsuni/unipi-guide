@@ -47,7 +47,6 @@
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.login_button_homepage = new System.Windows.Forms.Button();
-            this.mute_image = new System.Windows.Forms.PictureBox();
             this.kritikes_richTextBox = new System.Windows.Forms.RichTextBox();
             this.leaveReview_label = new System.Windows.Forms.Label();
             this.newReview_richTextBox = new System.Windows.Forms.RichTextBox();
@@ -56,6 +55,7 @@
             this.name_label = new System.Windows.Forms.Label();
             this.name_richTextBox = new System.Windows.Forms.RichTextBox();
             this.kritikes_title_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.mute_image = new System.Windows.Forms.PictureBox();
             this.kritikes_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
@@ -228,27 +228,13 @@
             this.login_button_homepage.UseVisualStyleBackColor = false;
             this.login_button_homepage.Click += new System.EventHandler(this.login_button_homepage_Click);
             // 
-            // mute_image
-            // 
-            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
-            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(20, 50);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(6);
-            this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(64, 50);
-            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mute_image.TabIndex = 14;
-            this.mute_image.TabStop = false;
-            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
-            // 
             // kritikes_richTextBox
             // 
             this.kritikes_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.kritikes_richTextBox.Location = new System.Drawing.Point(20, 253);
             this.kritikes_richTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kritikes_richTextBox.Name = "kritikes_richTextBox";
+            this.kritikes_richTextBox.ReadOnly = true;
             this.kritikes_richTextBox.Size = new System.Drawing.Size(1284, 1352);
             this.kritikes_richTextBox.TabIndex = 16;
             this.kritikes_richTextBox.Text = "";
@@ -345,6 +331,21 @@
             this.kritikes_title_richTextBox.Size = new System.Drawing.Size(1986, 181);
             this.kritikes_title_richTextBox.TabIndex = 15;
             this.kritikes_title_richTextBox.Text = "\n\t\t\t\t  \t\tΚριτικές για το Πανεπιστήμιο Πειραιά";
+            // 
+            // mute_image
+            // 
+            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
+            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.mute_image.Location = new System.Drawing.Point(20, 50);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(6);
+            this.mute_image.Name = "mute_image";
+            this.mute_image.Size = new System.Drawing.Size(64, 50);
+            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mute_image.TabIndex = 14;
+            this.mute_image.TabStop = false;
+            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
             // Kritikes_form
             // 
