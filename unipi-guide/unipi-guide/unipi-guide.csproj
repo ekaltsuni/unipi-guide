@@ -167,6 +167,7 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\images\university.jpg" />
     <None Include="bin\Debug\images\history.png" />
     <None Include="bin\Debug\images\login1.png" />
     <None Include="bin\Debug\images\calendar.jpg" />

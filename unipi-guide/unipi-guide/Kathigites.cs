@@ -115,7 +115,5 @@ namespace unipi_guide
                 }
             }
         }
-
-
     }
 }

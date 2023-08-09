@@ -59,8 +59,8 @@
             // 
             this.monthCalendar1.BackColor = System.Drawing.Color.White;
             this.monthCalendar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.monthCalendar1.Location = new System.Drawing.Point(47, 268);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(14);
+            this.monthCalendar1.Location = new System.Drawing.Point(24, 139);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
@@ -69,7 +69,6 @@
             // calendar_menu
             // 
             this.calendar_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
-            this.calendar_menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.calendar_menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.calendar_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.αρχικήStripMenuItem1,
@@ -82,8 +81,8 @@
             this.έξοδοςToolStripMenuItem});
             this.calendar_menu.Location = new System.Drawing.Point(0, 0);
             this.calendar_menu.Name = "calendar_menu";
-            this.calendar_menu.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
-            this.calendar_menu.Size = new System.Drawing.Size(1942, 42);
+            this.calendar_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.calendar_menu.Size = new System.Drawing.Size(1030, 24);
             this.calendar_menu.TabIndex = 1;
             this.calendar_menu.Text = "calendar_menu";
             // 
@@ -92,7 +91,7 @@
             this.αρχικήStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.αρχικήStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.αρχικήStripMenuItem1.Name = "αρχικήStripMenuItem1";
-            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(115, 36);
+            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(59, 20);
             this.αρχικήStripMenuItem1.Text = "Αρχική";
             this.αρχικήStripMenuItem1.Click += new System.EventHandler(this.αρχικήStripMenuItem1_Click);
             // 
@@ -101,7 +100,7 @@
             this.τοΠανεπιστήμιοToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.τοΠανεπιστήμιοToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.τοΠανεπιστήμιοToolStripMenuItem.Name = "τοΠανεπιστήμιοToolStripMenuItem";
-            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(231, 36);
+            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
             this.τοΠανεπιστήμιοToolStripMenuItem.Text = "Το Πανεπιστήμιο";
             this.τοΠανεπιστήμιοToolStripMenuItem.Click += new System.EventHandler(this.τοΠανεπιστήμιοToolStripMenuItem_Click);
             // 
@@ -115,31 +114,31 @@
             this.σχολέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχολέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
-            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.σχολέςToolStripMenuItem.Text = "Σχολές";
             // 
             // οικονομικώνToolStripMenuItem
             // 
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
-            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
+            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
-            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Name = "χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem";
-            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
+            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem
             // 
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Name = "τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem";
-            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(783, 44);
+            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             // 
             // ΠληροφορικήtoolStripMenuItem
@@ -152,33 +151,33 @@
             this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
-            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(195, 36);
+            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
             this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
-            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
             // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(433, 44);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
@@ -187,7 +186,7 @@
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.κριτικέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
-            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(131, 36);
+            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
             this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
@@ -196,7 +195,7 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
-            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(358, 36);
+            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(180, 20);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             // 
@@ -205,7 +204,7 @@
             this.σχετικάΜεΕμάςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχετικάΜεΕμάςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχετικάΜεΕμάςToolStripMenuItem.Name = "σχετικάΜεΕμάςToolStripMenuItem";
-            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(215, 36);
+            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
             this.σχετικάΜεΕμάςToolStripMenuItem.Text = "Σχετικά με εμάς";
             this.σχετικάΜεΕμάςToolStripMenuItem.Click += new System.EventHandler(this.σχετικάΜεΕμάςToolStripMenuItem_Click);
             // 
@@ -214,7 +213,7 @@
             this.έξοδοςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.έξοδοςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
-            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(118, 36);
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
@@ -226,10 +225,10 @@
             this.calendar_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.calendar_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.calendar_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.calendar_title_richTextBox.Location = new System.Drawing.Point(0, 37);
-            this.calendar_title_richTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.calendar_title_richTextBox.Location = new System.Drawing.Point(0, 19);
             this.calendar_title_richTextBox.Name = "calendar_title_richTextBox";
-            this.calendar_title_richTextBox.Size = new System.Drawing.Size(1986, 195);
+            this.calendar_title_richTextBox.ReadOnly = true;
+            this.calendar_title_richTextBox.Size = new System.Drawing.Size(1030, 101);
             this.calendar_title_richTextBox.TabIndex = 16;
             this.calendar_title_richTextBox.Text = "\n\t\t\t\t  \t\tΩρολόγιο Πρόγραμμα & Εκδηλώσεις";
             // 
@@ -239,10 +238,9 @@
             this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(20, 50);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(6);
+            this.mute_image.Location = new System.Drawing.Point(10, 26);
             this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(64, 50);
+            this.mute_image.Size = new System.Drawing.Size(32, 26);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mute_image.TabIndex = 17;
             this.mute_image.TabStop = false;
@@ -250,11 +248,12 @@
             // 
             // events_richTextBox
             // 
-            this.events_richTextBox.Font = new System.Drawing.Font("San Diego", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.events_richTextBox.Location = new System.Drawing.Point(20, 619);
+            this.events_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.events_richTextBox.Location = new System.Drawing.Point(10, 322);
+            this.events_richTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.events_richTextBox.Name = "events_richTextBox";
             this.events_richTextBox.ReadOnly = true;
-            this.events_richTextBox.Size = new System.Drawing.Size(1894, 632);
+            this.events_richTextBox.Size = new System.Drawing.Size(1009, 331);
             this.events_richTextBox.TabIndex = 18;
             this.events_richTextBox.Text = "";
             // 
@@ -265,10 +264,9 @@
             this.events_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.events_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.events_button.ForeColor = System.Drawing.Color.White;
-            this.events_button.Location = new System.Drawing.Point(471, 483);
-            this.events_button.Margin = new System.Windows.Forms.Padding(6);
+            this.events_button.Location = new System.Drawing.Point(924, 126);
             this.events_button.Name = "events_button";
-            this.events_button.Size = new System.Drawing.Size(155, 102);
+            this.events_button.Size = new System.Drawing.Size(94, 53);
             this.events_button.TabIndex = 22;
             this.events_button.Text = "Όλες οι εκδηλώσεις";
             this.events_button.UseVisualStyleBackColor = false;
@@ -276,12 +274,12 @@
             // 
             // calendar_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::unipi_guide.Properties.Resources.calendar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1942, 1280);
+            this.ClientSize = new System.Drawing.Size(1030, 664);
             this.Controls.Add(this.events_button);
             this.Controls.Add(this.events_richTextBox);
             this.Controls.Add(this.mute_image);
@@ -291,7 +289,9 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "calendar_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ωρολόγιο Πρόγραμμα-Εκδηλώσεις | Πανεπιστήμιο Πειραιώς";

@@ -87,7 +87,5 @@ namespace unipi_guide
             homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
             form1?.mute_image_Click(sender,e);
         }
-
-
     }
 }

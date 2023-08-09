@@ -245,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(969, 846);
+            this.ClientSize = new System.Drawing.Size(969, 845);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.mute_image);
@@ -255,7 +255,10 @@
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.username_label);
             this.Controls.Add(this.login_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "login_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Σύνδεση Χρήστη | Πανεπιστήμιο Πειραιώς";

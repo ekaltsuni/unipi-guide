@@ -84,6 +84,8 @@ namespace unipi_guide
 
         private void calendar_form_Load(object sender, EventArgs e)
         {
+            //this.Width = 1046;
+            //this.Height = 703;
             LoadData();
         }
 
@@ -123,6 +125,7 @@ namespace unipi_guide
 
         private void LoadData()
         {
+            events_richTextBox.Clear();
             /* Create object connection to database */
             connection = new SQLiteConnection(connectionToStudent);
             connection.Open();
