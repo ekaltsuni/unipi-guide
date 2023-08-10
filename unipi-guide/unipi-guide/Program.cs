@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech.Synthesis;
+using System.Media;
 
 namespace unipi_guide
 {
@@ -19,6 +21,67 @@ namespace unipi_guide
                 set { _registeredUser = value; }
             }
         }
+
+        /* Global class for getting and setting whether music is on or off 
+  between forms */
+        public static class Music
+        {
+            private static Boolean _musicStatus;
+            public static Boolean musicStatus
+            {
+                get { return _musicStatus; }
+                set { _musicStatus = value; }
+            }
+        }
+
+        // Global class for getting and setting whether the music player will be on or off
+        public static class MusicPlayer
+        {
+            private static SoundPlayer _player = new SoundPlayer("sound\\guitar_loop.wav");
+            public static SoundPlayer player
+            {
+                get { return _player; }
+                set { _player = value; }
+            }
+        }
+
+
+        /* Global method to check music status in each form */
+        public static void checkMusic(Control play, Control mute)
+        {
+            if (Music.musicStatus == true)
+            {
+                MusicPlayer.player.PlayLooping();
+                play.Visible = false;
+                mute.Visible = true;
+            }
+            else if (Music.musicStatus == false)
+            {
+                MusicPlayer.player.Stop();
+                mute.Visible = false;
+                play.Visible = true;
+            }
+        }
+
+
+        public static class SpeechPlay
+        {
+            private static SpeechSynthesizer _engine = new SpeechSynthesizer();
+
+            public static SpeechSynthesizer engine
+            {
+                get { return _engine; }
+                set { _engine = value; }
+            }
+        }
+
+        public static void SpeechEngine(Control c)
+        {
+            /* Initialize speech synthesizer */
+            SpeechPlay.engine.SelectVoice("Microsoft Stefanos");
+            SpeechPlay.engine.SpeakAsync(c.Text);
+        }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -27,6 +90,8 @@ namespace unipi_guide
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Music.musicStatus = true;
+            MusicPlayer.player.PlayLooping();
             Application.Run(new homepage_form());
         }
     }

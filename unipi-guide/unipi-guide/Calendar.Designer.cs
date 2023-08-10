@@ -51,8 +51,10 @@
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.events_richTextBox = new System.Windows.Forms.RichTextBox();
             this.events_button = new System.Windows.Forms.Button();
+            this.play_music_image = new System.Windows.Forms.PictureBox();
             this.calendar_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -272,6 +274,21 @@
             this.events_button.UseVisualStyleBackColor = false;
             this.events_button.Click += new System.EventHandler(this.events_button_Click);
             // 
+            // play_music_image
+            // 
+            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
+            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.play_music_image.Location = new System.Drawing.Point(10, 28);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
+            this.play_music_image.Name = "play_music_image";
+            this.play_music_image.Size = new System.Drawing.Size(32, 26);
+            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.play_music_image.TabIndex = 28;
+            this.play_music_image.TabStop = false;
+            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
+            // 
             // calendar_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +297,7 @@
             this.BackgroundImage = global::unipi_guide.Properties.Resources.calendar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1030, 664);
+            this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.events_button);
             this.Controls.Add(this.events_richTextBox);
             this.Controls.Add(this.mute_image);
@@ -299,6 +317,7 @@
             this.calendar_menu.ResumeLayout(false);
             this.calendar_menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +347,6 @@
         private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
         private System.Windows.Forms.RichTextBox events_richTextBox;
         private System.Windows.Forms.Button events_button;
+        private System.Windows.Forms.PictureBox play_music_image;
     }
 }

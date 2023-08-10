@@ -24,6 +24,35 @@ namespace unipi_guide
                 ΕκδηλώσειςtoolStripMenuItem.Visible = true;
                 login_button_homepage.Visible = false;
             }
+            /* Voice synth initialization */
+            SpeechPlay.engine.SpeakAsyncCancelAll();
+        }
+
+        private void toPanepistimio_form_Load(object sender, EventArgs e)
+        {
+            /* Check music status */
+            if (Music.musicStatus == false)
+            {
+                checkMusic(play_music_image, mute_image);
+            }
+            else
+            {
+                mute_image.Visible = true;
+                play_music_image.Visible = false;
+            }
+        }
+
+        private void play_music_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = true;
+            checkMusic(play_music_image, mute_image);
+        }
+
+
+        private void mute_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = false;
+            checkMusic(play_music_image, mute_image);
         }
 
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,52 +69,46 @@ namespace unipi_guide
         private void πίσωToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form homepage_from_toPanepistimio = new homepage_form();
-            homepage_from_toPanepistimio.ShowDialog();
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
             this.Close();
         }
         private void login_button_homepage_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form login_form_from_toPanepistimio = new login_form();
-            login_form_from_toPanepistimio.ShowDialog();
+            Form login = new login_form();
+            login.ShowDialog();
             this.Close();
         }
 
         private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form didaskontes_form_from_toPanepistimio = new Didaskontes_form();
-            didaskontes_form_from_toPanepistimio.ShowDialog();
+            Form didaskontes = new Didaskontes_form();
+            didaskontes.ShowDialog();
             this.Close();
         }
         private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form kritikes_form_from_uni = new Kritikes_form();
-            kritikes_form_from_uni.ShowDialog();
+            Form kritikes = new Kritikes_form();
+            kritikes.ShowDialog();
             this.Close();
         }
         private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form calendar_form_from_uni = new calendar_form();
-            calendar_form_from_uni.ShowDialog();
+            Form calendar = new calendar_form();
+            calendar.ShowDialog();
             this.Close();
         }
 
         private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form pliroforiki_form_from_toPanepistimio = new Pliroforiki_form();
-            pliroforiki_form_from_toPanepistimio.ShowDialog();
+            Form pliroforiki = new Pliroforiki_form();
+            pliroforiki.ShowDialog();
             this.Close();
-        }
-        private void mute_image_Click(object sender, EventArgs e)
-        {
-            /* Calls the mute_image_Click method of homepage_form to stop the player */
-            homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
-            form1?.mute_image_Click(sender,e);
         }
     }
 }

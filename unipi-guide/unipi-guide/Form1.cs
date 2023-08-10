@@ -16,10 +16,7 @@ namespace unipi_guide
 {
     public partial class homepage_form : Form
     {
-        /* Initialize sound player */
-        SoundPlayer player = new SoundPlayer("sound\\guitar_loop.wav");
-        /* Initialize speech synthesizer */
-        SpeechSynthesizer engine = new SpeechSynthesizer();
+
         public homepage_form()
         {
             InitializeComponent();
@@ -31,29 +28,57 @@ namespace unipi_guide
                 ΕκδηλώσειςtoolStripMenuItem.Visible = true;
                 login_button_homepage.Visible = false;
             }
-            
+
+            /* Voice synth controls' initialization */
+            voice_mute_image.Visible = false;
+            voice_sound_image.Visible = true;
+
         }
-        /* Play sound on form load */
+
+        /* Check music status on form load */
         private void homepage_form_Load(object sender, EventArgs e)
         {
-            player.PlayLooping();
-
-
+            if (Music.musicStatus == false)
+            {
+                checkMusic(play_music_image, mute_image);
+            }
+            else
+            {
+                mute_image.Visible = true;
+                play_music_image.Visible = false;
+            }
         }
-        /* Stop sound on mute image click */
+
+        /* Stop music on mute image click */
         public void mute_image_Click(object sender, EventArgs e)
         {
-            player.Stop();
+            Music.musicStatus = false;
+            checkMusic(play_music_image, mute_image);
         }
 
-        /* Synthesize voice */
+        /* Play music on mute image click */
+        private void play_music_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = true;
+            checkMusic(play_music_image, mute_image);
+        }
+
+        /* Synthesize voice and paus stop music while doing so if it's on */
         private void voice_sound_image_Click(object sender, EventArgs e)
         {
-            if (minima_proedrou_richTextBox.Text != "")
-            {
-                engine.SelectVoice("Microsoft Stefanos");
-                engine.SpeakAsync(minima_proedrou_richTextBox.Text);
-            }
+            SpeechEngine(minima_proedrou_richTextBox);
+            voice_mute_image.Visible = true;
+            voice_sound_image.Visible = false;
+            Music.musicStatus = false;
+            checkMusic(play_music_image, mute_image);
+        }
+
+        /* Stop voice speech on mute button click */
+        private void voice_mute_image_Click(object sender, EventArgs e)
+        {
+            SpeechPlay.engine.SpeakAsyncCancelAll();
+            voice_mute_image.Visible = false;
+            voice_sound_image.Visible = true;
         }
 
         /* Counter for image list slideshow loop */
@@ -88,48 +113,48 @@ namespace unipi_guide
         private void τοΠανεπιστήμιοToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form toPanepistimio_from_homepage = new toPanepistimio_form();
-            toPanepistimio_from_homepage.ShowDialog();
+            Form toPanepistimio = new toPanepistimio_form();
+            toPanepistimio.ShowDialog();
             this.Close();
         }
 
         private void login_button_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form login_form_from_homepage = new login_form();
-            login_form_from_homepage.ShowDialog();
+            Form login = new login_form();
+            login.ShowDialog();
             this.Close();
         }
 
         private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form didaskontes_form_from_homepage = new Didaskontes_form();
-            didaskontes_form_from_homepage.ShowDialog();
+            Form didaskontes = new Didaskontes_form();
+            didaskontes.ShowDialog();
             this.Close();
         }
 
         private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form kritikes_form_from_homepage = new Kritikes_form();
-            kritikes_form_from_homepage.ShowDialog();
+            Form kritikes = new Kritikes_form();
+            kritikes.ShowDialog();
             this.Close();
         }
 
         private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form calendar_form_from_homepage = new calendar_form();
-            calendar_form_from_homepage.ShowDialog();
+            Form calendar = new calendar_form();
+            calendar.ShowDialog();
             this.Close();
         }
 
         private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form pliroforiki_form_from_homepage = new Pliroforiki_form();
-            pliroforiki_form_from_homepage.ShowDialog();
+            Form pliroforiki = new Pliroforiki_form();
+            pliroforiki.ShowDialog();
             this.Close();
         }
     }

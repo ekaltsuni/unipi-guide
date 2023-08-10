@@ -56,8 +56,10 @@
             this.name_richTextBox = new System.Windows.Forms.RichTextBox();
             this.kritikes_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
+            this.play_music_image = new System.Windows.Forms.PictureBox();
             this.kritikes_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
             this.SuspendLayout();
             // 
             // kritikes_menu
@@ -340,12 +342,28 @@
             this.mute_image.TabStop = false;
             this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
+            // play_music_image
+            // 
+            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
+            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.play_music_image.Location = new System.Drawing.Point(13, 28);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
+            this.play_music_image.Name = "play_music_image";
+            this.play_music_image.Size = new System.Drawing.Size(30, 24);
+            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.play_music_image.TabIndex = 25;
+            this.play_music_image.TabStop = false;
+            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
+            // 
             // Kritikes_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(979, 528);
+            this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.name_richTextBox);
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.unregistered_label);
@@ -368,6 +386,7 @@
             this.kritikes_menu.ResumeLayout(false);
             this.kritikes_menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -402,5 +421,6 @@
         private System.Windows.Forms.RichTextBox name_richTextBox;
         private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
         private System.Windows.Forms.RichTextBox kritikes_title_richTextBox;
+        private System.Windows.Forms.PictureBox play_music_image;
     }
 }

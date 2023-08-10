@@ -38,75 +38,24 @@ namespace unipi_guide
                 name_label.Visible = true;
                 name_richTextBox.Visible = true;
             }
-        }
 
-        private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
-
-        }
-        /* Κριτικες form menu redirects to other pages */
-
-        private void τοΠανεπιστήμιοStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form toPanepistimio_from_homepage = new toPanepistimio_form();
-            toPanepistimio_from_homepage.ShowDialog();
-            this.Close();
-        }
-
-        private void αρχικήToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form arxiki_from_kritikes = new homepage_form();
-            arxiki_from_kritikes.ShowDialog();
-            this.Close();
-        }
-        private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form didaskontes_form_from_kritikes = new Didaskontes_form();
-            didaskontes_form_from_kritikes.ShowDialog();
-            this.Close();
-        }
-        private void login_button_homepage_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form login_form_from_kritikes = new login_form();
-            login_form_from_kritikes.ShowDialog();
-            this.Close();
-        }
-
-        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form calendar_form_from_reviews = new calendar_form();
-            calendar_form_from_reviews.ShowDialog();
-            this.Close();
-        }
-
-        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form pliroforiki_form_from_kritikes = new Pliroforiki_form();
-            pliroforiki_form_from_kritikes.ShowDialog();
-            this.Close();
-        }
-
-        private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void mute_image_Click(object sender, EventArgs e)
-        {
-            /* Calls the mute_image_Click method of homepage_form to stop the player */
-            homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
-            form1?.mute_image_Click(sender, e);
+            /* Voice synth initialization */
+            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         private void Kritikes_form_Load(object sender, EventArgs e)
         {
+            /* Check music status */
+            if (Music.musicStatus == false)
+            {
+                checkMusic(play_music_image, mute_image);
+            }
+            else
+            {
+                mute_image.Visible = true;
+                play_music_image.Visible = false;
+            }
+
             /* Create object connection to database */
             connection = new SQLiteConnection(connectionToStudent);
             connection.Open();
@@ -123,6 +72,18 @@ namespace unipi_guide
             reader.Close();
             command.Dispose();
             connection.Close();
+        }
+
+        private void mute_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = false;
+            checkMusic(play_music_image, mute_image);
+        }
+
+        private void play_music_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = true;
+            checkMusic(play_music_image, mute_image);
         }
 
         private void leaveNewReview_button_Click(object sender, EventArgs e)
@@ -163,6 +124,64 @@ namespace unipi_guide
             {
                 MessageBox.Show("Παρακαλώ συμπληρώστε όλα τα πεδία.");
             }
+        }
+
+        private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
+
+        }
+        /* Κριτικες form menu redirects to other pages */
+
+        private void τοΠανεπιστήμιοStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form toPanepistimio = new toPanepistimio_form();
+            toPanepistimio.ShowDialog();
+            this.Close();
+        }
+
+        private void αρχικήToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
+            this.Close();
+        }
+        private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form didaskontes = new Didaskontes_form();
+            didaskontes.ShowDialog();
+            this.Close();
+        }
+        private void login_button_homepage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form login = new login_form();
+            login.ShowDialog();
+            this.Close();
+        }
+
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar = new calendar_form();
+            calendar.ShowDialog();
+            this.Close();
+        }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki = new Pliroforiki_form();
+            pliroforiki.ShowDialog();
+            this.Close();
+        }
+
+        private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

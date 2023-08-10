@@ -20,64 +20,9 @@ namespace unipi_guide
             /* No need to check the user since we are on didaskontes page */
             ΠληροφορικήtoolStripMenuItem.Visible = true;
             ΕκδηλώσειςtoolStripMenuItem.Visible = true;
-        }
 
-        private void mute_image_Click(object sender, EventArgs e)
-        {
-            /* Calls the mute_image_Click method of homepage_form to stop the player */
-            homepage_form form1 = Application.OpenForms.OfType<homepage_form>().FirstOrDefault();
-            form1?.mute_image_Click(sender, e);
-        }
-
-        private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        /* Διδάσκοντες form menu redirects to other pages */
-
-        private void αρχικήToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form arxiki_from_didaskontes = new homepage_form();
-            arxiki_from_didaskontes.ShowDialog();
-            this.Close();
-        }
-
-        private void τοΠανεπιστήμιοStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form toPanepistimio_from_didaskontes = new toPanepistimio_form();
-            toPanepistimio_from_didaskontes.ShowDialog();
-            this.Close();
-        }
-
-        private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form kritikes_form_from_homepage = new Kritikes_form();
-            kritikes_form_from_homepage.ShowDialog();
-            this.Close();
-        }
-
-        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form calendar_form_from_didaskontes = new calendar_form();
-            calendar_form_from_didaskontes.ShowDialog();
-            this.Close();
-        }
-
-        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form pliroforiki_form_from_didaskontes = new Pliroforiki_form();
-            pliroforiki_form_from_didaskontes.ShowDialog();
-            this.Close();
-        }
-        private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
+            /* Voice synth initialization */
+            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         /* Try to download contact details of unipi professors and handle exception if system error occurs */
@@ -114,6 +59,82 @@ namespace unipi_guide
                     MessageBox.Show("There's been an error in downloading this file.");
                 }
             }
+        }
+
+        private void Didaskontes_form_Load(object sender, EventArgs e)
+        {
+            if (Music.musicStatus == false)
+            {
+                checkMusic(play_music_image, mute_image);
+            }
+            else
+            {
+                mute_image.Visible = true;
+                play_music_image.Visible = false;
+            }
+        }
+
+        private void mute_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = false;
+            checkMusic(play_music_image, mute_image);
+        }
+
+        private void play_music_image_Click(object sender, EventArgs e)
+        {
+            Music.musicStatus = true;
+            checkMusic(play_music_image, mute_image);
+        }
+
+        private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        /* Διδάσκοντες form menu redirects to other pages */
+
+        private void αρχικήToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
+            this.Close();
+        }
+
+        private void τοΠανεπιστήμιοStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form toPanepistimio = new toPanepistimio_form();
+            toPanepistimio.ShowDialog();
+            this.Close();
+        }
+
+        private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form kritikes = new Kritikes_form();
+            kritikes.ShowDialog();
+            this.Close();
+        }
+
+        private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form calendar = new calendar_form();
+            calendar.ShowDialog();
+            this.Close();
+        }
+
+        private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form pliroforiki = new Pliroforiki_form();
+            pliroforiki.ShowDialog();
+            this.Close();
+        }
+        private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
         }
     }
 }

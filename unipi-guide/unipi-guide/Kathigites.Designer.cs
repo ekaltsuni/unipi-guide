@@ -53,9 +53,11 @@
             this.didaskontes_intro_text_box = new System.Windows.Forms.Label();
             this.didaskontes_download_icon = new System.Windows.Forms.PictureBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
+            this.play_music_image = new System.Windows.Forms.PictureBox();
             this.kathigites_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.didaskontes_download_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
             this.SuspendLayout();
             // 
             // kathigites_menu
@@ -73,8 +75,8 @@
             this.έξοδοςToolStripMenuItem});
             this.kathigites_menu.Location = new System.Drawing.Point(0, 0);
             this.kathigites_menu.Name = "kathigites_menu";
-            this.kathigites_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.kathigites_menu.Size = new System.Drawing.Size(959, 24);
+            this.kathigites_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.kathigites_menu.Size = new System.Drawing.Size(1279, 28);
             this.kathigites_menu.TabIndex = 5;
             this.kathigites_menu.Text = "kathigites_menu";
             // 
@@ -83,7 +85,7 @@
             this.αρχικήToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.αρχικήToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.αρχικήToolStripMenuItem.Name = "αρχικήToolStripMenuItem";
-            this.αρχικήToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.αρχικήToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.αρχικήToolStripMenuItem.Text = "Αρχική";
             this.αρχικήToolStripMenuItem.Click += new System.EventHandler(this.αρχικήToolStripMenuItem_Click);
             // 
@@ -92,7 +94,7 @@
             this.τοΠανεπιστήμιοStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.τοΠανεπιστήμιοStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.τοΠανεπιστήμιοStripMenuItem1.Name = "τοΠανεπιστήμιοStripMenuItem1";
-            this.τοΠανεπιστήμιοStripMenuItem1.Size = new System.Drawing.Size(117, 20);
+            this.τοΠανεπιστήμιοStripMenuItem1.Size = new System.Drawing.Size(144, 24);
             this.τοΠανεπιστήμιοStripMenuItem1.Text = "Το Πανεπιστήμιο";
             this.τοΠανεπιστήμιοStripMenuItem1.Click += new System.EventHandler(this.τοΠανεπιστήμιοStripMenuItem1_Click);
             // 
@@ -106,31 +108,31 @@
             this.σχολέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχολέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
-            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.σχολέςToolStripMenuItem.Text = "Σχολές";
             // 
             // οικονομικώνToolStripMenuItem
             // 
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
-            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
-            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Name = "χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem";
-            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem
             // 
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Name = "τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem";
-            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
+            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             // 
             // ΠληροφορικήtoolStripMenuItem
@@ -143,33 +145,33 @@
             this.ΠληροφορικήtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΠληροφορικήtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
-            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(121, 24);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
             this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
-            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
             // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             // 
             // κριτικέςToolStripMenuItem
@@ -177,7 +179,7 @@
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.κριτικέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
-            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
             this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
@@ -186,7 +188,7 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ΕκδηλώσειςtoolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
-            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(180, 20);
+            this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(223, 24);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
             this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
@@ -196,7 +198,7 @@
             this.σχετικάΜεΕμάςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχετικάΜεΕμάςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχετικάΜεΕμάςToolStripMenuItem.Name = "σχετικάΜεΕμάςToolStripMenuItem";
-            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.σχετικάΜεΕμάςToolStripMenuItem.Text = "Σχετικά με εμάς";
             this.σχετικάΜεΕμάςToolStripMenuItem.Click += new System.EventHandler(this.σχετικάΜεΕμάςToolStripMenuItem_Click);
             // 
@@ -205,7 +207,7 @@
             this.έξοδοςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.έξοδοςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
-            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
@@ -218,9 +220,10 @@
             this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 0);
+            this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
             this.homepage_title_richTextBox.ReadOnly = true;
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(959, 77);
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(1279, 95);
             this.homepage_title_richTextBox.TabIndex = 10;
             this.homepage_title_richTextBox.Text = "\n\t\t\t\t     Διδάσκοντες του τμήματος Πληροφορικής";
             // 
@@ -230,12 +233,14 @@
             // 
             // stoixeiaKathigitwnRichTextBox
             // 
+            this.stoixeiaKathigitwnRichTextBox.BackColor = System.Drawing.Color.White;
             this.stoixeiaKathigitwnRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stoixeiaKathigitwnRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.stoixeiaKathigitwnRichTextBox.Location = new System.Drawing.Point(10, 82);
-            this.stoixeiaKathigitwnRichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.stoixeiaKathigitwnRichTextBox.Location = new System.Drawing.Point(13, 101);
+            this.stoixeiaKathigitwnRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stoixeiaKathigitwnRichTextBox.Name = "stoixeiaKathigitwnRichTextBox";
-            this.stoixeiaKathigitwnRichTextBox.Size = new System.Drawing.Size(572, 486);
+            this.stoixeiaKathigitwnRichTextBox.ReadOnly = true;
+            this.stoixeiaKathigitwnRichTextBox.Size = new System.Drawing.Size(763, 598);
             this.stoixeiaKathigitwnRichTextBox.TabIndex = 14;
             this.stoixeiaKathigitwnRichTextBox.Text = resources.GetString("stoixeiaKathigitwnRichTextBox.Text");
             // 
@@ -247,9 +252,10 @@
             this.didaskontes_save_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.didaskontes_save_button.ForeColor = System.Drawing.Color.White;
             this.didaskontes_save_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.didaskontes_save_button.Location = new System.Drawing.Point(638, 239);
+            this.didaskontes_save_button.Location = new System.Drawing.Point(851, 294);
+            this.didaskontes_save_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.didaskontes_save_button.Name = "didaskontes_save_button";
-            this.didaskontes_save_button.Size = new System.Drawing.Size(182, 30);
+            this.didaskontes_save_button.Size = new System.Drawing.Size(243, 37);
             this.didaskontes_save_button.TabIndex = 17;
             this.didaskontes_save_button.Text = "Αποθήκευση Στοιχείων";
             this.didaskontes_save_button.UseVisualStyleBackColor = false;
@@ -259,10 +265,9 @@
             // 
             this.didaskontes_intro_text_box.AutoSize = true;
             this.didaskontes_intro_text_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.didaskontes_intro_text_box.Location = new System.Drawing.Point(594, 144);
-            this.didaskontes_intro_text_box.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.didaskontes_intro_text_box.Location = new System.Drawing.Point(792, 177);
             this.didaskontes_intro_text_box.Name = "didaskontes_intro_text_box";
-            this.didaskontes_intro_text_box.Size = new System.Drawing.Size(357, 51);
+            this.didaskontes_intro_text_box.Size = new System.Drawing.Size(416, 60);
             this.didaskontes_intro_text_box.TabIndex = 18;
             this.didaskontes_intro_text_box.Text = "Σε αυτή την σελίδα, μπορείτε να δείτε τα στοιχεία\r\nτων διδασκόντων του τμήματος Π" +
     "ληροφορικής. \r\nΓια να τα αποθηκεύσετε, πατήστε το παρακάτω κουμπί.";
@@ -271,10 +276,10 @@
             // 
             this.didaskontes_download_icon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.didaskontes_download_icon.Image = ((System.Drawing.Image)(resources.GetObject("didaskontes_download_icon.Image")));
-            this.didaskontes_download_icon.Location = new System.Drawing.Point(851, 226);
-            this.didaskontes_download_icon.Margin = new System.Windows.Forms.Padding(2);
+            this.didaskontes_download_icon.Location = new System.Drawing.Point(1135, 278);
+            this.didaskontes_download_icon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.didaskontes_download_icon.Name = "didaskontes_download_icon";
-            this.didaskontes_download_icon.Size = new System.Drawing.Size(60, 50);
+            this.didaskontes_download_icon.Size = new System.Drawing.Size(80, 62);
             this.didaskontes_download_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.didaskontes_download_icon.TabIndex = 19;
             this.didaskontes_download_icon.TabStop = false;
@@ -286,20 +291,37 @@
             this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(10, 26);
+            this.mute_image.Location = new System.Drawing.Point(13, 32);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(32, 26);
+            this.mute_image.Size = new System.Drawing.Size(43, 32);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mute_image.TabIndex = 4;
             this.mute_image.TabStop = false;
             this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
+            // play_music_image
+            // 
+            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
+            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.play_music_image.Location = new System.Drawing.Point(13, 32);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.play_music_image.Name = "play_music_image";
+            this.play_music_image.Size = new System.Drawing.Size(43, 32);
+            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.play_music_image.TabIndex = 26;
+            this.play_music_image.TabStop = false;
+            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
+            // 
             // Didaskontes_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(959, 599);
+            this.ClientSize = new System.Drawing.Size(1279, 737);
+            this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.didaskontes_save_button);
             this.Controls.Add(this.didaskontes_download_icon);
             this.Controls.Add(this.didaskontes_intro_text_box);
@@ -309,16 +331,18 @@
             this.Controls.Add(this.homepage_title_richTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Didaskontes_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Διδάσκοντες | Πανεπιστήμιο Πειραιώς";
+            this.Load += new System.EventHandler(this.Didaskontes_form_Load);
             this.kathigites_menu.ResumeLayout(false);
             this.kathigites_menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.didaskontes_download_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,5 +374,6 @@
         private System.Windows.Forms.Label didaskontes_intro_text_box;
         private System.Windows.Forms.PictureBox didaskontes_download_icon;
         private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
+        private System.Windows.Forms.PictureBox play_music_image;
     }
 }
