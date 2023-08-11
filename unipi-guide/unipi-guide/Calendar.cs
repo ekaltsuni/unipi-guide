@@ -24,9 +24,6 @@ namespace unipi_guide
             /* No need to check the user since we are on didaskontes page */
             ΠληροφορικήtoolStripMenuItem.Visible = true;
             ΕκδηλώσειςtoolStripMenuItem.Visible = true;
-
-            /* Voice synth initialization */
-            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         private void calendar_form_Load(object sender, EventArgs e)

@@ -21,13 +21,6 @@ namespace unipi_guide
         public login_form()
         {
             InitializeComponent();
-            τοΠανεπιστήμιοToolStripMenuItem.Visible = false;
-            σχολέςToolStripMenuItem.Visible = false;
-            κριτικέςToolStripMenuItem.Visible = false;
-            σχετικάΜεΕμάςToolStripMenuItem.Visible = false;
-
-            /* Voice synth initialization */
-            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         private void login_form_Load(object sender, EventArgs e)

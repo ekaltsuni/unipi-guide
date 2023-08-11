@@ -24,8 +24,6 @@ namespace unipi_guide
                 ΕκδηλώσειςtoolStripMenuItem.Visible = true;
                 login_button_homepage.Visible = false;
             }
-            /* Voice synth initialization */
-            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         private void toPanepistimio_form_Load(object sender, EventArgs e)

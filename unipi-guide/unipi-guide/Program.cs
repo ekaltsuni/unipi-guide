@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Media;
+using AxWMPLib;
 
 namespace unipi_guide
 {
@@ -45,7 +46,6 @@ namespace unipi_guide
             }
         }
 
-
         /* Global method to check music status in each form */
         public static void checkMusic(Control play, Control mute)
         {
@@ -61,25 +61,6 @@ namespace unipi_guide
                 mute.Visible = false;
                 play.Visible = true;
             }
-        }
-
-
-        public static class SpeechPlay
-        {
-            private static SpeechSynthesizer _engine = new SpeechSynthesizer();
-
-            public static SpeechSynthesizer engine
-            {
-                get { return _engine; }
-                set { _engine = value; }
-            }
-        }
-
-        public static void SpeechEngine(Control c)
-        {
-            /* Initialize speech synthesizer */
-            SpeechPlay.engine.SelectVoice("Microsoft Stefanos");
-            SpeechPlay.engine.SpeakAsync(c.Text);
         }
 
         /// <summary>

@@ -21,17 +21,12 @@ namespace unipi_guide
             /* No need to check the user since we are on didaskontes page */
             ΠληροφορικήtoolStripMenuItem.Visible = true;
             ΕκδηλώσειςtoolStripMenuItem.Visible = true;
-
-            /* Voice synth initialization */
-            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
 
         /* Play video on form load */
         private void Pliroforiki_form_Load(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = "video/unipi_informatics_video.mp4";
-
             if (Music.musicStatus == false)
             {
                 checkMusic(play_music_image, mute_image);
@@ -41,6 +36,10 @@ namespace unipi_guide
                 mute_image.Visible = true;
                 play_music_image.Visible = false;
             }
+            axWindowsMediaPlayer1.URL = "video/unipi_informatics_video.mp4";
+            axWindowsMediaPlayer1.uiMode = "none";
+            axWindowsMediaPlayer1.settings.mute = true;
+            playVideoButton.Enabled = false;
         }
 
         private void mute_image_Click(object sender, EventArgs e)
@@ -55,6 +54,33 @@ namespace unipi_guide
             checkMusic(play_music_image, mute_image);
         }
 
+        /* Pause video player */
+        private void pauseVideoButton_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.pause();
+            stopVideoButton.Enabled = true;
+            pauseVideoButton.Enabled = false;
+            playVideoButton.Enabled = true;
+        }
+
+        /* Stop video player */
+        private void stopVideoButton_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+            stopVideoButton.Enabled = false;
+            pauseVideoButton.Enabled = false;
+            playVideoButton.Enabled = true;
+        }
+
+        /* Play or resume video player */
+        private void playVideoButton_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            stopVideoButton.Enabled = true;
+            pauseVideoButton.Enabled = true;
+            playVideoButton.Enabled = false;
+        }
+
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -64,6 +90,7 @@ namespace unipi_guide
 
         private void αρχικήStripMenuItem1_Click(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
             this.Hide();
             Form homepage = new homepage_form();
             homepage.ShowDialog();
@@ -72,6 +99,7 @@ namespace unipi_guide
 
         private void τοΠανεπιστήμιοToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
             this.Hide();
             Form toPanepistimio = new toPanepistimio_form();
             toPanepistimio.ShowDialog();
@@ -80,6 +108,7 @@ namespace unipi_guide
 
         private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
             this.Hide();
             Form kritikes = new Kritikes_form();
             kritikes.ShowDialog();
@@ -88,6 +117,7 @@ namespace unipi_guide
 
         private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
             this.Hide();
             Form calendar = new calendar_form();
             calendar.ShowDialog();
@@ -97,7 +127,6 @@ namespace unipi_guide
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
-
         }
     }
 }

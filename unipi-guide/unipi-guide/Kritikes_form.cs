@@ -38,9 +38,6 @@ namespace unipi_guide
                 name_label.Visible = true;
                 name_richTextBox.Visible = true;
             }
-
-            /* Voice synth initialization */
-            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         private void Kritikes_form_Load(object sender, EventArgs e)

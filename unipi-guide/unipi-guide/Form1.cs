@@ -16,6 +16,8 @@ namespace unipi_guide
 {
     public partial class homepage_form : Form
     {
+        /* Initialize speech synthesis */
+        SpeechSynthesizer engine = new SpeechSynthesizer();
 
         public homepage_form()
         {
@@ -63,10 +65,11 @@ namespace unipi_guide
             checkMusic(play_music_image, mute_image);
         }
 
-        /* Synthesize voice and paus stop music while doing so if it's on */
+        /* Synthesize voice and stop music while doing so if it's on */
         private void voice_sound_image_Click(object sender, EventArgs e)
         {
-            SpeechEngine(minima_proedrou_richTextBox);
+            engine.SelectVoice("Microsoft Stefanos");
+            engine.SpeakAsync(minima_proedrou_richTextBox.Text);
             voice_mute_image.Visible = true;
             voice_sound_image.Visible = false;
             Music.musicStatus = false;
@@ -76,7 +79,7 @@ namespace unipi_guide
         /* Stop voice speech on mute button click */
         private void voice_mute_image_Click(object sender, EventArgs e)
         {
-            SpeechPlay.engine.SpeakAsyncCancelAll();
+            engine.SpeakAsyncCancelAll();
             voice_mute_image.Visible = false;
             voice_sound_image.Visible = true;
         }
@@ -107,11 +110,15 @@ namespace unipi_guide
         /* Homepage menu redirects to other pages */
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
+            voice_mute_image.Visible = false;
+            voice_sound_image.Visible = true;
             MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
         }
 
         private void τοΠανεπιστήμιοToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form toPanepistimio = new toPanepistimio_form();
             toPanepistimio.ShowDialog();
@@ -120,6 +127,7 @@ namespace unipi_guide
 
         private void login_button_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form login = new login_form();
             login.ShowDialog();
@@ -128,6 +136,7 @@ namespace unipi_guide
 
         private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form didaskontes = new Didaskontes_form();
             didaskontes.ShowDialog();
@@ -136,6 +145,7 @@ namespace unipi_guide
 
         private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form kritikes = new Kritikes_form();
             kritikes.ShowDialog();
@@ -144,6 +154,7 @@ namespace unipi_guide
 
         private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form calendar = new calendar_form();
             calendar.ShowDialog();
@@ -152,10 +163,61 @@ namespace unipi_guide
 
         private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form pliroforiki = new Pliroforiki_form();
             pliroforiki.ShowDialog();
             this.Close();
+        }
+
+        private void οικονομικώνToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void μεταπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void sxoles1_homepage_button_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
         }
     }
 }

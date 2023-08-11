@@ -220,7 +220,7 @@
             this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
             this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 0);
-            this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.homepage_title_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
             this.homepage_title_richTextBox.ReadOnly = true;
             this.homepage_title_richTextBox.Size = new System.Drawing.Size(1279, 95);
@@ -253,7 +253,7 @@
             this.didaskontes_save_button.ForeColor = System.Drawing.Color.White;
             this.didaskontes_save_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.didaskontes_save_button.Location = new System.Drawing.Point(851, 294);
-            this.didaskontes_save_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.didaskontes_save_button.Margin = new System.Windows.Forms.Padding(4);
             this.didaskontes_save_button.Name = "didaskontes_save_button";
             this.didaskontes_save_button.Size = new System.Drawing.Size(243, 37);
             this.didaskontes_save_button.TabIndex = 17;
@@ -292,7 +292,7 @@
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mute_image.Location = new System.Drawing.Point(13, 32);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
             this.mute_image.Name = "mute_image";
             this.mute_image.Size = new System.Drawing.Size(43, 32);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -307,7 +307,7 @@
             this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
             this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.play_music_image.Location = new System.Drawing.Point(13, 32);
-            this.play_music_image.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(5);
             this.play_music_image.Name = "play_music_image";
             this.play_music_image.Size = new System.Drawing.Size(43, 32);
             this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

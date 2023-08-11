@@ -20,9 +20,6 @@ namespace unipi_guide
             /* No need to check the user since we are on didaskontes page */
             ΠληροφορικήtoolStripMenuItem.Visible = true;
             ΕκδηλώσειςtoolStripMenuItem.Visible = true;
-
-            /* Voice synth initialization */
-            SpeechPlay.engine.SpeakAsyncCancelAll();
         }
 
         /* Try to download contact details of unipi professors and handle exception if system error occurs */
