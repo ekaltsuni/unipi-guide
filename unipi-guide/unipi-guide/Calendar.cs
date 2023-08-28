@@ -167,5 +167,14 @@ namespace unipi_guide
             pliroforiki.ShowDialog();
             this.Close();
         }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            userStatus.registeredUser = false;
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
+            this.Close();
+        }
     }
 }

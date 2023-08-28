@@ -57,6 +57,7 @@
             this.kritikes_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.play_music_image = new System.Windows.Forms.PictureBox();
+            this.logout_button = new System.Windows.Forms.Button();
             this.kritikes_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
@@ -220,7 +221,7 @@
             this.login_button_homepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button_homepage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.login_button_homepage.ForeColor = System.Drawing.Color.White;
-            this.login_button_homepage.Location = new System.Drawing.Point(824, 26);
+            this.login_button_homepage.Location = new System.Drawing.Point(831, 28);
             this.login_button_homepage.Name = "login_button_homepage";
             this.login_button_homepage.Size = new System.Drawing.Size(124, 28);
             this.login_button_homepage.TabIndex = 8;
@@ -357,12 +358,29 @@
             this.play_music_image.TabStop = false;
             this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
             // 
+            // logout_button
+            // 
+            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.logout_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.logout_button.ForeColor = System.Drawing.Color.White;
+            this.logout_button.Location = new System.Drawing.Point(831, 28);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(124, 28);
+            this.logout_button.TabIndex = 30;
+            this.logout_button.Text = "Αποσύνδεση";
+            this.logout_button.UseVisualStyleBackColor = false;
+            this.logout_button.Visible = false;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
+            // 
             // Kritikes_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(979, 528);
+            this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.name_richTextBox);
             this.Controls.Add(this.name_label);
@@ -422,5 +440,6 @@
         private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
         private System.Windows.Forms.RichTextBox kritikes_title_richTextBox;
         private System.Windows.Forms.PictureBox play_music_image;
+        private System.Windows.Forms.Button logout_button;
     }
 }

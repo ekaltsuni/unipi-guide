@@ -52,6 +52,7 @@
             this.events_richTextBox = new System.Windows.Forms.RichTextBox();
             this.events_button = new System.Windows.Forms.Button();
             this.play_music_image = new System.Windows.Forms.PictureBox();
+            this.logout_button = new System.Windows.Forms.Button();
             this.calendar_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
@@ -289,6 +290,21 @@
             this.play_music_image.TabStop = false;
             this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
             // 
+            // logout_button
+            // 
+            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.logout_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.logout_button.ForeColor = System.Drawing.Color.White;
+            this.logout_button.Location = new System.Drawing.Point(895, 28);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(124, 28);
+            this.logout_button.TabIndex = 30;
+            this.logout_button.Text = "Αποσύνδεση";
+            this.logout_button.UseVisualStyleBackColor = false;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
+            // 
             // calendar_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +313,7 @@
             this.BackgroundImage = global::unipi_guide.Properties.Resources.calendar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1030, 664);
+            this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.events_button);
             this.Controls.Add(this.events_richTextBox);
@@ -348,5 +365,6 @@
         private System.Windows.Forms.RichTextBox events_richTextBox;
         private System.Windows.Forms.Button events_button;
         private System.Windows.Forms.PictureBox play_music_image;
+        private System.Windows.Forms.Button logout_button;
     }
 }

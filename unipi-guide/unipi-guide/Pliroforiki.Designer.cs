@@ -54,6 +54,7 @@
             this.playVideoButton = new System.Windows.Forms.Button();
             this.pauseVideoButton = new System.Windows.Forms.Button();
             this.stopVideoButton = new System.Windows.Forms.Button();
+            this.logout_button = new System.Windows.Forms.Button();
             this.homepage_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -181,6 +182,7 @@
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
             this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
+            this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
             // ΕκδηλώσειςtoolStripMenuItem
             // 
@@ -243,7 +245,7 @@
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(10, 106);
-            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(543, 380);
@@ -255,7 +257,7 @@
             this.PliroforikiRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PliroforikiRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.PliroforikiRichTextBox.Location = new System.Drawing.Point(584, 106);
-            this.PliroforikiRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PliroforikiRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PliroforikiRichTextBox.Name = "PliroforikiRichTextBox";
             this.PliroforikiRichTextBox.ReadOnly = true;
             this.PliroforikiRichTextBox.Size = new System.Drawing.Size(482, 380);
@@ -269,7 +271,7 @@
             this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
             this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.play_music_image.Location = new System.Drawing.Point(12, 29);
-            this.play_music_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
             this.play_music_image.Name = "play_music_image";
             this.play_music_image.Size = new System.Drawing.Size(30, 24);
             this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -281,7 +283,7 @@
             // 
             this.playVideoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.playVideoButton.Location = new System.Drawing.Point(141, 504);
-            this.playVideoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.playVideoButton.Margin = new System.Windows.Forms.Padding(2);
             this.playVideoButton.Name = "playVideoButton";
             this.playVideoButton.Size = new System.Drawing.Size(80, 39);
             this.playVideoButton.TabIndex = 24;
@@ -294,7 +296,7 @@
             // 
             this.pauseVideoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.pauseVideoButton.Location = new System.Drawing.Point(240, 504);
-            this.pauseVideoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pauseVideoButton.Margin = new System.Windows.Forms.Padding(2);
             this.pauseVideoButton.Name = "pauseVideoButton";
             this.pauseVideoButton.Size = new System.Drawing.Size(80, 39);
             this.pauseVideoButton.TabIndex = 25;
@@ -307,7 +309,7 @@
             // 
             this.stopVideoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.stopVideoButton.Location = new System.Drawing.Point(340, 504);
-            this.stopVideoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.stopVideoButton.Margin = new System.Windows.Forms.Padding(2);
             this.stopVideoButton.Name = "stopVideoButton";
             this.stopVideoButton.Size = new System.Drawing.Size(80, 39);
             this.stopVideoButton.TabIndex = 26;
@@ -316,12 +318,28 @@
             this.stopVideoButton.UseVisualStyleBackColor = true;
             this.stopVideoButton.Click += new System.EventHandler(this.stopVideoButton_Click);
             // 
+            // logout_button
+            // 
+            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.logout_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.logout_button.ForeColor = System.Drawing.Color.White;
+            this.logout_button.Location = new System.Drawing.Point(941, 29);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(124, 28);
+            this.logout_button.TabIndex = 30;
+            this.logout_button.Text = "Αποσύνδεση";
+            this.logout_button.UseVisualStyleBackColor = false;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
+            // 
             // Pliroforiki_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1077, 574);
+            this.Controls.Add(this.logout_button);
             this.Controls.Add(this.stopVideoButton);
             this.Controls.Add(this.pauseVideoButton);
             this.Controls.Add(this.playVideoButton);
@@ -333,7 +351,7 @@
             this.Controls.Add(this.pliroforiki_title_richTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Pliroforiki_form";
@@ -377,5 +395,6 @@
         private System.Windows.Forms.Button playVideoButton;
         private System.Windows.Forms.Button pauseVideoButton;
         private System.Windows.Forms.Button stopVideoButton;
+        private System.Windows.Forms.Button logout_button;
     }
 }

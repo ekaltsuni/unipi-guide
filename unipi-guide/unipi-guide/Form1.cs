@@ -29,6 +29,7 @@ namespace unipi_guide
                 ΠληροφορικήtoolStripMenuItem.Visible = true;
                 ΕκδηλώσειςtoolStripMenuItem.Visible = true;
                 login_button_homepage.Visible = false;
+                logout_button.Visible = true;
             }
 
             /* Voice synth controls' initialization */
@@ -218,6 +219,16 @@ namespace unipi_guide
         private void button3_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+            this.Hide();
+            userStatus.registeredUser = false;
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
+            this.Close();
         }
     }
 }

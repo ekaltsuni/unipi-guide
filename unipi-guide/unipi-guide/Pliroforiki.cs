@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,8 @@ namespace unipi_guide
 {
     public partial class Pliroforiki_form : Form
     {
+        /* Initialize speech synthesis */
+        SpeechSynthesizer engine = new SpeechSynthesizer();
         public Pliroforiki_form()
         {
             InitializeComponent();
@@ -127,6 +130,25 @@ namespace unipi_guide
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
+        }
+
+        private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form didaskontes = new Didaskontes_form();
+            didaskontes.ShowDialog();
+            this.Close();
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+            this.Hide();
+            userStatus.registeredUser = false;
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
+            this.Close();
         }
     }
 }

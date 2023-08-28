@@ -40,24 +40,6 @@ namespace unipi_guide
             }
         }
 
-        /* Try to download contact details of unipi professors and handle exception if system error occurs */
-        private void didaskontes_download_icon_Click(object sender, EventArgs e)
-        {
-            saveFileDialogKathigites.InitialDirectory = Application.StartupPath + "\\textfiles";
-            if (saveFileDialogKathigites.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    stoixeiaKathigitwnRichTextBox.SaveFile(saveFileDialogKathigites.FileName, RichTextBoxStreamType.PlainText);
-                    MessageBox.Show("File saved at " + saveFileDialogKathigites.FileName);
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("There's been an error in downloading this file.");
-                }
-            }
-        }
-
         private void Didaskontes_form_Load(object sender, EventArgs e)
         {
             if (Music.musicStatus == false)
@@ -132,6 +114,15 @@ namespace unipi_guide
         private void σχετικάΜεΕμάςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ο παρών οδηγός για το Πανεπιστήμιο Πειραιά δημιουργήθηκε από τις φοιτήτριες Καλτσούνη Ελένη (ΜΠΠΛ 2218) και Καούνη Μαρία (ΜΠΠΛ 2219) του τμήματος ΠΜΣ Πληροφορικής στα πλαίσια της απαλλάκτικής εργασίας  για το μάθημα Ταχεία Ανάπτυξη Εφαρμογών (εαρινό εξάμηνο, 2023).\r\n\r\nΣτόχος του οδηγού είναι να προσομειώσει μια οθόνη αφής που θα μπορούσε να βρίσκεται στην είσοδο του πανεπιστημίου και η οποία θα μπορέσει να αποτελέσει πηγή πληροφοριών για εγγεγραμμένους φοιτητές και επισκέπτες του πανεπιστημίου. \r\n\r\nΜεταξύ άλλων η εφαρμογή  παρουσιάζει βασικές πληροφορίες του πανεπιστημίου, τις υπηρεσίες που διαθέτει, τις σχολές και τα τμήματα.");
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            userStatus.registeredUser = false;
+            Form homepage = new homepage_form();
+            homepage.ShowDialog();
+            this.Close();
         }
     }
 }

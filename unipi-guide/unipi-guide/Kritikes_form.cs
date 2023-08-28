@@ -37,6 +37,7 @@ namespace unipi_guide
                 newReview_richTextBox.Visible = true;
                 name_label.Visible = true;
                 name_richTextBox.Visible = true;
+                logout_button.Visible = true;
             }
         }
 
@@ -179,6 +180,15 @@ namespace unipi_guide
         private void έξοδοςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            userStatus.registeredUser = false;
+            Form kritikes = new Kritikes_form();
+            kritikes.ShowDialog();
+            this.Close();
         }
     }
 }

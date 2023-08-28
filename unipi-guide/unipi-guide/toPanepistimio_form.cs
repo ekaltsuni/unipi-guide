@@ -23,6 +23,7 @@ namespace unipi_guide
                 ΠληροφορικήtoolStripMenuItem.Visible = true;
                 ΕκδηλώσειςtoolStripMenuItem.Visible = true;
                 login_button_homepage.Visible = false;
+                logout_button.Visible = true;
             }
         }
 
@@ -106,6 +107,15 @@ namespace unipi_guide
             this.Hide();
             Form pliroforiki = new Pliroforiki_form();
             pliroforiki.ShowDialog();
+            this.Close();
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            userStatus.registeredUser = false;
+            Form toPanepistimio = new toPanepistimio_form();
+            toPanepistimio.ShowDialog();
             this.Close();
         }
     }
