@@ -21,6 +21,12 @@ namespace unipi_guide
                 get { return _registeredUser; }
                 set { _registeredUser = value; }
             }
+            private static Boolean _isAdmin;
+            public static Boolean isAdmin
+            {
+                get { return _isAdmin; }
+                set { _isAdmin = value; }
+            }
         }
 
         /* Global class for getting and setting whether music is on or off 

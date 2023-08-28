@@ -211,3 +211,4 @@ C:\Users\mario\Source\Repos\unipi-guide_28_8\unipi-guide\unipi-guide\obj\Debug\e
 C:\Users\mario\Source\Repos\unipi-guide_28_8\unipi-guide\unipi-guide\obj\Debug\unipi-guide.csproj.CopyComplete
 C:\Users\mario\Source\Repos\unipi-guide_28_8\unipi-guide\unipi-guide\obj\Debug\unipi-guide.exe
 C:\Users\mario\Source\Repos\unipi-guide_28_8\unipi-guide\unipi-guide\obj\Debug\unipi-guide.pdb
+C:\Users\mario\source\repos\unipi-guide_28_8\unipi-guide\unipi-guide\obj\Debug\unipi_guide.AddEvent.resources

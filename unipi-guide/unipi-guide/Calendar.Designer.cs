@@ -53,6 +53,7 @@
             this.events_button = new System.Windows.Forms.Button();
             this.play_music_image = new System.Windows.Forms.PictureBox();
             this.logout_button = new System.Windows.Forms.Button();
+            this.addEvent_button = new System.Windows.Forms.Button();
             this.calendar_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
@@ -156,7 +157,6 @@
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
             this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
-            this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
@@ -200,7 +200,6 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
             this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(180, 20);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
-            this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
             // 
@@ -281,7 +280,7 @@
             this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
             this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.play_music_image.Location = new System.Drawing.Point(10, 28);
+            this.play_music_image.Location = new System.Drawing.Point(10, 26);
             this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
             this.play_music_image.Name = "play_music_image";
             this.play_music_image.Size = new System.Drawing.Size(32, 26);
@@ -305,6 +304,22 @@
             this.logout_button.UseVisualStyleBackColor = false;
             this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
+            // addEvent_button
+            // 
+            this.addEvent_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.addEvent_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addEvent_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addEvent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.addEvent_button.ForeColor = System.Drawing.Color.White;
+            this.addEvent_button.Location = new System.Drawing.Point(924, 185);
+            this.addEvent_button.Name = "addEvent_button";
+            this.addEvent_button.Size = new System.Drawing.Size(94, 53);
+            this.addEvent_button.TabIndex = 31;
+            this.addEvent_button.Text = "Προσθέστε μια εκδήλωση";
+            this.addEvent_button.UseVisualStyleBackColor = false;
+            this.addEvent_button.Visible = false;
+            this.addEvent_button.Click += new System.EventHandler(this.addEvent_button_Click);
+            // 
             // calendar_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,6 +328,7 @@
             this.BackgroundImage = global::unipi_guide.Properties.Resources.calendar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1030, 664);
+            this.Controls.Add(this.addEvent_button);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.events_button);
@@ -366,5 +382,6 @@
         private System.Windows.Forms.Button events_button;
         private System.Windows.Forms.PictureBox play_music_image;
         private System.Windows.Forms.Button logout_button;
+        private System.Windows.Forms.Button addEvent_button;
     }
 }

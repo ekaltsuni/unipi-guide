@@ -20,16 +20,16 @@ namespace unipi_guide
         public calendar_form()
         {
             InitializeComponent();
-            /* Form behavior when user is logged in */
-            /* No need to check the user since we are on didaskontes page */
-            ΠληροφορικήtoolStripMenuItem.Visible = true;
-            ΕκδηλώσειςtoolStripMenuItem.Visible = true;
+            /* Form behavior when admin is logged in */
+            if (userStatus.isAdmin == true) { 
+                addEvent_button.Visible = true;
+            }
         }
 
         private void calendar_form_Load(object sender, EventArgs e)
         {
-            //this.Width = 1046;
-            //this.Height = 703;
+            this.Width = 1046;
+            this.Height = 703;
             LoadData();
 
             /* Check music status */
@@ -174,6 +174,14 @@ namespace unipi_guide
             userStatus.registeredUser = false;
             Form homepage = new homepage_form();
             homepage.ShowDialog();
+            this.Close();
+        }
+
+        private void addEvent_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form addEvent = new AddEvent();
+            addEvent.ShowDialog();
             this.Close();
         }
     }

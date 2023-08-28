@@ -76,6 +76,14 @@ namespace unipi_guide
                 connection.Close();
                 this.Hide();
                 userStatus.registeredUser = true;
+                if (username.Equals("admin"))
+                {
+                    userStatus.isAdmin = true;
+                }
+                else
+                {
+                    userStatus.isAdmin = false;
+                }
                 Form homepage = new homepage_form();
                 homepage.ShowDialog();
                 this.Close();
