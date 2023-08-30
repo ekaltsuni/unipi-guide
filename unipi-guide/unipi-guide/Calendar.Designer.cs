@@ -161,26 +161,28 @@
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
-            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
             // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακές Σπουδές";
+            this.προπτυχιακάToolStripMenuItem.Click += new System.EventHandler(this.προπτυχιακάToolStripMenuItem_Click);
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακές Σπουδές";
+            this.μεταπτυχιακάToolStripMenuItem.Click += new System.EventHandler(this.μεταπτυχιακάToolStripMenuItem_Click);
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 

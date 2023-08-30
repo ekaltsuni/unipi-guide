@@ -20,10 +20,6 @@ namespace unipi_guide
         public Pliroforiki_form()
         {
             InitializeComponent();
-            /* Form behavior when user is logged in */
-            /* No need to check the user since we are on didaskontes page */
-            ΠληροφορικήtoolStripMenuItem.Visible = true;
-            ΕκδηλώσειςtoolStripMenuItem.Visible = true;
         }
 
 
@@ -148,6 +144,24 @@ namespace unipi_guide
             userStatus.registeredUser = false;
             Form homepage = new homepage_form();
             homepage.ShowDialog();
+            this.Close();
+        }
+
+        private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form undergraduate = new Undergraduate();
+            undergraduate.ShowDialog();
+            this.Close();
+        }
+
+        private void μεταπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form postgraduate = new Postgraduate();
+            postgraduate.ShowDialog();
             this.Close();
         }
     }

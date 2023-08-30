@@ -194,11 +194,19 @@ namespace unipi_guide
         private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form undergraduate = new Undergraduate();
+            undergraduate.ShowDialog();
+            this.Close();
         }
 
         private void μεταπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form postgraduate = new Postgraduate();
+            postgraduate.ShowDialog();
+            this.Close();
         }
 
         private void sxoles1_homepage_button_Click(object sender, EventArgs e)

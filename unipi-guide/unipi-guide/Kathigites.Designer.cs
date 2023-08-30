@@ -146,31 +146,32 @@
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
             this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
-            this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
-            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
             // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακές Σπουδές";
+            this.προπτυχιακάToolStripMenuItem.Click += new System.EventHandler(this.προπτυχιακάToolStripMenuItem_Click);
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακές Σπουδές";
+            this.μεταπτυχιακάToolStripMenuItem.Click += new System.EventHandler(this.μεταπτυχιακάToolStripMenuItem_Click);
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             // 
             // κριτικέςToolStripMenuItem
@@ -189,7 +190,6 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
             this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(180, 20);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
-            this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
             // 
             // σχετικάΜεΕμάςToolStripMenuItem

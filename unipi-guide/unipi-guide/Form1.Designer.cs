@@ -62,24 +62,24 @@ namespace unipi_guide
             this.sxolesButton3 = new System.Windows.Forms.Button();
             this.sxolesButton2 = new System.Windows.Forms.Button();
             this.sxolesButton4 = new System.Windows.Forms.Button();
-            this.slideshow_homepage_image = new System.Windows.Forms.PictureBox();
-            this.voice_sound_image = new System.Windows.Forms.PictureBox();
-            this.mute_image = new System.Windows.Forms.PictureBox();
-            this.homepage_main_image = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.play_music_image = new System.Windows.Forms.PictureBox();
-            this.voice_mute_image = new System.Windows.Forms.PictureBox();
             this.logout_button = new System.Windows.Forms.Button();
+            this.voice_mute_image = new System.Windows.Forms.PictureBox();
+            this.play_music_image = new System.Windows.Forms.PictureBox();
+            this.slideshow_homepage_image = new System.Windows.Forms.PictureBox();
+            this.voice_sound_image = new System.Windows.Forms.PictureBox();
+            this.mute_image = new System.Windows.Forms.PictureBox();
+            this.homepage_main_image = new System.Windows.Forms.PictureBox();
             this.homepage_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.voice_mute_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow_homepage_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voice_sound_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homepage_main_image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.voice_mute_image)).BeginInit();
             this.SuspendLayout();
             // 
             // homepage_menu
@@ -90,8 +90,8 @@ namespace unipi_guide
             this.αρχικήStripMenuItem1,
             this.τοΠανεπιστήμιοToolStripMenuItem,
             this.σχολέςToolStripMenuItem,
-            this.κριτικέςToolStripMenuItem,
             this.ΠληροφορικήtoolStripMenuItem,
+            this.κριτικέςToolStripMenuItem,
             this.ΕκδηλώσειςtoolStripMenuItem,
             this.σχετικάΜεΕμάςToolStripMenuItem,
             this.έξοδοςToolStripMenuItem});
@@ -186,28 +186,28 @@ namespace unipi_guide
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Name = "τοΤμήμαΠληροφορικήςToolStripMenuItem";
-            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Text = "Το Τμήμα Πληροφορικής";
             this.τοΤμήμαΠληροφορικήςToolStripMenuItem.Click += new System.EventHandler(this.τοΤμήμαΠληροφορικήςToolStripMenuItem_Click);
             // 
             // προπτυχιακάToolStripMenuItem
             // 
             this.προπτυχιακάToolStripMenuItem.Name = "προπτυχιακάToolStripMenuItem";
-            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακά";
+            this.προπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.προπτυχιακάToolStripMenuItem.Text = "Προπτυχιακές Σπουδές";
             this.προπτυχιακάToolStripMenuItem.Click += new System.EventHandler(this.προπτυχιακάToolStripMenuItem_Click);
             // 
             // μεταπτυχιακάToolStripMenuItem
             // 
             this.μεταπτυχιακάToolStripMenuItem.Name = "μεταπτυχιακάToolStripMenuItem";
-            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακά";
+            this.μεταπτυχιακάToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.μεταπτυχιακάToolStripMenuItem.Text = "Μεταπτυχιακές Σπουδές";
             this.μεταπτυχιακάToolStripMenuItem.Click += new System.EventHandler(this.μεταπτυχιακάToolStripMenuItem_Click);
             // 
             // διδάσκοντεςToolStripMenuItem
             // 
             this.διδάσκοντεςToolStripMenuItem.Name = "διδάσκοντεςToolStripMenuItem";
-            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.διδάσκοντεςToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.διδάσκοντεςToolStripMenuItem.Text = "Διδάσκοντες";
             this.διδάσκοντεςToolStripMenuItem.Click += new System.EventHandler(this.διδάσκοντεςToolStripMenuItem_Click);
             // 
@@ -386,6 +386,92 @@ namespace unipi_guide
             this.sxolesButton4.UseVisualStyleBackColor = false;
             this.sxolesButton4.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.Location = new System.Drawing.Point(290, 537);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(219, 40);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Οικονομικών, Επιχειρηματικών\r\nκαι Διεθνών Σπουδών";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(290, 654);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(198, 20);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Ναυτιλίας και Βιομηχανίας";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.Location = new System.Drawing.Point(555, 537);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 40);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Χρηματοοικονομικής \r\nκαι Στατιστικής";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.Location = new System.Drawing.Point(555, 654);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(320, 20);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
+            // 
+            // logout_button
+            // 
+            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.logout_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.logout_button.ForeColor = System.Drawing.Color.White;
+            this.logout_button.Location = new System.Drawing.Point(836, 30);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(124, 28);
+            this.logout_button.TabIndex = 29;
+            this.logout_button.Text = "Αποσύνδεση";
+            this.logout_button.UseVisualStyleBackColor = false;
+            this.logout_button.Visible = false;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
+            // 
+            // voice_mute_image
+            // 
+            this.voice_mute_image.BackColor = System.Drawing.Color.White;
+            this.voice_mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voice_mute_image.Image = ((System.Drawing.Image)(resources.GetObject("voice_mute_image.Image")));
+            this.voice_mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.voice_mute_image.Location = new System.Drawing.Point(240, 437);
+            this.voice_mute_image.Margin = new System.Windows.Forms.Padding(4);
+            this.voice_mute_image.Name = "voice_mute_image";
+            this.voice_mute_image.Size = new System.Drawing.Size(29, 24);
+            this.voice_mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.voice_mute_image.TabIndex = 28;
+            this.voice_mute_image.TabStop = false;
+            this.voice_mute_image.Click += new System.EventHandler(this.voice_mute_image_Click);
+            // 
+            // play_music_image
+            // 
+            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
+            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.play_music_image.Location = new System.Drawing.Point(13, 27);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
+            this.play_music_image.Name = "play_music_image";
+            this.play_music_image.Size = new System.Drawing.Size(32, 26);
+            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.play_music_image.TabIndex = 27;
+            this.play_music_image.TabStop = false;
+            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
+            // 
             // slideshow_homepage_image
             // 
             this.slideshow_homepage_image.Location = new System.Drawing.Point(12, 537);
@@ -435,92 +521,6 @@ namespace unipi_guide
             this.homepage_main_image.TabIndex = 2;
             this.homepage_main_image.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(290, 537);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 40);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Οικονομικών, Επιχειρηματικών\r\nκαι Διεθνών Σπουδών";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(290, 654);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 20);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Ναυτιλίας και Βιομηχανίας";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label3.Location = new System.Drawing.Point(555, 537);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 40);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Χρηματοοικονομικής \r\nκαι Στατιστικής";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(555, 654);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(320, 20);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
-            // 
-            // play_music_image
-            // 
-            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
-            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.play_music_image.Location = new System.Drawing.Point(13, 27);
-            this.play_music_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.play_music_image.Name = "play_music_image";
-            this.play_music_image.Size = new System.Drawing.Size(32, 26);
-            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.play_music_image.TabIndex = 27;
-            this.play_music_image.TabStop = false;
-            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
-            // 
-            // voice_mute_image
-            // 
-            this.voice_mute_image.BackColor = System.Drawing.Color.White;
-            this.voice_mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.voice_mute_image.Image = ((System.Drawing.Image)(resources.GetObject("voice_mute_image.Image")));
-            this.voice_mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.voice_mute_image.Location = new System.Drawing.Point(240, 437);
-            this.voice_mute_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.voice_mute_image.Name = "voice_mute_image";
-            this.voice_mute_image.Size = new System.Drawing.Size(29, 24);
-            this.voice_mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.voice_mute_image.TabIndex = 28;
-            this.voice_mute_image.TabStop = false;
-            this.voice_mute_image.Click += new System.EventHandler(this.voice_mute_image_Click);
-            // 
-            // logout_button
-            // 
-            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.logout_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.logout_button.ForeColor = System.Drawing.Color.White;
-            this.logout_button.Location = new System.Drawing.Point(836, 30);
-            this.logout_button.Name = "logout_button";
-            this.logout_button.Size = new System.Drawing.Size(124, 28);
-            this.logout_button.TabIndex = 29;
-            this.logout_button.Text = "Αποσύνδεση";
-            this.logout_button.UseVisualStyleBackColor = false;
-            this.logout_button.Visible = false;
-            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
-            // 
             // homepage_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -552,7 +552,7 @@ namespace unipi_guide
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.homepage_menu;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "homepage_form";
@@ -561,12 +561,12 @@ namespace unipi_guide
             this.Load += new System.EventHandler(this.homepage_form_Load);
             this.homepage_menu.ResumeLayout(false);
             this.homepage_menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.voice_mute_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow_homepage_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.voice_sound_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homepage_main_image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.voice_mute_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -184,5 +184,21 @@ namespace unipi_guide
             addEvent.ShowDialog();
             this.Close();
         }
+
+        private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form undergraduate = new Undergraduate();
+            undergraduate.ShowDialog();
+            this.Close();
+        }
+
+        private void μεταπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form postgraduate = new Postgraduate();
+            postgraduate.ShowDialog();
+            this.Close();
+        }
     }
 }
