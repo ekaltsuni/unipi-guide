@@ -146,5 +146,21 @@ namespace unipi_guide
             StatisticsSchoolForm.ShowDialog();
             this.Close();
         }
+
+        private void οικονομικώνToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form BusinessSchoolForm = new BusinessSchoolForm();
+            BusinessSchoolForm.ShowDialog();
+            this.Close();
+        }
+
+        private void ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form ManufacturingSchoolForm = new ManufacturingSchoolForm();
+            ManufacturingSchoolForm.ShowDialog();
+            this.Close();
+        }
     }
 }

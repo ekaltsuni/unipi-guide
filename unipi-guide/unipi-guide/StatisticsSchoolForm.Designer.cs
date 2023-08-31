@@ -47,16 +47,16 @@
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statistics_school_title_richTextBox = new System.Windows.Forms.RichTextBox();
-            this.mute_image = new System.Windows.Forms.PictureBox();
-            this.play_music_image = new System.Windows.Forms.PictureBox();
             this.login_button = new System.Windows.Forms.Button();
             this.logout_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.play_music_image = new System.Windows.Forms.PictureBox();
+            this.mute_image = new System.Windows.Forms.PictureBox();
             this.statistics_school_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             this.SuspendLayout();
             // 
             // statistics_school_menu
@@ -115,12 +115,14 @@
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
             this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
+            this.οικονομικώνToolStripMenuItem.Click += new System.EventHandler(this.οικονομικώνToolStripMenuItem_Click);
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Click += new System.EventHandler(this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem_Click);
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 
@@ -147,6 +149,7 @@
             this.ΠληροφορικήtoolStripMenuItem.Name = "ΠληροφορικήtoolStripMenuItem";
             this.ΠληροφορικήtoolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.ΠληροφορικήtoolStripMenuItem.Text = "Πληροφορική";
+            this.ΠληροφορικήtoolStripMenuItem.Visible = false;
             // 
             // τοΤμήμαΠληροφορικήςToolStripMenuItem
             // 
@@ -192,6 +195,7 @@
             this.ΕκδηλώσειςtoolStripMenuItem.Name = "ΕκδηλώσειςtoolStripMenuItem";
             this.ΕκδηλώσειςtoolStripMenuItem.Size = new System.Drawing.Size(180, 20);
             this.ΕκδηλώσειςtoolStripMenuItem.Text = "Πρόγραμμα και Εκδηλώσεις";
+            this.ΕκδηλώσειςtoolStripMenuItem.Visible = false;
             this.ΕκδηλώσειςtoolStripMenuItem.Click += new System.EventHandler(this.ΕκδηλώσειςtoolStripMenuItem_Click);
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
@@ -227,35 +231,6 @@
             this.statistics_school_title_richTextBox.TabIndex = 15;
             this.statistics_school_title_richTextBox.Text = "\n\t\t\t\t \t    Σχολή Χρηματοοικονομικής και Στατιστικής";
             // 
-            // mute_image
-            // 
-            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
-            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(9, 28);
-            this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(32, 26);
-            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mute_image.TabIndex = 30;
-            this.mute_image.TabStop = false;
-            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
-            // 
-            // play_music_image
-            // 
-            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
-            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.play_music_image.Location = new System.Drawing.Point(10, 29);
-            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
-            this.play_music_image.Name = "play_music_image";
-            this.play_music_image.Size = new System.Drawing.Size(30, 24);
-            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.play_music_image.TabIndex = 31;
-            this.play_music_image.TabStop = false;
-            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
-            // 
             // login_button
             // 
             this.login_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
@@ -287,16 +262,6 @@
             this.logout_button.Visible = false;
             this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 113);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(448, 479);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.White;
@@ -308,6 +273,45 @@
             this.richTextBox1.Size = new System.Drawing.Size(623, 449);
             this.richTextBox1.TabIndex = 41;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 113);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(448, 479);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
+            // play_music_image
+            // 
+            this.play_music_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
+            this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.play_music_image.Location = new System.Drawing.Point(10, 29);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
+            this.play_music_image.Name = "play_music_image";
+            this.play_music_image.Size = new System.Drawing.Size(30, 24);
+            this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.play_music_image.TabIndex = 31;
+            this.play_music_image.TabStop = false;
+            this.play_music_image.Click += new System.EventHandler(this.play_music_image_Click);
+            // 
+            // mute_image
+            // 
+            this.mute_image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
+            this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.mute_image.Location = new System.Drawing.Point(9, 28);
+            this.mute_image.Name = "mute_image";
+            this.mute_image.Size = new System.Drawing.Size(32, 26);
+            this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mute_image.TabIndex = 30;
+            this.mute_image.TabStop = false;
+            this.mute_image.Click += new System.EventHandler(this.mute_image_Click);
             // 
             // StatisticsSchoolForm
             // 
@@ -330,9 +334,9 @@
             this.Load += new System.EventHandler(this.StatisticsSchoolForm_Load);
             this.statistics_school_menu.ResumeLayout(false);
             this.statistics_school_menu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

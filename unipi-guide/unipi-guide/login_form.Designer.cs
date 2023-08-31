@@ -109,12 +109,14 @@
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
             this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
+            this.οικονομικώνToolStripMenuItem.Click += new System.EventHandler(this.οικονομικώνToolStripMenuItem_Click);
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Click += new System.EventHandler(this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem_Click);
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 

@@ -174,11 +174,19 @@ namespace unipi_guide
         private void οικονομικώνToolStripMenuItem_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form BusinessSchoolForm = new BusinessSchoolForm();
+            BusinessSchoolForm.ShowDialog();
+            this.Close(); 
         }
 
         private void ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form ManufacturingSchoolForm = new ManufacturingSchoolForm();
+            ManufacturingSchoolForm.ShowDialog();
+            this.Close();
         }
 
         private void χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem_Click(object sender, EventArgs e)
@@ -220,6 +228,10 @@ namespace unipi_guide
         private void sxoles1_homepage_button_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form BusinessSchoolForm = new BusinessSchoolForm();
+            BusinessSchoolForm.ShowDialog();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -234,6 +246,10 @@ namespace unipi_guide
         private void button1_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form ManufacturingSchoolForm = new ManufacturingSchoolForm();
+            ManufacturingSchoolForm.ShowDialog();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

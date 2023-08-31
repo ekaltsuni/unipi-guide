@@ -252,3 +252,5 @@ C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\o
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.Undergraduate.resources
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.CS_School_Form.resources
 C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.StatisticsSchoolForm.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.BusinessSchoolForm.resources
+C:\Users\unknown\Desktop\eleni\unipi-guide\unipi-guide\unipi-guide\unipi-guide\obj\Debug\unipi_guide.ManufacturingSchoolForm.resources
