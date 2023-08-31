@@ -110,5 +110,21 @@ namespace unipi_guide
         {
             Application.Exit();
         }
+
+        private void τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form CS_School_Form = new CS_School_Form();
+            CS_School_Form.ShowDialog();
+            this.Close();
+        }
+
+        private void χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form StatisticsSchoolForm = new StatisticsSchoolForm();
+            StatisticsSchoolForm.ShowDialog();
+            this.Close();
+        }
     }
 }

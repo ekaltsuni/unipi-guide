@@ -80,6 +80,12 @@
     <Compile Include="Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CS_School_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS_School_Form.Designer.cs">
+      <DependentUpon>CS_School_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="StatisticsSchoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsSchoolForm.Designer.cs">
+      <DependentUpon>StatisticsSchoolForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="toPanepistimio_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS_School_Form.resx">
+      <DependentUpon>CS_School_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.el.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -166,6 +181,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsSchoolForm.resx">
+      <DependentUpon>StatisticsSchoolForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="toPanepistimio_form.resx">
       <DependentUpon>toPanepistimio_form.cs</DependentUpon>

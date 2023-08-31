@@ -184,11 +184,19 @@ namespace unipi_guide
         private void χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form StatisticsSchoolForm = new StatisticsSchoolForm();
+            StatisticsSchoolForm.ShowDialog();
+            this.Close();
         }
 
         private void τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form CS_School_Form = new CS_School_Form();
+            CS_School_Form.ShowDialog();
+            this.Close();
         }
 
         private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
@@ -217,6 +225,10 @@ namespace unipi_guide
         private void button2_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form StatisticsSchoolForm = new StatisticsSchoolForm();
+            StatisticsSchoolForm.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -227,6 +239,10 @@ namespace unipi_guide
         private void button3_Click(object sender, EventArgs e)
         {
             engine.SpeakAsyncCancelAll();
+            this.Hide();
+            Form CS_School_Form = new CS_School_Form();
+            CS_School_Form.ShowDialog();
+            this.Close();
         }
 
         private void logout_button_Click(object sender, EventArgs e)

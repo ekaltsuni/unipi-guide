@@ -68,8 +68,8 @@
             this.έξοδοςToolStripMenuItem});
             this.login_menu.Location = new System.Drawing.Point(0, 0);
             this.login_menu.Name = "login_menu";
-            this.login_menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.login_menu.Size = new System.Drawing.Size(1292, 28);
+            this.login_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.login_menu.Size = new System.Drawing.Size(969, 24);
             this.login_menu.TabIndex = 1;
             this.login_menu.Text = "login_menu";
             // 
@@ -78,7 +78,7 @@
             this.αρχικήStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.αρχικήStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.αρχικήStripMenuItem1.Name = "αρχικήStripMenuItem1";
-            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(74, 24);
+            this.αρχικήStripMenuItem1.Size = new System.Drawing.Size(59, 20);
             this.αρχικήStripMenuItem1.Text = "Αρχική";
             this.αρχικήStripMenuItem1.Click += new System.EventHandler(this.αρχικήStripMenuItem1_Click);
             // 
@@ -87,7 +87,7 @@
             this.τοΠανεπιστήμιοToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.τοΠανεπιστήμιοToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.τοΠανεπιστήμιοToolStripMenuItem.Name = "τοΠανεπιστήμιοToolStripMenuItem";
-            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.τοΠανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
             this.τοΠανεπιστήμιοToolStripMenuItem.Text = "Το Πανεπιστήμιο";
             this.τοΠανεπιστήμιοToolStripMenuItem.Click += new System.EventHandler(this.τοΠανεπιστήμιοToolStripMenuItem_Click);
             // 
@@ -101,39 +101,41 @@
             this.σχολέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχολέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
-            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.σχολέςToolStripMenuItem.Text = "Σχολές";
             // 
             // οικονομικώνToolStripMenuItem
             // 
             this.οικονομικώνToolStripMenuItem.Name = "οικονομικώνToolStripMenuItem";
-            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.οικονομικώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.οικονομικώνToolStripMenuItem.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών ";
             // 
             // ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem
             // 
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Name = "ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem";
-            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.ναυτιλίαςΚαιΒιομηχανίαςToolStripMenuItem.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem
             // 
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Name = "χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem";
-            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Text = "Χρηματοοικονομικής και Στατιστικής";
+            this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem.Click += new System.EventHandler(this.χρηματοοικονομικήςΚαιΣτατιστικήςToolStripMenuItem_Click);
             // 
             // τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem
             // 
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Name = "τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem";
-            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(482, 26);
+            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Size = new System.Drawing.Size(390, 22);
             this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
+            this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem.Click += new System.EventHandler(this.τεχνολογιώνΠληροφορικήςΚαιΕπικοινωνιώνToolStripMenuItem_Click);
             // 
             // κριτικέςToolStripMenuItem
             // 
             this.κριτικέςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.κριτικέςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
-            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
             this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
@@ -142,7 +144,7 @@
             this.σχετικάΜεΕμάςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.σχετικάΜεΕμάςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.σχετικάΜεΕμάςToolStripMenuItem.Name = "σχετικάΜεΕμάςToolStripMenuItem";
-            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.σχετικάΜεΕμάςToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
             this.σχετικάΜεΕμάςToolStripMenuItem.Text = "Σχετικά με εμάς";
             this.σχετικάΜεΕμάςToolStripMenuItem.Click += new System.EventHandler(this.σχετικάΜεΕμάςToolStripMenuItem_Click);
             // 
@@ -151,7 +153,7 @@
             this.έξοδοςToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.έξοδοςToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
-            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
@@ -160,10 +162,9 @@
             this.login_label.AutoSize = true;
             this.login_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.login_label.ForeColor = System.Drawing.Color.White;
-            this.login_label.Location = new System.Drawing.Point(168, 134);
-            this.login_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.login_label.Location = new System.Drawing.Point(126, 109);
             this.login_label.Name = "login_label";
-            this.login_label.Size = new System.Drawing.Size(275, 39);
+            this.login_label.Size = new System.Drawing.Size(220, 31);
             this.login_label.TabIndex = 2;
             this.login_label.Text = "Σύνδεση Χρήστη";
             // 
@@ -172,10 +173,9 @@
             this.username_label.AutoSize = true;
             this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.username_label.ForeColor = System.Drawing.Color.White;
-            this.username_label.Location = new System.Drawing.Point(208, 267);
-            this.username_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.username_label.Location = new System.Drawing.Point(156, 217);
             this.username_label.Name = "username_label";
-            this.username_label.Size = new System.Drawing.Size(196, 31);
+            this.username_label.Size = new System.Drawing.Size(156, 25);
             this.username_label.TabIndex = 3;
             this.username_label.Text = "Όνομα Χρήστη";
             // 
@@ -184,10 +184,9 @@
             this.password_label.AutoSize = true;
             this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.password_label.ForeColor = System.Drawing.Color.White;
-            this.password_label.Location = new System.Drawing.Point(201, 409);
-            this.password_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.password_label.Location = new System.Drawing.Point(151, 332);
             this.password_label.Name = "password_label";
-            this.password_label.Size = new System.Drawing.Size(215, 31);
+            this.password_label.Size = new System.Drawing.Size(170, 25);
             this.password_label.TabIndex = 4;
             this.password_label.Text = "Κωδικός Χρήστη";
             // 
@@ -195,10 +194,9 @@
             // 
             this.login_button.BackColor = System.Drawing.Color.White;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.login_button.Location = new System.Drawing.Point(244, 561);
-            this.login_button.Margin = new System.Windows.Forms.Padding(4);
+            this.login_button.Location = new System.Drawing.Point(183, 456);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(139, 37);
+            this.login_button.Size = new System.Drawing.Size(104, 30);
             this.login_button.TabIndex = 5;
             this.login_button.Text = "Είσοδος";
             this.login_button.UseVisualStyleBackColor = false;
@@ -210,10 +208,9 @@
             this.mute_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mute_image.Location = new System.Drawing.Point(16, 33);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
+            this.mute_image.Location = new System.Drawing.Point(12, 27);
             this.mute_image.Name = "mute_image";
-            this.mute_image.Size = new System.Drawing.Size(43, 32);
+            this.mute_image.Size = new System.Drawing.Size(32, 26);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mute_image.TabIndex = 7;
             this.mute_image.TabStop = false;
@@ -223,10 +220,9 @@
             // 
             this.login_image.Image = global::unipi_guide.Properties.Resources.login1;
             this.login_image.InitialImage = ((System.Drawing.Image)(resources.GetObject("login_image.InitialImage")));
-            this.login_image.Location = new System.Drawing.Point(636, 28);
-            this.login_image.Margin = new System.Windows.Forms.Padding(4);
+            this.login_image.Location = new System.Drawing.Point(477, 23);
             this.login_image.Name = "login_image";
-            this.login_image.Size = new System.Drawing.Size(657, 1015);
+            this.login_image.Size = new System.Drawing.Size(493, 825);
             this.login_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.login_image.TabIndex = 6;
             this.login_image.TabStop = false;
@@ -234,20 +230,18 @@
             // usernameTextBox
             // 
             this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.usernameTextBox.Location = new System.Drawing.Point(215, 337);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.usernameTextBox.Location = new System.Drawing.Point(161, 274);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(200, 34);
+            this.usernameTextBox.Size = new System.Drawing.Size(151, 29);
             this.usernameTextBox.TabIndex = 8;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.passwordTextBox.Location = new System.Drawing.Point(215, 480);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordTextBox.Location = new System.Drawing.Point(161, 390);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(200, 34);
+            this.passwordTextBox.Size = new System.Drawing.Size(151, 29);
             this.passwordTextBox.TabIndex = 9;
             this.passwordTextBox.UseSystemPasswordChar = true;
             // 
@@ -257,10 +251,10 @@
             this.play_music_image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
             this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.play_music_image.Location = new System.Drawing.Point(16, 33);
-            this.play_music_image.Margin = new System.Windows.Forms.Padding(5);
+            this.play_music_image.Location = new System.Drawing.Point(12, 27);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(4);
             this.play_music_image.Name = "play_music_image";
-            this.play_music_image.Size = new System.Drawing.Size(40, 30);
+            this.play_music_image.Size = new System.Drawing.Size(30, 24);
             this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.play_music_image.TabIndex = 24;
             this.play_music_image.TabStop = false;
@@ -268,10 +262,10 @@
             // 
             // login_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(1292, 1040);
+            this.ClientSize = new System.Drawing.Size(969, 845);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
@@ -284,7 +278,6 @@
             this.Controls.Add(this.login_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "login_form";
