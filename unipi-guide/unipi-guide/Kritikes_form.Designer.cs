@@ -79,7 +79,7 @@
             this.kritikes_menu.Location = new System.Drawing.Point(0, 0);
             this.kritikes_menu.Name = "kritikes_menu";
             this.kritikes_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.kritikes_menu.Size = new System.Drawing.Size(979, 24);
+            this.kritikes_menu.Size = new System.Drawing.Size(959, 24);
             this.kritikes_menu.TabIndex = 2;
             this.kritikes_menu.Text = "kritikes_menu";
             // 
@@ -238,11 +238,11 @@
             // kritikes_richTextBox
             // 
             this.kritikes_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.kritikes_richTextBox.Location = new System.Drawing.Point(10, 132);
+            this.kritikes_richTextBox.Location = new System.Drawing.Point(31, 155);
             this.kritikes_richTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.kritikes_richTextBox.Name = "kritikes_richTextBox";
             this.kritikes_richTextBox.ReadOnly = true;
-            this.kritikes_richTextBox.Size = new System.Drawing.Size(644, 376);
+            this.kritikes_richTextBox.Size = new System.Drawing.Size(593, 421);
             this.kritikes_richTextBox.TabIndex = 16;
             this.kritikes_richTextBox.Text = "";
             // 
@@ -252,7 +252,7 @@
             this.leaveReview_label.BackColor = System.Drawing.Color.Transparent;
             this.leaveReview_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.leaveReview_label.ForeColor = System.Drawing.Color.Black;
-            this.leaveReview_label.Location = new System.Drawing.Point(674, 134);
+            this.leaveReview_label.Location = new System.Drawing.Point(649, 160);
             this.leaveReview_label.Name = "leaveReview_label";
             this.leaveReview_label.Size = new System.Drawing.Size(287, 78);
             this.leaveReview_label.TabIndex = 17;
@@ -261,7 +261,7 @@
             // 
             // newReview_richTextBox
             // 
-            this.newReview_richTextBox.Location = new System.Drawing.Point(678, 224);
+            this.newReview_richTextBox.Location = new System.Drawing.Point(653, 262);
             this.newReview_richTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.newReview_richTextBox.Name = "newReview_richTextBox";
             this.newReview_richTextBox.Size = new System.Drawing.Size(271, 133);
@@ -276,7 +276,7 @@
             this.leaveNewReview_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.leaveNewReview_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.leaveNewReview_button.ForeColor = System.Drawing.Color.White;
-            this.leaveNewReview_button.Location = new System.Drawing.Point(678, 439);
+            this.leaveNewReview_button.Location = new System.Drawing.Point(653, 527);
             this.leaveNewReview_button.Name = "leaveNewReview_button";
             this.leaveNewReview_button.Size = new System.Drawing.Size(124, 28);
             this.leaveNewReview_button.TabIndex = 21;
@@ -291,7 +291,7 @@
             this.unregistered_label.BackColor = System.Drawing.Color.Transparent;
             this.unregistered_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.unregistered_label.ForeColor = System.Drawing.Color.Black;
-            this.unregistered_label.Location = new System.Drawing.Point(674, 132);
+            this.unregistered_label.Location = new System.Drawing.Point(649, 158);
             this.unregistered_label.Name = "unregistered_label";
             this.unregistered_label.Size = new System.Drawing.Size(281, 52);
             this.unregistered_label.TabIndex = 22;
@@ -303,7 +303,7 @@
             this.name_label.BackColor = System.Drawing.Color.Transparent;
             this.name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.name_label.ForeColor = System.Drawing.Color.Black;
-            this.name_label.Location = new System.Drawing.Point(674, 366);
+            this.name_label.Location = new System.Drawing.Point(649, 416);
             this.name_label.Name = "name_label";
             this.name_label.Size = new System.Drawing.Size(75, 24);
             this.name_label.TabIndex = 23;
@@ -312,7 +312,7 @@
             // 
             // name_richTextBox
             // 
-            this.name_richTextBox.Location = new System.Drawing.Point(678, 392);
+            this.name_richTextBox.Location = new System.Drawing.Point(653, 463);
             this.name_richTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.name_richTextBox.Name = "name_richTextBox";
             this.name_richTextBox.Size = new System.Drawing.Size(243, 33);
@@ -331,7 +331,7 @@
             this.kritikes_title_richTextBox.Location = new System.Drawing.Point(0, 19);
             this.kritikes_title_richTextBox.Name = "kritikes_title_richTextBox";
             this.kritikes_title_richTextBox.ReadOnly = true;
-            this.kritikes_title_richTextBox.Size = new System.Drawing.Size(979, 94);
+            this.kritikes_title_richTextBox.Size = new System.Drawing.Size(959, 94);
             this.kritikes_title_richTextBox.TabIndex = 15;
             this.kritikes_title_richTextBox.Text = "\n\t\t\t\t  \t\tΚριτικές για το Πανεπιστήμιο Πειραιά";
             // 
@@ -385,7 +385,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(979, 528);
+            this.ClientSize = new System.Drawing.Size(959, 621);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.name_richTextBox);

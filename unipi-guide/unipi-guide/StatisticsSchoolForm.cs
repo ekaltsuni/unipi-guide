@@ -54,11 +54,10 @@ namespace unipi_guide
 
         private void logout_button_Click(object sender, EventArgs e)
         {
-            userStatus.registeredUser = false;
             this.Hide();
             userStatus.registeredUser = false;
-            Form homepage = new homepage_form();
-            homepage.ShowDialog();
+            Form StatisticsSchoolForm = new StatisticsSchoolForm();
+            StatisticsSchoolForm.ShowDialog();
             this.Close();
         }
 

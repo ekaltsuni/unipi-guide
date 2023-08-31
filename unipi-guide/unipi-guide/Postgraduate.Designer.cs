@@ -222,7 +222,7 @@
             this.postgraduate_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.postgraduate_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.postgraduate_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.postgraduate_title_richTextBox.Location = new System.Drawing.Point(0, 12);
+            this.postgraduate_title_richTextBox.Location = new System.Drawing.Point(0, 23);
             this.postgraduate_title_richTextBox.Name = "postgraduate_title_richTextBox";
             this.postgraduate_title_richTextBox.ReadOnly = true;
             this.postgraduate_title_richTextBox.Size = new System.Drawing.Size(1077, 89);
@@ -248,11 +248,11 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox1.Location = new System.Drawing.Point(454, 107);
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.richTextBox1.Location = new System.Drawing.Point(475, 144);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(623, 468);
+            this.richTextBox1.Size = new System.Drawing.Size(580, 442);
             this.richTextBox1.TabIndex = 34;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -288,9 +288,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::unipi_guide.Properties.Resources.CS_postgraduate;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 112);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(448, 479);
+            this.pictureBox1.Size = new System.Drawing.Size(448, 510);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -300,7 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 574);
+            this.ClientSize = new System.Drawing.Size(1077, 621);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);

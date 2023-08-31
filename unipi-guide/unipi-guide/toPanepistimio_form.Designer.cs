@@ -46,13 +46,13 @@
             this.ΕκδηλώσειςtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toPanepistimio_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.istoria_richTextBox = new System.Windows.Forms.RichTextBox();
             this.login_button_homepage = new System.Windows.Forms.Button();
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.play_music_image = new System.Windows.Forms.PictureBox();
             this.logout_button = new System.Windows.Forms.Button();
+            this.homepage_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.toPanepistimio_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,7 +75,7 @@
             this.toPanepistimio_menu.Location = new System.Drawing.Point(0, 0);
             this.toPanepistimio_menu.Name = "toPanepistimio_menu";
             this.toPanepistimio_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.toPanepistimio_menu.Size = new System.Drawing.Size(969, 24);
+            this.toPanepistimio_menu.Size = new System.Drawing.Size(981, 24);
             this.toPanepistimio_menu.TabIndex = 1;
             this.toPanepistimio_menu.Text = "toPanepistimio_menu";
             // 
@@ -216,30 +216,15 @@
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
-            // toPanepistimio_title_richTextBox
-            // 
-            this.toPanepistimio_title_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.toPanepistimio_title_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.toPanepistimio_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toPanepistimio_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.toPanepistimio_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.toPanepistimio_title_richTextBox.Location = new System.Drawing.Point(0, 0);
-            this.toPanepistimio_title_richTextBox.Name = "toPanepistimio_title_richTextBox";
-            this.toPanepistimio_title_richTextBox.ReadOnly = true;
-            this.toPanepistimio_title_richTextBox.Size = new System.Drawing.Size(969, 77);
-            this.toPanepistimio_title_richTextBox.TabIndex = 10;
-            this.toPanepistimio_title_richTextBox.Text = "\n\t\t\t\t        Η Ιστορία του Πανεπιστήμιου Πειραιώς";
-            // 
             // istoria_richTextBox
             // 
             this.istoria_richTextBox.BackColor = System.Drawing.Color.White;
             this.istoria_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.istoria_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.istoria_richTextBox.Location = new System.Drawing.Point(0, 477);
+            this.istoria_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.istoria_richTextBox.Location = new System.Drawing.Point(29, 544);
             this.istoria_richTextBox.Name = "istoria_richTextBox";
             this.istoria_richTextBox.ReadOnly = true;
-            this.istoria_richTextBox.Size = new System.Drawing.Size(969, 278);
+            this.istoria_richTextBox.Size = new System.Drawing.Size(923, 238);
             this.istoria_richTextBox.TabIndex = 11;
             this.istoria_richTextBox.Text = resources.GetString("istoria_richTextBox.Text");
             // 
@@ -250,7 +235,7 @@
             this.login_button_homepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button_homepage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.login_button_homepage.ForeColor = System.Drawing.Color.White;
-            this.login_button_homepage.Location = new System.Drawing.Point(820, 28);
+            this.login_button_homepage.Location = new System.Drawing.Point(840, 28);
             this.login_button_homepage.Name = "login_button_homepage";
             this.login_button_homepage.Size = new System.Drawing.Size(124, 28);
             this.login_button_homepage.TabIndex = 14;
@@ -275,9 +260,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::unipi_guide.Properties.Resources.university;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(969, 407);
+            this.pictureBox1.Size = new System.Drawing.Size(981, 450);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -304,7 +289,7 @@
             this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.logout_button.ForeColor = System.Drawing.Color.White;
-            this.logout_button.Location = new System.Drawing.Point(820, 28);
+            this.logout_button.Location = new System.Drawing.Point(840, 28);
             this.logout_button.Name = "logout_button";
             this.logout_button.Size = new System.Drawing.Size(124, 28);
             this.logout_button.TabIndex = 30;
@@ -313,20 +298,35 @@
             this.logout_button.Visible = false;
             this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
+            // homepage_title_richTextBox
+            // 
+            this.homepage_title_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.homepage_title_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.homepage_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
+            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 24);
+            this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
+            this.homepage_title_richTextBox.ReadOnly = true;
+            this.homepage_title_richTextBox.Size = new System.Drawing.Size(981, 94);
+            this.homepage_title_richTextBox.TabIndex = 31;
+            this.homepage_title_richTextBox.Text = "\n\t\t\t\t        Η Ιστορία του Πανεπιστήμιου Πειραιώς";
+            // 
             // toPanepistimio_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(969, 687);
+            this.ClientSize = new System.Drawing.Size(981, 816);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.login_button_homepage);
             this.Controls.Add(this.mute_image);
             this.Controls.Add(this.istoria_richTextBox);
             this.Controls.Add(this.toPanepistimio_menu);
-            this.Controls.Add(this.toPanepistimio_title_richTextBox);
+            this.Controls.Add(this.homepage_title_richTextBox);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -358,7 +358,6 @@
         private System.Windows.Forms.ToolStripMenuItem κριτικέςToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem σχετικάΜεΕμάςToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem έξοδοςToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox toPanepistimio_title_richTextBox;
         private System.Windows.Forms.RichTextBox istoria_richTextBox;
         private System.Windows.Forms.PictureBox mute_image;
         private System.Windows.Forms.ToolStripMenuItem τοΠανεπιστήμιοStripMenuItem1;
@@ -372,5 +371,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox play_music_image;
         private System.Windows.Forms.Button logout_button;
+        private System.Windows.Forms.RichTextBox homepage_title_richTextBox;
     }
 }

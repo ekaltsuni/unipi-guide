@@ -56,9 +56,8 @@ namespace unipi_guide
         {
             userStatus.registeredUser = false;
             this.Hide();
-            userStatus.registeredUser = false;
-            Form homepage = new homepage_form();
-            homepage.ShowDialog();
+            Form CS_School_Form = new CS_School_Form();
+            CS_School_Form.ShowDialog();
             this.Close();
         }
 
@@ -166,6 +165,11 @@ namespace unipi_guide
             Form ManufacturingSchoolForm = new ManufacturingSchoolForm();
             ManufacturingSchoolForm.ShowDialog();
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

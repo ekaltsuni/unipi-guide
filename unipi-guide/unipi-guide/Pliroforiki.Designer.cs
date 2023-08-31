@@ -224,7 +224,7 @@
             this.pliroforiki_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pliroforiki_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.pliroforiki_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.pliroforiki_title_richTextBox.Location = new System.Drawing.Point(0, 12);
+            this.pliroforiki_title_richTextBox.Location = new System.Drawing.Point(0, 24);
             this.pliroforiki_title_richTextBox.Name = "pliroforiki_title_richTextBox";
             this.pliroforiki_title_richTextBox.ReadOnly = true;
             this.pliroforiki_title_richTextBox.Size = new System.Drawing.Size(1077, 89);
@@ -248,7 +248,7 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(10, 106);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(10, 155);
             this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
@@ -260,7 +260,7 @@
             this.PliroforikiRichTextBox.BackColor = System.Drawing.Color.White;
             this.PliroforikiRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PliroforikiRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.PliroforikiRichTextBox.Location = new System.Drawing.Point(584, 106);
+            this.PliroforikiRichTextBox.Location = new System.Drawing.Point(584, 155);
             this.PliroforikiRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PliroforikiRichTextBox.Name = "PliroforikiRichTextBox";
             this.PliroforikiRichTextBox.ReadOnly = true;
@@ -286,7 +286,7 @@
             // playVideoButton
             // 
             this.playVideoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.playVideoButton.Location = new System.Drawing.Point(141, 504);
+            this.playVideoButton.Location = new System.Drawing.Point(141, 553);
             this.playVideoButton.Margin = new System.Windows.Forms.Padding(2);
             this.playVideoButton.Name = "playVideoButton";
             this.playVideoButton.Size = new System.Drawing.Size(80, 39);
@@ -299,7 +299,7 @@
             // pauseVideoButton
             // 
             this.pauseVideoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.pauseVideoButton.Location = new System.Drawing.Point(240, 504);
+            this.pauseVideoButton.Location = new System.Drawing.Point(240, 553);
             this.pauseVideoButton.Margin = new System.Windows.Forms.Padding(2);
             this.pauseVideoButton.Name = "pauseVideoButton";
             this.pauseVideoButton.Size = new System.Drawing.Size(80, 39);
@@ -312,7 +312,7 @@
             // stopVideoButton
             // 
             this.stopVideoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.stopVideoButton.Location = new System.Drawing.Point(340, 504);
+            this.stopVideoButton.Location = new System.Drawing.Point(340, 553);
             this.stopVideoButton.Margin = new System.Windows.Forms.Padding(2);
             this.stopVideoButton.Name = "stopVideoButton";
             this.stopVideoButton.Size = new System.Drawing.Size(80, 39);
@@ -342,7 +342,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 574);
+            this.ClientSize = new System.Drawing.Size(1077, 621);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.stopVideoButton);
             this.Controls.Add(this.pauseVideoButton);

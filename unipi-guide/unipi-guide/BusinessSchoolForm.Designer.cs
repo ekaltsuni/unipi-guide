@@ -265,8 +265,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 113);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(448, 479);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(448, 510);
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
             // 
@@ -274,11 +273,11 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox1.Location = new System.Drawing.Point(467, 119);
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.richTextBox1.Location = new System.Drawing.Point(473, 143);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(598, 449);
+            this.richTextBox1.Size = new System.Drawing.Size(585, 442);
             this.richTextBox1.TabIndex = 42;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -305,7 +304,7 @@
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(941, 29);
+            this.login_button.Location = new System.Drawing.Point(942, 30);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(124, 28);
             this.login_button.TabIndex = 44;
@@ -318,7 +317,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 591);
+            this.ClientSize = new System.Drawing.Size(1077, 621);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.richTextBox1);

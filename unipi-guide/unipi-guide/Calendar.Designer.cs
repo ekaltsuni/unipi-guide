@@ -86,7 +86,7 @@
             this.calendar_menu.Location = new System.Drawing.Point(0, 0);
             this.calendar_menu.Name = "calendar_menu";
             this.calendar_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.calendar_menu.Size = new System.Drawing.Size(1030, 24);
+            this.calendar_menu.Size = new System.Drawing.Size(959, 24);
             this.calendar_menu.TabIndex = 1;
             this.calendar_menu.Text = "calendar_menu";
             // 
@@ -233,10 +233,10 @@
             this.calendar_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.calendar_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.calendar_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.calendar_title_richTextBox.Location = new System.Drawing.Point(0, 19);
+            this.calendar_title_richTextBox.Location = new System.Drawing.Point(0, 24);
             this.calendar_title_richTextBox.Name = "calendar_title_richTextBox";
             this.calendar_title_richTextBox.ReadOnly = true;
-            this.calendar_title_richTextBox.Size = new System.Drawing.Size(1030, 101);
+            this.calendar_title_richTextBox.Size = new System.Drawing.Size(959, 101);
             this.calendar_title_richTextBox.TabIndex = 16;
             this.calendar_title_richTextBox.Text = "\n\t\t\t\t  \t\tΩρολόγιο Πρόγραμμα & Εκδηλώσεις";
             // 
@@ -257,22 +257,22 @@
             // events_richTextBox
             // 
             this.events_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.events_richTextBox.Location = new System.Drawing.Point(10, 322);
+            this.events_richTextBox.Location = new System.Drawing.Point(24, 315);
             this.events_richTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.events_richTextBox.Name = "events_richTextBox";
             this.events_richTextBox.ReadOnly = true;
-            this.events_richTextBox.Size = new System.Drawing.Size(1009, 331);
+            this.events_richTextBox.Size = new System.Drawing.Size(924, 295);
             this.events_richTextBox.TabIndex = 18;
             this.events_richTextBox.Text = "";
             // 
             // events_button
             // 
-            this.events_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.events_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
             this.events_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.events_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.events_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.events_button.ForeColor = System.Drawing.Color.White;
-            this.events_button.Location = new System.Drawing.Point(924, 126);
+            this.events_button.Location = new System.Drawing.Point(834, 139);
             this.events_button.Name = "events_button";
             this.events_button.Size = new System.Drawing.Size(94, 53);
             this.events_button.TabIndex = 22;
@@ -302,7 +302,7 @@
             this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.logout_button.ForeColor = System.Drawing.Color.White;
-            this.logout_button.Location = new System.Drawing.Point(895, 28);
+            this.logout_button.Location = new System.Drawing.Point(829, 31);
             this.logout_button.Name = "logout_button";
             this.logout_button.Size = new System.Drawing.Size(124, 28);
             this.logout_button.TabIndex = 30;
@@ -317,7 +317,7 @@
             this.addEvent_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEvent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.addEvent_button.ForeColor = System.Drawing.Color.White;
-            this.addEvent_button.Location = new System.Drawing.Point(924, 185);
+            this.addEvent_button.Location = new System.Drawing.Point(834, 211);
             this.addEvent_button.Name = "addEvent_button";
             this.addEvent_button.Size = new System.Drawing.Size(94, 53);
             this.addEvent_button.TabIndex = 31;
@@ -333,11 +333,11 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::unipi_guide.Properties.Resources.calendar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1030, 664);
+            this.ClientSize = new System.Drawing.Size(959, 621);
             this.Controls.Add(this.addEvent_button);
+            this.Controls.Add(this.events_button);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
-            this.Controls.Add(this.events_button);
             this.Controls.Add(this.events_richTextBox);
             this.Controls.Add(this.mute_image);
             this.Controls.Add(this.calendar_menu);

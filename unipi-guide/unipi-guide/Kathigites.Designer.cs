@@ -46,7 +46,6 @@
             this.ΕκδηλώσειςtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.σχετικάΜεΕμάςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.homepage_title_richTextBox = new System.Windows.Forms.RichTextBox();
             this.saveFileDialogKathigites = new System.Windows.Forms.SaveFileDialog();
             this.stoixeiaKathigitwnRichTextBox = new System.Windows.Forms.RichTextBox();
             this.didaskontes_save_button = new System.Windows.Forms.Button();
@@ -54,6 +53,7 @@
             this.mute_image = new System.Windows.Forms.PictureBox();
             this.play_music_image = new System.Windows.Forms.PictureBox();
             this.logout_button = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.kathigites_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mute_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play_music_image)).BeginInit();
@@ -214,21 +214,6 @@
             this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
             this.έξοδοςToolStripMenuItem.Click += new System.EventHandler(this.έξοδοςToolStripMenuItem_Click);
             // 
-            // homepage_title_richTextBox
-            // 
-            this.homepage_title_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.homepage_title_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.homepage_title_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.homepage_title_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.homepage_title_richTextBox.ForeColor = System.Drawing.Color.White;
-            this.homepage_title_richTextBox.Location = new System.Drawing.Point(0, 0);
-            this.homepage_title_richTextBox.Name = "homepage_title_richTextBox";
-            this.homepage_title_richTextBox.ReadOnly = true;
-            this.homepage_title_richTextBox.Size = new System.Drawing.Size(959, 77);
-            this.homepage_title_richTextBox.TabIndex = 10;
-            this.homepage_title_richTextBox.Text = "\n\t\t\t\t     Διδάσκοντες του τμήματος Πληροφορικής";
-            // 
             // saveFileDialogKathigites
             // 
             this.saveFileDialogKathigites.Filter = "Text files|*.txt";
@@ -238,11 +223,11 @@
             this.stoixeiaKathigitwnRichTextBox.BackColor = System.Drawing.Color.White;
             this.stoixeiaKathigitwnRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stoixeiaKathigitwnRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.stoixeiaKathigitwnRichTextBox.Location = new System.Drawing.Point(10, 82);
+            this.stoixeiaKathigitwnRichTextBox.Location = new System.Drawing.Point(24, 145);
             this.stoixeiaKathigitwnRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.stoixeiaKathigitwnRichTextBox.Name = "stoixeiaKathigitwnRichTextBox";
             this.stoixeiaKathigitwnRichTextBox.ReadOnly = true;
-            this.stoixeiaKathigitwnRichTextBox.Size = new System.Drawing.Size(572, 486);
+            this.stoixeiaKathigitwnRichTextBox.Size = new System.Drawing.Size(545, 486);
             this.stoixeiaKathigitwnRichTextBox.TabIndex = 14;
             this.stoixeiaKathigitwnRichTextBox.Text = resources.GetString("stoixeiaKathigitwnRichTextBox.Text");
             // 
@@ -318,12 +303,27 @@
             this.logout_button.UseVisualStyleBackColor = false;
             this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(-9, 24);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(981, 94);
+            this.richTextBox1.TabIndex = 31;
+            this.richTextBox1.Text = "\n\t\t\t\t  \tΔιδάσκοντες του τμήματος Πληροφορικής";
+            // 
             // Didaskontes_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(959, 599);
+            this.ClientSize = new System.Drawing.Size(959, 621);
             this.Controls.Add(this.logout_button);
             this.Controls.Add(this.play_music_image);
             this.Controls.Add(this.didaskontes_save_button);
@@ -331,7 +331,7 @@
             this.Controls.Add(this.stoixeiaKathigitwnRichTextBox);
             this.Controls.Add(this.kathigites_menu);
             this.Controls.Add(this.mute_image);
-            this.Controls.Add(this.homepage_title_richTextBox);
+            this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -369,7 +369,6 @@
         private System.Windows.Forms.ToolStripMenuItem ΕκδηλώσειςtoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem σχετικάΜεΕμάςToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem έξοδοςToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox homepage_title_richTextBox;
         private System.Windows.Forms.SaveFileDialog saveFileDialogKathigites;
         private System.Windows.Forms.RichTextBox stoixeiaKathigitwnRichTextBox;
         private System.Windows.Forms.Button didaskontes_save_button;
@@ -377,5 +376,6 @@
         private System.Windows.Forms.ToolStripMenuItem τοΤμήμαΠληροφορικήςToolStripMenuItem;
         private System.Windows.Forms.PictureBox play_music_image;
         private System.Windows.Forms.Button logout_button;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

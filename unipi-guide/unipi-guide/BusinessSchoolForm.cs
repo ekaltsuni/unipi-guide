@@ -55,8 +55,9 @@ namespace unipi_guide
         private void logout_button_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form homepage = new homepage_form();
-            homepage.ShowDialog();
+            userStatus.registeredUser = false;
+            Form BusinessSchoolForm = new BusinessSchoolForm();
+            BusinessSchoolForm.ShowDialog();
             this.Close();
         }
 
