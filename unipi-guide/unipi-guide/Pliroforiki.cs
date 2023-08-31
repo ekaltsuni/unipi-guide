@@ -15,8 +15,6 @@ namespace unipi_guide
 {
     public partial class Pliroforiki_form : Form
     {
-        /* Initialize speech synthesis */
-        SpeechSynthesizer engine = new SpeechSynthesizer();
         public Pliroforiki_form()
         {
             InitializeComponent();
@@ -130,7 +128,6 @@ namespace unipi_guide
 
         private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form didaskontes = new Didaskontes_form();
             didaskontes.ShowDialog();
@@ -139,7 +136,6 @@ namespace unipi_guide
 
         private void logout_button_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             userStatus.registeredUser = false;
             Form homepage = new homepage_form();
@@ -149,7 +145,6 @@ namespace unipi_guide
 
         private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form undergraduate = new Undergraduate();
             undergraduate.ShowDialog();
@@ -158,7 +153,6 @@ namespace unipi_guide
 
         private void μεταπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form postgraduate = new Postgraduate();
             postgraduate.ShowDialog();

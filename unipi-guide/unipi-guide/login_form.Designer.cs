@@ -135,6 +135,7 @@
             this.κριτικέςToolStripMenuItem.Name = "κριτικέςToolStripMenuItem";
             this.κριτικέςToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.κριτικέςToolStripMenuItem.Text = "Κριτικές";
+            this.κριτικέςToolStripMenuItem.Click += new System.EventHandler(this.κριτικέςToolStripMenuItem_Click);
             // 
             // σχετικάΜεΕμάςToolStripMenuItem
             // 
@@ -195,7 +196,7 @@
             this.login_button.BackColor = System.Drawing.Color.White;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.login_button.Location = new System.Drawing.Point(244, 561);
-            this.login_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_button.Margin = new System.Windows.Forms.Padding(4);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(139, 37);
             this.login_button.TabIndex = 5;
@@ -210,7 +211,7 @@
             this.mute_image.Image = ((System.Drawing.Image)(resources.GetObject("mute_image.Image")));
             this.mute_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mute_image.Location = new System.Drawing.Point(16, 33);
-            this.mute_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mute_image.Margin = new System.Windows.Forms.Padding(4);
             this.mute_image.Name = "mute_image";
             this.mute_image.Size = new System.Drawing.Size(43, 32);
             this.mute_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,7 +224,7 @@
             this.login_image.Image = global::unipi_guide.Properties.Resources.login1;
             this.login_image.InitialImage = ((System.Drawing.Image)(resources.GetObject("login_image.InitialImage")));
             this.login_image.Location = new System.Drawing.Point(636, 28);
-            this.login_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_image.Margin = new System.Windows.Forms.Padding(4);
             this.login_image.Name = "login_image";
             this.login_image.Size = new System.Drawing.Size(657, 1015);
             this.login_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -234,7 +235,7 @@
             // 
             this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.usernameTextBox.Location = new System.Drawing.Point(215, 337);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(200, 34);
             this.usernameTextBox.TabIndex = 8;
@@ -243,7 +244,7 @@
             // 
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.passwordTextBox.Location = new System.Drawing.Point(215, 480);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(200, 34);
@@ -257,7 +258,7 @@
             this.play_music_image.Image = ((System.Drawing.Image)(resources.GetObject("play_music_image.Image")));
             this.play_music_image.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.play_music_image.Location = new System.Drawing.Point(16, 33);
-            this.play_music_image.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.play_music_image.Margin = new System.Windows.Forms.Padding(5);
             this.play_music_image.Name = "play_music_image";
             this.play_music_image.Size = new System.Drawing.Size(40, 30);
             this.play_music_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +284,7 @@
             this.Controls.Add(this.login_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "login_form";

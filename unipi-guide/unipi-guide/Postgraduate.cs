@@ -14,8 +14,6 @@ namespace unipi_guide
 {
     public partial class Postgraduate : Form
     {
-        /* Initialize speech synthesis */
-        SpeechSynthesizer engine = new SpeechSynthesizer();
         public Postgraduate()
         {
             InitializeComponent();
@@ -35,7 +33,6 @@ namespace unipi_guide
 
         private void logout_button_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             userStatus.registeredUser = false;
             Form homepage = new homepage_form();
@@ -45,7 +42,6 @@ namespace unipi_guide
 
         private void αρχικήStripMenuItem1_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form homepage = new homepage_form();
             homepage.ShowDialog();
@@ -54,7 +50,6 @@ namespace unipi_guide
 
         private void τοΠανεπιστήμιοToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form toPanepistimio = new toPanepistimio_form();
             toPanepistimio.ShowDialog();
@@ -68,7 +63,6 @@ namespace unipi_guide
 
         private void τοΤμήμαΠληροφορικήςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form pliroforiki = new Pliroforiki_form();
             pliroforiki.ShowDialog();
@@ -77,7 +71,6 @@ namespace unipi_guide
 
         private void προπτυχιακάToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form undergraduate = new Undergraduate();
             undergraduate.ShowDialog();
@@ -86,7 +79,6 @@ namespace unipi_guide
 
         private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form kritikes = new Kritikes_form();
             kritikes.ShowDialog();
@@ -95,7 +87,6 @@ namespace unipi_guide
 
         private void ΕκδηλώσειςtoolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form calendar = new calendar_form();
             calendar.ShowDialog();
@@ -104,7 +95,6 @@ namespace unipi_guide
 
         private void διδάσκοντεςToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            engine.SpeakAsyncCancelAll();
             this.Hide();
             Form didaskontes = new Didaskontes_form();
             didaskontes.ShowDialog();

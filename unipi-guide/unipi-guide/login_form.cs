@@ -122,5 +122,13 @@ namespace unipi_guide
             toPanepistimio.ShowDialog();
             this.Close();
         }
+
+        private void κριτικέςToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form kritikes = new Kritikes_form();
+            kritikes.ShowDialog();
+            this.Close();
+        }
     }
 }
