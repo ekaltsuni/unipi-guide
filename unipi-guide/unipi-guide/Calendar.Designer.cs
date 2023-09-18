@@ -86,7 +86,7 @@
             this.calendar_menu.Location = new System.Drawing.Point(0, 0);
             this.calendar_menu.Name = "calendar_menu";
             this.calendar_menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.calendar_menu.Size = new System.Drawing.Size(959, 24);
+            this.calendar_menu.Size = new System.Drawing.Size(971, 24);
             this.calendar_menu.TabIndex = 1;
             this.calendar_menu.Text = "calendar_menu";
             // 
@@ -236,7 +236,7 @@
             this.calendar_title_richTextBox.Location = new System.Drawing.Point(0, 24);
             this.calendar_title_richTextBox.Name = "calendar_title_richTextBox";
             this.calendar_title_richTextBox.ReadOnly = true;
-            this.calendar_title_richTextBox.Size = new System.Drawing.Size(959, 101);
+            this.calendar_title_richTextBox.Size = new System.Drawing.Size(971, 101);
             this.calendar_title_richTextBox.TabIndex = 16;
             this.calendar_title_richTextBox.Text = "\n\t\t\t\t  \t\tΩρολόγιο Πρόγραμμα & Εκδηλώσεις";
             // 
@@ -333,7 +333,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::unipi_guide.Properties.Resources.calendar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(959, 621);
+            this.ClientSize = new System.Drawing.Size(971, 623);
             this.Controls.Add(this.addEvent_button);
             this.Controls.Add(this.events_button);
             this.Controls.Add(this.logout_button);

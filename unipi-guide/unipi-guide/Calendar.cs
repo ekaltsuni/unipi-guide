@@ -28,8 +28,7 @@ namespace unipi_guide
 
         private void calendar_form_Load(object sender, EventArgs e)
         {
-            this.Width = 1046;
-            this.Height = 703;
+            
             LoadData();
 
             /* Check music status */
